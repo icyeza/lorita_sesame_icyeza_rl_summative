@@ -1,0 +1,37 @@
+[project]
+name = "sook-ultrasound-rl-summative"
+version = "0.1.0"
+description = "RL summative: obstetric ultrasound probe-guidance agent (DQN, REINFORCE, A2C, PPO)"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "gymnasium>=0.29.1",
+    "numpy>=1.26,<2.0",
+    "scipy>=1.12.0",
+    "torch>=2.2.0",
+    "stable-baselines3>=2.3.0",
+    "matplotlib>=3.8.0",
+    "scikit-learn>=1.4.0",
+    "pandas>=2.2.0",
+    "pyyaml>=6.0.1",
+    "tensorboard>=2.16.0",
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.29.0",
+    "websockets>=12.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "httpx2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["environment", "training", "evaluation"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
