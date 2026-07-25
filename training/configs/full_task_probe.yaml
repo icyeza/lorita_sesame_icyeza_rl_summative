@@ -1,0 +1,14 @@
+# Single-combo config used ONLY for the Phase-2 bounded full-task probe run
+# (`--curriculum full_task --config training/configs/full_task_probe.yaml`).
+# An empty grid produces exactly one combo (PPO defaults from
+# training/pg_training.py::train_ppo), so this doesn't sweep anything --
+# it exists purely so the probe run doesn't accidentally iterate the full
+# training/configs/ppo.yaml grid (16 combos x 2 seeds) under a wall-clock
+# cap per combo, which is what happened the first time this was tried
+# (see status.md Phase 2 -- that run then hit a separate SubprocVecEnv
+# hang and had to be killed).
+grid_timesteps: 500000
+headline_timesteps: 500000
+seeds: [0]
+
+grid: {}

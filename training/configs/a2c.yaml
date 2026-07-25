@@ -1,0 +1,16 @@
+# A2C hyperparameter grid. NOT run in full by the assistant that scaffolded
+# this project -- only `--smoke` runs were executed.
+#
+# Tiered budgets (Phase 3): see dqn.yaml / ppo.yaml for the rationale.
+grid_timesteps: 50000
+headline_timesteps: 200000
+seeds: [0, 1]
+
+grid:
+  learning_rate: [7.0e-4, 3.0e-4]  # NOTE: must have a decimal point -- PyYAML's safe_load parses bare "3e-4" as a STRING, not a float
+  gamma: [0.99]
+  n_steps: [5, 16]
+  entropy_coef: [0.0, 0.01]
+  gae_lambda: [1.0, 0.95]
+  net_arch:
+    - [64, 64]

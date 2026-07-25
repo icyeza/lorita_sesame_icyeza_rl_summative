@@ -1,0 +1,21 @@
+# DQN hyperparameter grid. NOT run in full by the assistant that scaffolded
+# this project -- only `--smoke` runs were executed to validate the pipeline.
+# The human runs this full grid (2 seeds x 16 combos = 32 runs) over multiple days.
+#
+# Tiered budgets (Phase 3): grid_timesteps is a SHORT budget for every grid
+# cell (differentiated behavior, not full convergence); headline_timesteps
+# is for a handful of best-config runs producing report-quality curves.
+grid_timesteps: 50000
+headline_timesteps: 200000
+seeds: [0, 1]
+
+grid:
+  learning_rate: [1.0e-3, 2.5e-4]  # NOTE: must have a decimal point -- PyYAML's safe_load parses bare "1e-3" as a STRING, not a float
+  gamma: [0.99]
+  buffer_size: [50000]
+  batch_size: [64, 128]
+  target_update_interval: [500, 2000]
+  exploration_fraction: [0.2]
+  net_arch:
+    - [64, 64]
+    - [128, 128]
