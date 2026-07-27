@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Ultrasound Probe-Guidance -- Live Viz</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #10121a; color: #eee; font-family: monospace; overflow: hidden; }
+  #hud { position: absolute; top: 10px; left: 10px; z-index: 10; background: rgba(0,0,0,0.6); padding: 8px 12px; border-radius: 6px; font-size: 11.5px; line-height: 1.55; width: 190px; }
+  #hud .label { color: #9aa4b2; }
+  #hud .ok { color: #5ee08a; font-weight: bold; }
+  #hud hr { border: none; border-top: 1px solid #333c48; margin: 4px 0; }
+  #hud .legend { color: #616a76; font-size: 9.5px; line-height: 1.4; margin-top: 5px; }
+  #status { position: absolute; top: 10px; right: 10px; z-index: 10; background: rgba(0,0,0,0.6); padding: 6px 12px; border-radius: 6px; font-size: 12px; max-width: 45vw; text-align: right; }
+  #pause-hint { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 10; background: rgba(0,0,0,0.75); color: #fff; padding: 10px 18px; border-radius: 8px; font-size: 14px; display: none; }
+  #pause-hint.show { display: block; }
+  #confirm-panel { position: absolute; bottom: 10px; left: 10px; z-index: 10; background: rgba(0,0,0,0.7); padding: 8px; border-radius: 6px; display: none; text-align: center; }
+  #confirm-panel.show { display: block; }
+  #confirm-panel img { width: 140px; height: 140px; display: block; border-radius: 4px; }
+  #confirm-panel .cap { font-size: 10px; color: #9aa4b2; margin-top: 4px; max-width: 140px; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<div id="hud">
+  <div><span class="label">plane:</span> <span id="hud-target">-</span></div>
+  <div><span class="label">angle &alpha;:</span> <span id="hud-alpha">-</span></div>
+  <div><span class="label">dist d:</span> <span id="hud-d">-</span></div>
+  <hr>
+  <div><span class="label">acquired:</span> <span id="hud-acquired">none</span></div>
+  <div><span class="label">diagnosis:</span> <span id="hud-flag">-</span></div>
+  <div><span class="label">step:</span> <span id="hud-step">-</span></div>
+  <div class="legend">green = within tolerance to freeze.<br>"acquired" = plane angle+depth matched the target -- the structure isn't necessarily centered on-screen (see the reference view on a success).</div>
+</div>
+<div id="status">disconnected</div>
+<div id="confirm-panel">
+  <img id="confirm-img" src="" alt="reference view" />
+  <div class="cap" id="confirm-label">reference view</div>
+</div>
+<div id="pause-hint">Episode ended — press SPACE or R to continue</div>
+
+<script type="importmap">
+{ "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x10121a);
+
+// Camera sits above and in front of the bed, angled down at the abdomen --
+// a "clinician looking over the patient" framing rather than a flat
+// side-on view.
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.01, 100);
+camera.position.set(0.35, 0.45, 0.55);
+camera.lookAt(0, 0.05, 0);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+// Free orbit/zoom/pan so a good viewing angle can be found live, instead
+// of being stuck with whatever angle was hardcoded.
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 0.05, 0);
+controls.enableDamping = true;
+controls.dampingFactor = 0.08;
+controls.minDistance = 0.15;
+controls.maxDistance = 2.5;
+controls.update();
+
+window.addEventListener("resize", () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+scene.add(new THREE.AmbientLight(0xffffff, 0.55));
+const dirLight = new THREE.DirectionalLight(0xffffff, 0.5);
+dirLight.position.set(1, 2, 1);
+scene.add(dirLight);
+// Overhead exam light above the bed -- a room needs a real light source in
+// it, not just an ambient fill, or the walls/floor read as flat and grey.
+const examLight = new THREE.PointLight(0xfff4e0, 0.9, 3.0);
+examLight.position.set(0, 1.3, 0);
+scene.add(examLight);
+
+// --- room shell: floor + two walls, so the scene reads as an exam room
+// instead of objects floating in a void ---
+const ROOM_W = 2.4, ROOM_D = 2.4, ROOM_H = 1.6;
+const FLOOR_Y = -0.35; // bed legs rest on this
+const floorMat = new THREE.MeshStandardMaterial({ color: 0xb9c2cc, roughness: 0.9 });
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(ROOM_W, ROOM_D), floorMat);
+floor.rotation.x = -Math.PI / 2;
+floor.position.set(0, FLOOR_Y, 0);
+scene.add(floor);
+
+const wallMat = new THREE.MeshStandardMaterial({ color: 0xdbe4ec, roughness: 0.95, side: THREE.DoubleSide });
+const backWall = new THREE.Mesh(new THREE.PlaneGeometry(ROOM_W, ROOM_H), wallMat);
+backWall.position.set(0, FLOOR_Y + ROOM_H / 2, -ROOM_D / 2);
+scene.add(backWall);
+const sideWall = new THREE.Mesh(new THREE.PlaneGeometry(ROOM_D, ROOM_H), wallMat);
+sideWall.rotation.y = Math.PI / 2;
+sideWall.position.set(-ROOM_W / 2, FLOOR_Y + ROOM_H / 2, 0);
+scene.add(sideWall);
+// baseboard trim so the floor/wall seam doesn't look like two flat planes
+// just clipping through each other
+const trimMat = new THREE.MeshStandardMaterial({ color: 0x8b97a3 });
+const backTrim = new THREE.Mesh(new THREE.BoxGeometry(ROOM_W, 0.03, 0.02), trimMat);
+backTrim.position.set(0, FLOOR_Y + 0.015, -ROOM_D / 2 + 0.01);
+scene.add(backTrim);
+const sideTrim = new THREE.Mesh(new THREE.BoxGeometry(0.02, 0.03, ROOM_D), trimMat);
+sideTrim.position.set(-ROOM_W / 2 + 0.01, FLOOR_Y + 0.015, 0);
+scene.add(sideTrim);
+
+// --- bed, built up from a few pieces instead of one bare box ---
+const bedGroup = new THREE.Group();
+const frameMat = new THREE.MeshStandardMaterial({ color: 0x3a4a6b });
+const mattressMat = new THREE.MeshStandardMaterial({ color: 0xf2f4f7, roughness: 0.8 });
+
+const bedFrame = new THREE.Mesh(new THREE.BoxGeometry(0.9, 0.1, 0.5), frameMat);
+bedFrame.position.set(0, 0, 0);
+bedGroup.add(bedFrame);
+
+const mattress = new THREE.Mesh(new THREE.BoxGeometry(0.84, 0.06, 0.46), mattressMat);
+mattress.position.set(0, 0.08, 0);
+bedGroup.add(mattress);
+
+const headboard = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.35, 0.5), frameMat);
+headboard.position.set(-0.47, 0.13, 0);
+bedGroup.add(headboard);
+
+const legGeo = new THREE.BoxGeometry(0.04, 0.2, 0.04);
+const legOffsets = [
+  [0.4, -0.21], [-0.4, -0.21], [0.4, 0.21], [-0.4, 0.21],
+];
+for (const [lx, lz] of legOffsets) {
+  const leg = new THREE.Mesh(legGeo, frameMat);
+  leg.position.set(lx, -0.15, lz);
+  bedGroup.add(leg);
+}
+
+bedGroup.position.set(0, -0.1, 0);
+scene.add(bedGroup);
+
+// Everything driven by the env's raw (x,y,z) coordinates -- the abdomen
+// surface, the probe, and the target marker -- goes in ONE group offset to
+// the mattress top, so they all move together and stay geometrically
+// consistent with each other. (Positioning the abdomen mesh alone at the
+// mattress height, while leaving the probe/marker using raw env
+// coordinates centered at world y=0, would visually detach the probe from
+// the belly surface it's supposed to be touching.)
+// Mattress top surface: bedGroup.y=-0.1, mattress local center y=0.08,
+// local half-height 0.03 -> top at local y=0.11.
+const bedTopY = -0.1 + 0.08 + 0.03;
+const patientGroup = new THREE.Group();
+patientGroup.position.set(0, bedTopY, 0);
+scene.add(patientGroup);
+
+// Only the upper hemisphere is ever relevant (the probe only ever
+// contacts the top of the abdomen), so build a half-sphere -- the full
+// sphere previously sank its lower half through the bed surface, which is
+// what made the shape look like it was "floating"/clipping rather than
+// resting on top of it.
+const ABDOMEN_SEMI_AXES = { x: 0.14, y: 0.10, z: 0.18 }; // matches MATERNAL_ABDOMEN_SEMI_AXES (x,z,y remapped for viz)
+
+// Procedural skin texture (chosen over importing a 3D model -- see
+// discussion: the hemisphere IS the real physics geometry the probe
+// contact math uses, so an off-the-shelf torso model would look nicer but
+// would no longer visually correspond to the actual simulated surface).
+// A flat color read as too plain/placeholder-y; this adds tone variation,
+// speckling, and a faint linea nigra (the vertical pigmentation line
+// common in pregnancy) via a generated canvas texture -- no external
+// assets, still a single self-contained HTML file.
+function makeSkinTexture() {
+  const size = 512;
+  const canvas = document.createElement("canvas");
+  canvas.width = size; canvas.height = size;
+  const ctx = canvas.getContext("2d");
+
+  // base tone: slightly lighter near the top of the dome (v=0, canvas
+  // top -- SphereGeometry's v runs from the pole at thetaStart to the rim
+  // at thetaStart+thetaLength) fading a bit darker toward the rim, for a
+  // soft rounded-form shading cue beyond what the scene lights alone give.
+  const grad = ctx.createLinearGradient(0, 0, 0, size);
+  grad.addColorStop(0, "#e2b494");
+  grad.addColorStop(1, "#c58e68");
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, size, size);
+
+  // subtle organic speckling so the surface doesn't read as a flat, dead-
+  // uniform fill
+  for (let i = 0; i < 2500; i++) {
+    const x = Math.random() * size;
+    const y = Math.random() * size;
+    const r = Math.random() * 1.3 + 0.3;
+    const shade = Math.random() * 26 - 13;
+    ctx.fillStyle = `rgba(${130 + shade},${90 + shade * 0.6},${65 + shade * 0.4},0.09)`;
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // faint linea nigra: a soft vertical band down one meridian (u=0.5),
+  // from the navel area toward the rim
+  const lineaX = size * 0.5;
+  const lineaGrad = ctx.createLinearGradient(lineaX - 12, 0, lineaX + 12, 0);
+  lineaGrad.addColorStop(0, "rgba(95,58,40,0)");
+  lineaGrad.addColorStop(0.5, "rgba(95,58,40,0.25)");
+  lineaGrad.addColorStop(1, "rgba(95,58,40,0)");
+  ctx.fillStyle = lineaGrad;
+  ctx.fillRect(lineaX - 12, size * 0.08, 24, size * 0.92);
+
+  return new THREE.CanvasTexture(canvas);
+}
+
+// thetaStart=0/thetaLength=PI/2 keeps just the cap around the +Y pole
+// (Three's sphere theta=0 is the +Y pole), i.e. a dome bulging upward
+// with a flat base at local y=0 -- exactly "resting on the bed", no flip needed.
+const abdomenGeo = new THREE.SphereGeometry(1, 48, 32, 0, Math.PI * 2, 0, Math.PI / 2);
+abdomenGeo.scale(ABDOMEN_SEMI_AXES.x, ABDOMEN_SEMI_AXES.y, ABDOMEN_SEMI_AXES.z);
+const abdomenMat = new THREE.MeshStandardMaterial({ map: makeSkinTexture(), roughness: 0.65 });
+const abdomen = new THREE.Mesh(abdomenGeo, abdomenMat);
+patientGroup.add(abdomen);
+
+// navel: a small dimple near the top of the dome (approximate placement,
+// not derived from the physics geometry -- purely decorative), on the
+// same meridian as the linea nigra above
+const navelMat = new THREE.MeshStandardMaterial({ color: 0x9c6a4d, roughness: 0.8 });
+const navel = new THREE.Mesh(new THREE.SphereGeometry(0.009, 12, 8), navelMat);
+navel.position.set(0, 0.086, 0.045);
+patientGroup.add(navel);
+
+// --- ultrasound machine: a cart with wheels, a control panel, and a
+// screen-on-an-arm, instead of a bare textured plane floating in space ---
+const machineGroup = new THREE.Group();
+const machineBodyMat = new THREE.MeshStandardMaterial({ color: 0xe8ebef, roughness: 0.7 });
+const machineDarkMat = new THREE.MeshStandardMaterial({ color: 0x2b2f36, roughness: 0.5 });
+
+const cartBody = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.5, 0.28), machineBodyMat);
+cartBody.position.set(0, 0.25, 0);
+machineGroup.add(cartBody);
+
+const controlPanel = new THREE.Mesh(new THREE.BoxGeometry(0.28, 0.08, 0.2), machineDarkMat);
+controlPanel.position.set(0, 0.5 + 0.02, 0.02);
+controlPanel.rotation.x = -0.25;
+machineGroup.add(controlPanel);
+
+const wheelGeo = new THREE.CylinderGeometry(0.03, 0.03, 0.03, 12);
+for (const [wx, wz] of [[0.12, 0.11], [-0.12, 0.11], [0.12, -0.11], [-0.12, -0.11]]) {
+  const wheel = new THREE.Mesh(wheelGeo, machineDarkMat);
+  wheel.rotation.z = Math.PI / 2;
+  wheel.position.set(wx, 0.03, wz);
+  machineGroup.add(wheel);
+}
+
+const screenArm = new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.015, 0.35, 8), machineDarkMat);
+screenArm.position.set(0, 0.7, -0.05);
+machineGroup.add(screenArm);
+
+// Screen enlarged (bezel + plane only -- NOT the cart/arm/stand height,
+// which stays at its original size) so the display is legible without
+// making the whole machine taller.
+const screenBezel = new THREE.Mesh(new THREE.BoxGeometry(0.46, 0.36, 0.03), machineDarkMat);
+screenBezel.position.set(0, 0.9, -0.05);
+machineGroup.add(screenBezel);
+
+const monitorGeo = new THREE.PlaneGeometry(0.4, 0.3);
+const monitorCanvas = document.createElement("canvas");
+monitorCanvas.width = 256; monitorCanvas.height = 256;
+const monitorCtx = monitorCanvas.getContext("2d");
+const monitorTexture = new THREE.CanvasTexture(monitorCanvas);
+const monitorMat = new THREE.MeshBasicMaterial({ map: monitorTexture });
+const monitor = new THREE.Mesh(monitorGeo, monitorMat);
+monitor.position.set(0, 0.9, -0.033);
+machineGroup.add(monitor);
+
+// Place the cart against the back-left corner, angled to face the bed.
+// (Previously scaled the whole group up to enlarge the screen -- that
+// also made the cart/stand taller, which wasn't wanted. The screen itself
+// is now sized directly above instead, so the stand height is unchanged.)
+machineGroup.position.set(-0.85, FLOOR_Y, -0.65);
+machineGroup.rotation.y = Math.PI / 5;
+scene.add(machineGroup);
+
+// Probe: a real transducer shape (rounded scanning head + tapered neck +
+// handle + a grip ring), not a bare cone. Authored the natural way --
+// scanning face at +Y "up", handle hanging below at -Y -- inside an inner
+// group, then that WHOLE group is rotated +90deg about X once.
+//
+// IMPORTANT, verified with the actual three.js source (not assumed):
+// Object3D.lookAt() does NOT use the camera convention (-Z faces the
+// target). For a plain Object3D/Group, it aligns local +Z to the target --
+// confirmed by installing three@0.160.0 and checking directly:
+//   probe.lookAt(target); new THREE.Vector3(0,0,1).applyQuaternion(probe.quaternion)
+//   -> points at the target. (0,0,-1) points away from it.
+// This is the OPPOSITE of the camera/light case (which DOES use -Z), and
+// earlier passes on this file assumed the camera convention applied here
+// too -- that assumption, not the position-offset math, was the actual
+// bug behind two rounds of "still embedded" reports. With +Z confirmed as
+// the lookAt-forward axis, rotating +90deg about X (not -90) is what
+// correctly remaps the authored "+Y tip" to "+Z tip" (forward, into the
+// body) instead of leaving it on the wrong (-Z, into the handle's own
+// path) side. Numerically verified with the exact hierarchy used below
+// before shipping this: rotateX(-PI/2) put the scanning head 0.006 BEHIND
+// the reported surface point (embedded) and the handle 0.14 further still
+// (i.e. the HANDLE was the part poking into the belly); rotateX(+PI/2)
+// puts the head 0.006 in FRONT of the surface (floating just clear of it,
+// as intended) and the handle 0.14 out the other way.
+const probeGripMat = new THREE.MeshStandardMaterial({ color: 0x2a2c31, roughness: 0.75 });
+const probeAccentMat = new THREE.MeshStandardMaterial({ color: 0x00b3c6, metalness: 0.4, roughness: 0.3 });
+
+// probeShape holds the actual meshes, authored naturally (head/leading
+// edge at the TOP, +Y, handle hanging below at -Y) -- exactly like before.
+const probeShape = new THREE.Group();
+
+// rounded scanning head (the part that contacts the skin) -- plain
+// material (the emissive glow was tried and reverted, too much).
+const probeHeadMat = new THREE.MeshStandardMaterial({ color: 0xe8ecf1, metalness: 0.3, roughness: 0.35 });
+const probeCap = new THREE.Mesh(new THREE.SphereGeometry(0.015, 16, 12), probeHeadMat);
+const PROBE_HEAD_CENTER_Y = 0.028;
+const PROBE_HEAD_RADIUS = 0.015;
+probeCap.position.set(0, PROBE_HEAD_CENTER_Y, 0);
+probeShape.add(probeCap);
+
+// tapered neck between the head and the handle
+const probeNeck = new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.011, 0.02, 16), probeHeadMat);
+probeNeck.position.set(0, 0.013, 0);
+probeShape.add(probeNeck);
+
+// main handle/shaft
+const probeShaft = new THREE.Mesh(new THREE.CylinderGeometry(0.011, 0.013, 0.09, 16), probeGripMat);
+probeShaft.position.set(0, -0.042, 0);
+probeShape.add(probeShaft);
+
+// grip ring detail (a coloured accent band, like a real transducer's
+// cable-side marker ring) + a thin cable stub trailing off the back
+const probeRing = new THREE.Mesh(new THREE.TorusGeometry(0.0125, 0.0025, 8, 16), probeAccentMat);
+probeRing.rotation.x = Math.PI / 2;
+probeRing.position.set(0, -0.01, 0);
+probeShape.add(probeRing);
+
+const probeCable = new THREE.Mesh(new THREE.CylinderGeometry(0.004, 0.004, 0.05, 8), probeGripMat);
+probeCable.position.set(0, -0.11, 0);
+probeShape.add(probeCable);
+
+// Shift the WHOLE shape (still in its natural, un-rotated, Y-up authoring
+// frame -- easy to reason about directly, unlike computing where an
+// offset lands AFTER a rotation, which is what caused the sign mixups in
+// the last two attempts) so the head's leading edge -- its top point,
+// PROBE_HEAD_CENTER_Y + PROBE_HEAD_RADIUS = 0.043, the part meant to
+// touch skin -- sits at this group's own local origin, PLUS a bit of
+// extra clearance (0.006) so it visibly floats just off the surface
+// instead of only being exactly tangent to it (a perfectly tangent sphere
+// can still read as "touching/embedded" at grazing viewing angles).
+const PROBE_LEADING_EDGE_Y = PROBE_HEAD_CENTER_Y + PROBE_HEAD_RADIUS;
+const PROBE_CLEARANCE = 0.006;
+probeShape.position.set(0, -(PROBE_LEADING_EDGE_Y + PROBE_CLEARANCE), 0);
+
+// probeInner just carries the fixed orientation rotation. Because the
+// origin itself never moves under a pure rotation, wrapping the
+// (already origin-aligned) probeShape in this rotated group is
+// guaranteed correct with no sign ambiguity -- rotating about the origin
+// cannot un-align something that was aligned AT the origin. (The sign of
+// the rotation itself -- see the big comment above -- is what needed
+// fixing, and is now numerically verified, not assumed.)
+const probeInner = new THREE.Group();
+probeInner.add(probeShape);
+probeInner.rotateX(Math.PI / 2);
+
+const probe = new THREE.Group();
+probe.add(probeInner);
+patientGroup.add(probe);
+
+// Target marker: was added to the scene but its position was NEVER set
+// anywhere -- it just sat at the origin (visible as a stray dot inside
+// the abdomen). Now driven by the real target-plane point the backend
+// sends (environment/rendering.py's `target_point`), hidden when there's
+// no active target.
+const targetMarkerGeo = new THREE.SphereGeometry(0.008, 12, 12);
+const targetMarkerMat = new THREE.MeshBasicMaterial({ color: 0x00e0ff });
+const targetMarker = new THREE.Mesh(targetMarkerGeo, targetMarkerMat);
+targetMarker.visible = false;
+patientGroup.add(targetMarker);
+
+// Motion smoothing: the server only sends a new pose once per discrete
+// env.step() (every ~0.3s in the demo loop), so setting the probe's
+// transform directly from each message makes it visibly snap/teleport
+// between poses instead of flowing. Instead, incoming messages update a
+// TARGET position/rotation, and every render frame (requestAnimationFrame,
+// ~60fps) nudges the actually-displayed probe a fraction of the way
+// there -- exponential smoothing, cheap and framerate-independent enough
+// for a demo viz (not physically simulated, just visually smoothed).
+const probeTargetPos = new THREE.Vector3();
+const probeTargetQuat = new THREE.Quaternion();
+const probeLookHelper = new THREE.Object3D(); // scratch object, never added to the scene -- just reuses Object3D.lookAt() to compute the target quaternion without touching the live probe directly
+let haveProbeTarget = false;
+const PROBE_SMOOTHING = 0.15; // fraction of the remaining distance closed per frame -- lower = smoother/slower, higher = snappier/closer to instant
+
+// Episode-end pulse: a ring that briefly expands and fades wherever the
+// probe was when an episode ends (environment/rendering.py's
+// `episode_ended`, true on the exact terminated/truncated step) -- makes
+// it obvious something happened without having to watch the HUD's step
+// counter. Green = ended WITH an acquisition (`success`); orange = ended
+// without one (subtask/episode timeout).
+const pulseRingGeo = new THREE.RingGeometry(0.01, 0.015, 32);
+const pulseRingMat = new THREE.MeshBasicMaterial({
+  color: 0x5ee08a, transparent: true, opacity: 0, side: THREE.DoubleSide, depthWrite: false,
+});
+const pulseRing = new THREE.Mesh(pulseRingGeo, pulseRingMat);
+pulseRing.visible = false;
+pulseRing.renderOrder = 998;
+patientGroup.add(pulseRing);
+
+let pulseActive = false;
+let pulseStartMs = 0;
+const PULSE_DURATION_MS = 900;
+const PULSE_MAX_SCALE = 7;
+
+function triggerEpisodeEndPulse(position, upVec, success) {
+  pulseRing.position.copy(position);
+  // RingGeometry lies flat in its local XY plane (normal = local +Z) --
+  // align that normal to the surface's up/normal direction so the ring
+  // sits flush against the belly like a ripple, instead of facing some
+  // arbitrary fixed direction.
+  pulseRing.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), upVec.clone().normalize());
+  pulseRingMat.color.set(success ? 0x5ee08a : 0xffa64d);
+  pulseRing.scale.setScalar(1);
+  pulseRingMat.opacity = 0.85;
+  pulseRing.visible = true;
+  pulseActive = true;
+  pulseStartMs = performance.now();
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+  controls.update(); // required each frame while enableDamping is on
+  if (haveProbeTarget) {
+    probe.position.lerp(probeTargetPos, PROBE_SMOOTHING);
+    probe.quaternion.slerp(probeTargetQuat, PROBE_SMOOTHING);
+  }
+  if (pulseActive) {
+    const t = (performance.now() - pulseStartMs) / PULSE_DURATION_MS;
+    if (t >= 1) {
+      pulseActive = false;
+      pulseRing.visible = false;
+    } else {
+      pulseRing.scale.setScalar(1 + t * (PULSE_MAX_SCALE - 1));
+      pulseRingMat.opacity = 0.85 * (1 - t);
+    }
+  }
+  renderer.render(scene, camera);
+}
+animate();
+
+// --- WebSocket bridge (see environment/rendering.py for the JSON schema) ---
+// Port is overridable via ?port=<N> in this page's own URL, so you can run
+// scripts/serve_viz.py twice on two ports (one --policy random, one
+// --policy model) and open this file twice, once per port, to compare
+// them side by side. No override -> the default below (8765) is used.
+const statusEl = document.getElementById("status");
+const overridePort = new URLSearchParams(window.location.search).get("port");
+const wsUrl = overridePort ? `ws://localhost:${overridePort}/ws` : "ws://localhost:8765/ws";
+let lastPolicyLabel = null;
+
+// The server pauses at episode end (scripts/serve_viz.py, PAUSE_ON_EPISODE_END)
+// and waits for a "resume" text message before starting the next episode --
+// SPACE/R send it. Kept as a live `let` (not const) since connect() re-runs
+// on every reconnect and needs to (re)bind onto the current socket.
+let activeWs = null;
+const pauseHintEl = document.getElementById("pause-hint");
+const confirmPanelEl = document.getElementById("confirm-panel");
+const confirmImgEl = document.getElementById("confirm-img");
+const confirmLabelEl = document.getElementById("confirm-label");
+window.addEventListener("keydown", (e) => {
+  if (e.code !== "Space" && e.key !== "r" && e.key !== "R") return;
+  e.preventDefault();
+  pauseHintEl.classList.remove("show");
+  if (activeWs && activeWs.readyState === WebSocket.OPEN) {
+    activeWs.send("resume");
+  }
+});
+
+function connect() {
+  const ws = new WebSocket(wsUrl);
+  activeWs = ws;
+  ws.onopen = () => { statusEl.textContent = "connected" + (lastPolicyLabel ? ` — ${lastPolicyLabel}` : ""); };
+  ws.onclose = () => { statusEl.textContent = "disconnected (retrying...)"; setTimeout(connect, 1500); };
+  ws.onerror = () => ws.close();
+  ws.onmessage = (event) => {
+    const msg = JSON.parse(event.data);
+
+    if (msg.policy_label && msg.policy_label !== lastPolicyLabel) {
+      lastPolicyLabel = msg.policy_label;
+      statusEl.textContent = `connected — ${lastPolicyLabel}`;
+    }
+
+    probeTargetPos.set(msg.probe.position[0], msg.probe.position[2], msg.probe.position[1]);
+    const fwd = new THREE.Vector3(msg.probe.forward[0], msg.probe.forward[2], msg.probe.forward[1]);
+    probeLookHelper.position.copy(probeTargetPos);
+    probeLookHelper.lookAt(probeTargetPos.clone().add(fwd));
+    probeTargetQuat.copy(probeLookHelper.quaternion);
+    if (!haveProbeTarget) {
+      // first message: snap immediately instead of animating in from the
+      // probe's initial (0,0,0) default -- avoids a weird slide-in on load
+      probe.position.copy(probeTargetPos);
+      probe.quaternion.copy(probeTargetQuat);
+    }
+    haveProbeTarget = true;
+
+    if (msg.episode_ended) {
+      const upVec = new THREE.Vector3(msg.probe.up[0], msg.probe.up[2], msg.probe.up[1]);
+      triggerEpisodeEndPulse(probeTargetPos, upVec, !!msg.success);
+      pauseHintEl.classList.add("show");
+    } else {
+      pauseHintEl.classList.remove("show");
+    }
+
+    // Confirmation panel: only attached by scripts/serve_viz.py right after
+    // a success (see environment/rendering.py's schema doc) -- a SEPARATE,
+    // deliberately well-aimed reference render of the acquired structure,
+    // not the literal live probe feed (which is very often near-blank at
+    // the moment of success -- "acquired" only means the imaging plane's
+    // angle+depth matched the target, not that the structure is centered
+    // on-screen; see the HUD legend). Shown until the next message that
+    // lacks a confirmation (i.e. real stepping resumed on the next episode).
+    if (msg.confirmation) {
+      confirmImgEl.src = "data:image/png;base64," + msg.confirmation.png_base64;
+      confirmLabelEl.textContent = msg.confirmation.label;
+      confirmPanelEl.classList.add("show");
+    } else {
+      confirmPanelEl.classList.remove("show");
+    }
+
+    if (msg.target_point) {
+      targetMarker.position.set(msg.target_point[0], msg.target_point[2], msg.target_point[1]);
+      targetMarker.visible = true;
+    } else {
+      targetMarker.visible = false;
+    }
+
+    // Tolerances the env actually gates freezing on (locked defaults --
+    // see environment/custom_env.py: alpha_tol_deg=18, d_tol_m=0.012).
+    // Hardcoded here for HUD coloring only; this file has no access to
+    // the Python-side config, so if those defaults ever change, this
+    // display would need updating to match.
+    const ALPHA_TOL_DEG = 18;
+    const D_TOL_MM = 12;
+
+    document.getElementById("hud-target").textContent = msg.target ?? "(none active)";
+
+    const alphaEl = document.getElementById("hud-alpha");
+    const alphaVal = msg.alpha_deg;
+    alphaEl.textContent = alphaVal != null ? `${alphaVal.toFixed(1)}° (need <${ALPHA_TOL_DEG}°)` : "-";
+    alphaEl.className = alphaVal != null && alphaVal < ALPHA_TOL_DEG ? "ok" : "off";
+
+    const dEl = document.getElementById("hud-d");
+    const dValMm = msg.d_m != null ? msg.d_m * 1000 : null;
+    dEl.textContent = dValMm != null ? `${dValMm.toFixed(1)}mm (need <${D_TOL_MM}mm)` : "-";
+    dEl.className = dValMm != null && dValMm < D_TOL_MM ? "ok" : "off";
+
+    document.getElementById("hud-acquired").textContent = (msg.acquired || []).join(", ") || "none yet";
+
+    const flagEl = document.getElementById("hud-flag");
+    flagEl.textContent = msg.flag ?? "not yet available";
+    flagEl.className = msg.flag ? "ok" : "";
+
+    document.getElementById("hud-step").textContent = msg.step ?? "-";
+
+    if (msg.slice_png_base64) {
+      const img = new Image();
+      img.onload = () => {
+        monitorCtx.clearRect(0, 0, 256, 256);
+        monitorCtx.drawImage(img, 0, 0, 256, 256);
+        monitorTexture.needsUpdate = true;
+      };
+      img.src = "data:image/png;base64," + msg.slice_png_base64;
+    }
+  };
+}
+connect();
+</script>
+</body>
+</html>
