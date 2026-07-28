@@ -1,0 +1,10 @@
+{
+  "algo": "ppo",
+  "curriculum": "single_target",
+  "n_envs": 4,
+  "total_timesteps": 200000,
+  "seed": 0,
+  "n_episodes": 3336,
+  "learning_start_estimate_timesteps": 2520,
+  "noise_band_threshold": -12.336354649999999
+}

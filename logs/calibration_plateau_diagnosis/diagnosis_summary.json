@@ -1,0 +1,13 @@
+{
+  "regime": "MIXED/PARTIAL",
+  "whole_run_success_rate": 0.0005995203836930455,
+  "n_episodes_total": 3336,
+  "n_episodes_success": 2,
+  "checkpoint_snapshot": {
+    "success_rate": 0.0,
+    "freeze_rate": 0.0,
+    "median_alpha": 0.3023499143166458,
+    "median_d": 59.155725001592714
+  },
+  "reward_breakdown": null
+}

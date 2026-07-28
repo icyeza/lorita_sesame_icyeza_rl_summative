@@ -1,0 +1,22 @@
+{
+  "algo": "ppo",
+  "curriculum": "single_target",
+  "n_envs": 4,
+  "total_timesteps": 60000,
+  "seed": 0,
+  "n_episodes": 1005,
+  "whole_run_success_rate": 0.0009950248756218905,
+  "checkpoint_snapshot": {
+    "success_rate": 0.0,
+    "freeze_attempted_rate": 0.0,
+    "median_terminal_alpha_deg": 0.30703403617407865,
+    "median_terminal_d_mm": 37.60650394707332
+  },
+  "reward_breakdown": {
+    "shaping_total": -1.219755698985352,
+    "event_total": -3.023320416839592,
+    "step_cost_total": -2.9999999999999973,
+    "n_steps": 60,
+    "froze": false
+  }
+}
