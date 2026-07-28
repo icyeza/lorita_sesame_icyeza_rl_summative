@@ -1,0 +1,5 @@
+Layer A: {'decreasing_in_alpha': True, 'decreasing_in_d': True, 'increasing_in_v': True, 'passed': True}
+
+[head] endpoint_ok=6/8 symmetry_ok=8/8 lerp_monotonic_fraction(diagnostic)=0.61 greedy_tolerance_success(diagnostic)=0.72 greedy_improved_fraction(GATE)=1.00 greedy_mean_improvement_ratio(GATE)=0.78
+[abdomen] endpoint_ok=6/8 symmetry_ok=8/8 lerp_monotonic_fraction(diagnostic)=0.33 greedy_tolerance_success(diagnostic)=0.89 greedy_improved_fraction(GATE)=1.00 greedy_mean_improvement_ratio(GATE)=0.92
+[femur] endpoint_ok=7/8 symmetry_ok=8/8 lerp_monotonic_fraction(diagnostic)=0.06 greedy_tolerance_success(diagnostic)=0.67 greedy_improved_fraction(GATE)=1.00 greedy_mean_improvement_ratio(GATE)=0.83
