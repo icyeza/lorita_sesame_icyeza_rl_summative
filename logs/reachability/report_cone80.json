@@ -1,0 +1,12 @@
+{
+  "n_samples": 500,
+  "actuator_limit_deg": 80.0,
+  "alpha_tol_deg": 14.999999999999998,
+  "d_tol_mm": 12.0,
+  "per_target_reachable_fraction": {
+    "head": 1.0,
+    "abdomen": 1.0,
+    "femur": 1.0
+  },
+  "all_three_reachable_fraction": 1.0
+}

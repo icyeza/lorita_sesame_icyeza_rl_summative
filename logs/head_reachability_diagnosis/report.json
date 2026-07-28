@@ -1,0 +1,57 @@
+{
+  "alpha_tol_deg": 14.999999999999998,
+  "d_tol_mm": 12.0,
+  "n_head_samples": 500,
+  "n_unreachable": 225,
+  "n_reachable": 275,
+  "unreachable_fraction": 0.45,
+  "split": {
+    "alpha_bound": 0,
+    "d_bound": 0,
+    "both_bound": 0,
+    "other": 225
+  },
+  "split_fraction": {
+    "alpha_bound": 0.0,
+    "d_bound": 0.0,
+    "both_bound": 0.0
+  },
+  "failing_alpha_min_deg_distribution": {
+    "min": 0.00256234554699749,
+    "median": 0.0025636788302438596,
+    "max": 0.002583900627995951,
+    "mean": 0.0025657400231316827
+  },
+  "failing_d_min_mm_distribution": {
+    "min": 9.263007028081915e-10,
+    "median": 3.642523117104292e-05,
+    "max": 0.004537986036540026,
+    "mean": 0.00022420869966438192
+  },
+  "reachable_d_combined_mm_distribution": {
+    "min": 7.269550362943476e-08,
+    "median": 0.004134245122909815,
+    "max": 7.827285742252152,
+    "mean": 0.22789647696632434
+  },
+  "reachable_alpha_combined_deg_distribution": {
+    "min": 0.002564062362008322,
+    "median": 0.18410969765882415,
+    "max": 14.446656008775737,
+    "mean": 1.40827185161343
+  },
+  "context_d_min_mm_distribution": {
+    "abdomen": {
+      "min": 7.032374965741022e-10,
+      "median": 7.18432741517812e-05,
+      "max": 0.0013817967430434781,
+      "mean": 0.00018279270864817032
+    },
+    "femur": {
+      "min": 1.4862763797474088e-10,
+      "median": 5.232633834236812e-05,
+      "max": 0.0009374035847909204,
+      "mean": 0.00011799847669912912
+    }
+  }
+}

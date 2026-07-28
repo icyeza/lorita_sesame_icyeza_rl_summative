@@ -1,0 +1,11 @@
+{
+  "n_samples": 500,
+  "alpha_tol_deg": 14.999999999999998,
+  "d_tol_mm": 12.0,
+  "per_target_reachable_fraction": {
+    "head": 0.55,
+    "abdomen": 0.866,
+    "femur": 0.96
+  },
+  "all_three_reachable_fraction": 0.446
+}

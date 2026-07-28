@@ -1,0 +1,6 @@
+Reachability measurement (unfiltered sampling, N=500, actuator_limit_deg=60.0)
+alpha_tol=15.0deg  d_tol=12.0mm
+head: 1.000
+abdomen: 1.000
+femur: 1.000
+all_three: 1.000

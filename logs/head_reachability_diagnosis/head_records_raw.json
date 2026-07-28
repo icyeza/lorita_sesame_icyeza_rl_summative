@@ -1,0 +1,4502 @@
+[
+  {
+    "alpha_min_deg": 0.002566745905703602,
+    "d_at_alpha_min_mm": 26.95123214150301,
+    "d_min_mm": 0.00015429725822024842,
+    "alpha_at_d_min_deg": 51.43455484204323,
+    "alpha_combined_deg": 45.4038702281962,
+    "d_combined_mm": 0.2426540736012034,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025722947467408867,
+    "d_at_alpha_min_mm": 42.37169752314233,
+    "d_min_mm": 2.1341617554340105e-05,
+    "alpha_at_d_min_deg": 61.184638557802785,
+    "alpha_combined_deg": 1.0403660152061003,
+    "d_combined_mm": 0.0013930979542082023,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564791454346959,
+    "d_at_alpha_min_mm": 54.10470176492824,
+    "d_min_mm": 6.872781147905046e-06,
+    "alpha_at_d_min_deg": 58.96007846992974,
+    "alpha_combined_deg": 0.003717181523479044,
+    "d_combined_mm": 7.030552980241686e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562657741942353,
+    "d_at_alpha_min_mm": 22.95400024877288,
+    "d_min_mm": 6.516316111644829e-06,
+    "alpha_at_d_min_deg": 53.39941912875863,
+    "alpha_combined_deg": 0.002564079845595438,
+    "d_combined_mm": 5.880021332363779e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562878033391078,
+    "d_at_alpha_min_mm": 62.677576758272224,
+    "d_min_mm": 6.228037554631557e-08,
+    "alpha_at_d_min_deg": 62.431505713758334,
+    "alpha_combined_deg": 0.00258607346897698,
+    "d_combined_mm": 1.3998330911035471e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002565033018176951,
+    "d_at_alpha_min_mm": 82.42824489340097,
+    "d_min_mm": 7.316352096139599e-05,
+    "alpha_at_d_min_deg": 39.432578291101755,
+    "alpha_combined_deg": 0.030318435597864936,
+    "d_combined_mm": 0.021434682381248512,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002574222264073153,
+    "d_at_alpha_min_mm": 102.52554306535386,
+    "d_min_mm": 1.639811886278153e-05,
+    "alpha_at_d_min_deg": 64.00771841028362,
+    "alpha_combined_deg": 33.79466723114995,
+    "d_combined_mm": 0.01715534787553874,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025627972573180674,
+    "d_at_alpha_min_mm": 130.3248796921519,
+    "d_min_mm": 0.00026912196500199204,
+    "alpha_at_d_min_deg": 67.16795090344856,
+    "alpha_combined_deg": 66.04265818444865,
+    "d_combined_mm": 0.06263264404557747,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002570411157926333,
+    "d_at_alpha_min_mm": 36.27917454707862,
+    "d_min_mm": 4.871020636548226e-07,
+    "alpha_at_d_min_deg": 69.06616172505007,
+    "alpha_combined_deg": 0.42231506679979924,
+    "d_combined_mm": 0.015409652199263997,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025661308522841723,
+    "d_at_alpha_min_mm": 19.183407809320958,
+    "d_min_mm": 1.73039610175938e-05,
+    "alpha_at_d_min_deg": 46.02185865217931,
+    "alpha_combined_deg": 1.5250477950777563,
+    "d_combined_mm": 0.0012363008198246618,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002575697413801954,
+    "d_at_alpha_min_mm": 36.12571856287419,
+    "d_min_mm": 0.00022798863354056724,
+    "alpha_at_d_min_deg": 44.27126100728671,
+    "alpha_combined_deg": 0.5034784335634775,
+    "d_combined_mm": 0.006424249112538008,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562603270575029,
+    "d_at_alpha_min_mm": 28.62321858211145,
+    "d_min_mm": 6.8647515731702124e-06,
+    "alpha_at_d_min_deg": 26.745463940415878,
+    "alpha_combined_deg": 0.0026270577639053755,
+    "d_combined_mm": 5.664855712332459e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002566297446765859,
+    "d_at_alpha_min_mm": 287.2903153566185,
+    "d_min_mm": 0.00023226100148485514,
+    "alpha_at_d_min_deg": 20.78799948487888,
+    "alpha_combined_deg": 0.002572632510074846,
+    "d_combined_mm": 2.671874442566111e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002569228479173865,
+    "d_at_alpha_min_mm": 97.16020488822768,
+    "d_min_mm": 0.001009359418074521,
+    "alpha_at_d_min_deg": 56.98649018701851,
+    "alpha_combined_deg": 31.8073556706043,
+    "d_combined_mm": 1.5796923812556594,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025624223547485443,
+    "d_at_alpha_min_mm": 181.64857956544344,
+    "d_min_mm": 2.1569859746841187e-08,
+    "alpha_at_d_min_deg": 34.390490473731425,
+    "alpha_combined_deg": 0.229874041926559,
+    "d_combined_mm": 0.0002627663808735131,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025636892082484554,
+    "d_at_alpha_min_mm": 114.26078827890484,
+    "d_min_mm": 2.9240769527927313e-07,
+    "alpha_at_d_min_deg": 81.7025709582529,
+    "alpha_combined_deg": 59.91760639386021,
+    "d_combined_mm": 0.002200974079449858,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025650306026512608,
+    "d_at_alpha_min_mm": 149.41704201514926,
+    "d_min_mm": 3.8628401727303086e-06,
+    "alpha_at_d_min_deg": 6.6500002651142935,
+    "alpha_combined_deg": 67.80227474192202,
+    "d_combined_mm": 0.0052651786120461175,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025635495992432492,
+    "d_at_alpha_min_mm": 226.06251749237776,
+    "d_min_mm": 8.272395034889701e-07,
+    "alpha_at_d_min_deg": 30.215175730217993,
+    "alpha_combined_deg": 0.6131288652257741,
+    "d_combined_mm": 0.05149151088490526,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562631999743344,
+    "d_at_alpha_min_mm": 94.61228781015656,
+    "d_min_mm": 9.484315249830289e-06,
+    "alpha_at_d_min_deg": 46.655435274197956,
+    "alpha_combined_deg": 63.41538453824863,
+    "d_combined_mm": 0.0005228292920267386,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002564580280502917,
+    "d_at_alpha_min_mm": 13.672286142990622,
+    "d_min_mm": 0.00010401738905214185,
+    "alpha_at_d_min_deg": 73.41417906514953,
+    "alpha_combined_deg": 2.105813920279643,
+    "d_combined_mm": 0.1932412992886297,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025749312114077567,
+    "d_at_alpha_min_mm": 109.00002712670505,
+    "d_min_mm": 8.468816758977482e-07,
+    "alpha_at_d_min_deg": 45.98165268326441,
+    "alpha_combined_deg": 30.612445526460135,
+    "d_combined_mm": 3.1472951518652232,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025643334152774277,
+    "d_at_alpha_min_mm": 73.00929559027472,
+    "d_min_mm": 1.0433959169573204e-07,
+    "alpha_at_d_min_deg": 27.907470028432662,
+    "alpha_combined_deg": 0.002583908385852144,
+    "d_combined_mm": 1.9977070262404295e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002574640181569972,
+    "d_at_alpha_min_mm": 111.81220129164866,
+    "d_min_mm": 1.1343986167089426e-06,
+    "alpha_at_d_min_deg": 38.666554170688975,
+    "alpha_combined_deg": 67.44332471881309,
+    "d_combined_mm": 0.015918384030172428,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002566744201764744,
+    "d_at_alpha_min_mm": 55.13875213703276,
+    "d_min_mm": 0.00014589524048591596,
+    "alpha_at_d_min_deg": 47.226778824729905,
+    "alpha_combined_deg": 32.33842849793382,
+    "d_combined_mm": 0.011337316322843072,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002564400214776324,
+    "d_at_alpha_min_mm": 286.11632113849123,
+    "d_min_mm": 0.00013025866243859208,
+    "alpha_at_d_min_deg": 78.15804738313399,
+    "alpha_combined_deg": 0.9935557558151443,
+    "d_combined_mm": 0.20975337128354932,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025641065682462014,
+    "d_at_alpha_min_mm": 99.74471230627991,
+    "d_min_mm": 5.4446120223428096e-05,
+    "alpha_at_d_min_deg": 52.07320415607812,
+    "alpha_combined_deg": 13.45777926821216,
+    "d_combined_mm": 25.226465035248,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025684281355005992,
+    "d_at_alpha_min_mm": 119.65024123448478,
+    "d_min_mm": 0.0001252765053083582,
+    "alpha_at_d_min_deg": 51.1197733938322,
+    "alpha_combined_deg": 14.446656008775737,
+    "d_combined_mm": 0.009531432193538025,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025630735635204707,
+    "d_at_alpha_min_mm": 69.45352843197216,
+    "d_min_mm": 2.175004977511552e-05,
+    "alpha_at_d_min_deg": 60.29255984066539,
+    "alpha_combined_deg": 58.23919574819984,
+    "d_combined_mm": 0.0001838726171737859,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025648833933803695,
+    "d_at_alpha_min_mm": 117.05277061942316,
+    "d_min_mm": 5.4514818620566825e-06,
+    "alpha_at_d_min_deg": 82.1878524704945,
+    "alpha_combined_deg": 50.70245278355301,
+    "d_combined_mm": 7.971828758654358,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256234583147489,
+    "d_at_alpha_min_mm": 226.33022526350885,
+    "d_min_mm": 8.289381359798559e-08,
+    "alpha_at_d_min_deg": 71.6045049365163,
+    "alpha_combined_deg": 1.2758709789484977,
+    "d_combined_mm": 0.00281444735467352,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025631247543995324,
+    "d_at_alpha_min_mm": 95.03275470541406,
+    "d_min_mm": 0.0006915100445037403,
+    "alpha_at_d_min_deg": 37.83099511195676,
+    "alpha_combined_deg": 17.754484120726683,
+    "d_combined_mm": 6.628171225644943,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562737669111287,
+    "d_at_alpha_min_mm": 7.139131636160603,
+    "d_min_mm": 0.0003405871453789253,
+    "alpha_at_d_min_deg": 3.084563919549494,
+    "alpha_combined_deg": 0.002878559098618823,
+    "d_combined_mm": 0.00028497389267862335,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025629034887034176,
+    "d_at_alpha_min_mm": 134.6844018759035,
+    "d_min_mm": 1.4693662925280293e-05,
+    "alpha_at_d_min_deg": 54.116728494204025,
+    "alpha_combined_deg": 55.64278472981653,
+    "d_combined_mm": 0.2336334093805542,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025660632456413848,
+    "d_at_alpha_min_mm": 54.958928318572895,
+    "d_min_mm": 1.2436699243313836e-05,
+    "alpha_at_d_min_deg": 8.993510279364433,
+    "alpha_combined_deg": 0.015196294437557736,
+    "d_combined_mm": 0.004140641787963058,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564320765814663,
+    "d_at_alpha_min_mm": 200.73024669482143,
+    "d_min_mm": 6.580733479565026e-10,
+    "alpha_at_d_min_deg": 13.430172425235288,
+    "alpha_combined_deg": 1.1164974226321114,
+    "d_combined_mm": 0.001676288241517314,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025637096798055837,
+    "d_at_alpha_min_mm": 2.0811397096198463,
+    "d_min_mm": 8.858616353979215e-06,
+    "alpha_at_d_min_deg": 51.84568240192679,
+    "alpha_combined_deg": 4.0631010382072015,
+    "d_combined_mm": 0.5403733932975422,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564183181110718,
+    "d_at_alpha_min_mm": 76.69377708026802,
+    "d_min_mm": 2.5399000025427235e-06,
+    "alpha_at_d_min_deg": 54.18600933011876,
+    "alpha_combined_deg": 0.3634307147472996,
+    "d_combined_mm": 0.0029647467920699204,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564630162299743,
+    "d_at_alpha_min_mm": 0.3073927332175319,
+    "d_min_mm": 0.00046148655032107744,
+    "alpha_at_d_min_deg": 25.37076685213401,
+    "alpha_combined_deg": 52.48610101619876,
+    "d_combined_mm": 1.4664495827704724,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025631125255602583,
+    "d_at_alpha_min_mm": 2.5737227699645904,
+    "d_min_mm": 6.2595404575751935e-06,
+    "alpha_at_d_min_deg": 61.3139282354664,
+    "alpha_combined_deg": 0.004499196107320159,
+    "d_combined_mm": 0.0005744066639617912,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025625163699915044,
+    "d_at_alpha_min_mm": 88.37850419310259,
+    "d_min_mm": 0.00014228246728031912,
+    "alpha_at_d_min_deg": 53.18174194204073,
+    "alpha_combined_deg": 30.76520860940258,
+    "d_combined_mm": 0.0013896685541331388,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025637803338547102,
+    "d_at_alpha_min_mm": 260.716483462633,
+    "d_min_mm": 0.00030896344821389654,
+    "alpha_at_d_min_deg": 61.39097208303492,
+    "alpha_combined_deg": 0.01058614241272604,
+    "d_combined_mm": 0.0077402550553177666,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025625957326705973,
+    "d_at_alpha_min_mm": 96.14999450979856,
+    "d_min_mm": 2.1944938352613796e-05,
+    "alpha_at_d_min_deg": 75.10482974973864,
+    "alpha_combined_deg": 63.76403182621736,
+    "d_combined_mm": 0.00036828655561316204,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563952340602628,
+    "d_at_alpha_min_mm": 108.43586508304166,
+    "d_min_mm": 0.00020203887961655525,
+    "alpha_at_d_min_deg": 38.422750755788734,
+    "alpha_combined_deg": 2.3004881566506534,
+    "d_combined_mm": 1.0730921286021509,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025831560475080375,
+    "d_at_alpha_min_mm": 56.808059213883666,
+    "d_min_mm": 0.0034972131466165512,
+    "alpha_at_d_min_deg": 71.33645136919088,
+    "alpha_combined_deg": 18.41129224610567,
+    "d_combined_mm": 0.05977209457991295,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562506271696569,
+    "d_at_alpha_min_mm": 43.58868511647007,
+    "d_min_mm": 0.00016593946922105474,
+    "alpha_at_d_min_deg": 71.69184411475885,
+    "alpha_combined_deg": 22.464568983531944,
+    "d_combined_mm": 2.3264865765776355,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562687750477761,
+    "d_at_alpha_min_mm": 231.0328409470694,
+    "d_min_mm": 0.0008519278067835652,
+    "alpha_at_d_min_deg": 42.01851049935195,
+    "alpha_combined_deg": 0.09624930579227932,
+    "d_combined_mm": 0.009022259894976317,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025743924405645545,
+    "d_at_alpha_min_mm": 185.40405739679278,
+    "d_min_mm": 0.0001962613119244061,
+    "alpha_at_d_min_deg": 7.913804738159187,
+    "alpha_combined_deg": 23.146861147044046,
+    "d_combined_mm": 4.7207292894856785,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025697660634331904,
+    "d_at_alpha_min_mm": 76.43927998336454,
+    "d_min_mm": 1.2049236608469016e-08,
+    "alpha_at_d_min_deg": 41.23954143449619,
+    "alpha_combined_deg": 65.1082103317951,
+    "d_combined_mm": 0.005397528076517277,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562355076973193,
+    "d_at_alpha_min_mm": 84.02281078550351,
+    "d_min_mm": 1.805628934502231e-10,
+    "alpha_at_d_min_deg": 70.68486051965687,
+    "alpha_combined_deg": 0.007908509116573832,
+    "d_combined_mm": 0.0059847047004649365,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025626581686064563,
+    "d_at_alpha_min_mm": 274.078909636022,
+    "d_min_mm": 9.088605090745716e-06,
+    "alpha_at_d_min_deg": 58.517182217490614,
+    "alpha_combined_deg": 28.323660312303197,
+    "d_combined_mm": 0.15694715819537797,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563857098622577,
+    "d_at_alpha_min_mm": 86.66534360088826,
+    "d_min_mm": 7.617881131218891e-05,
+    "alpha_at_d_min_deg": 25.68293383188569,
+    "alpha_combined_deg": 0.5646177177125433,
+    "d_combined_mm": 0.04044410695307156,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562524050358193,
+    "d_at_alpha_min_mm": 117.61425967062247,
+    "d_min_mm": 0.00022670061368412764,
+    "alpha_at_d_min_deg": 50.857642078924634,
+    "alpha_combined_deg": 26.205779988367578,
+    "d_combined_mm": 0.8042782090974532,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025641924199842404,
+    "d_at_alpha_min_mm": 110.20102617423113,
+    "d_min_mm": 9.376579108613014e-06,
+    "alpha_at_d_min_deg": 40.52501502341583,
+    "alpha_combined_deg": 0.0029386437460375806,
+    "d_combined_mm": 0.00010081747445234336,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025634903128750153,
+    "d_at_alpha_min_mm": 101.49401459646444,
+    "d_min_mm": 0.0033299154700988653,
+    "alpha_at_d_min_deg": 36.65531851332225,
+    "alpha_combined_deg": 48.85231421077459,
+    "d_combined_mm": 0.2751529055428359,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563216184453648,
+    "d_at_alpha_min_mm": 104.5093466803422,
+    "d_min_mm": 0.00046442811575675425,
+    "alpha_at_d_min_deg": 14.437348615066893,
+    "alpha_combined_deg": 34.522260858543305,
+    "d_combined_mm": 2.91148621939577,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025643254560721806,
+    "d_at_alpha_min_mm": 165.71944349125704,
+    "d_min_mm": 0.00173511508672266,
+    "alpha_at_d_min_deg": 65.25709755998373,
+    "alpha_combined_deg": 2.940284340411423,
+    "d_combined_mm": 0.4820955660689128,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025649989164271652,
+    "d_at_alpha_min_mm": 68.82945129223307,
+    "d_min_mm": 0.0006585831326333495,
+    "alpha_at_d_min_deg": 41.218551802791204,
+    "alpha_combined_deg": 0.03588297051576426,
+    "d_combined_mm": 0.004366757271400027,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025629903761613206,
+    "d_at_alpha_min_mm": 34.996695125826385,
+    "d_min_mm": 6.509583395081688e-07,
+    "alpha_at_d_min_deg": 55.87270373227958,
+    "alpha_combined_deg": 6.524238790303163,
+    "d_combined_mm": 0.04975823475054612,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002574204707788298,
+    "d_at_alpha_min_mm": 251.40163292479966,
+    "d_min_mm": 6.022899748533924e-06,
+    "alpha_at_d_min_deg": 24.09382383893399,
+    "alpha_combined_deg": 0.002566926658793041,
+    "d_combined_mm": 3.7632285705641716e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025780152953613343,
+    "d_at_alpha_min_mm": 239.45083349707696,
+    "d_min_mm": 4.194120299672033e-05,
+    "alpha_at_d_min_deg": 35.41218652275339,
+    "alpha_combined_deg": 44.279866958183234,
+    "d_combined_mm": 0.23226278183835491,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002577850871982145,
+    "d_at_alpha_min_mm": 134.18007240714573,
+    "d_min_mm": 3.1137222938903975e-06,
+    "alpha_at_d_min_deg": 77.32006663586597,
+    "alpha_combined_deg": 7.274817661945401,
+    "d_combined_mm": 0.021041171535993164,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562512672028963,
+    "d_at_alpha_min_mm": 63.13603191693153,
+    "d_min_mm": 6.933541200604393e-07,
+    "alpha_at_d_min_deg": 16.574040143206663,
+    "alpha_combined_deg": 2.964629404718527,
+    "d_combined_mm": 0.028624038901273036,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624229236862585,
+    "d_at_alpha_min_mm": 6.052764102151738,
+    "d_min_mm": 0.000401054422881787,
+    "alpha_at_d_min_deg": 11.863083507375384,
+    "alpha_combined_deg": 0.12868405724748397,
+    "d_combined_mm": 1.1087645538209552,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624466767230868,
+    "d_at_alpha_min_mm": 102.73122992184888,
+    "d_min_mm": 1.198086757587139e-07,
+    "alpha_at_d_min_deg": 20.75904618509461,
+    "alpha_combined_deg": 1.3204286691371512,
+    "d_combined_mm": 0.008473233068362918,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624624645479107,
+    "d_at_alpha_min_mm": 23.7703244316861,
+    "d_min_mm": 0.00011519637838075525,
+    "alpha_at_d_min_deg": 31.88349680458726,
+    "alpha_combined_deg": 57.58105315632827,
+    "d_combined_mm": 0.7226776439904908,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002573594269263651,
+    "d_at_alpha_min_mm": 1.7798874892585164,
+    "d_min_mm": 0.0004335943781241802,
+    "alpha_at_d_min_deg": 54.11777553236673,
+    "alpha_combined_deg": 44.65706528891617,
+    "d_combined_mm": 0.6013541933344024,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002564726938745284,
+    "d_at_alpha_min_mm": 86.25149294022758,
+    "d_min_mm": 0.0010831395571841984,
+    "alpha_at_d_min_deg": 37.40620255462121,
+    "alpha_combined_deg": 58.88375079622674,
+    "d_combined_mm": 1.057590261267144,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256871135598998,
+    "d_at_alpha_min_mm": 73.98285609346775,
+    "d_min_mm": 1.0075174328485073e-07,
+    "alpha_at_d_min_deg": 76.07340531217818,
+    "alpha_combined_deg": 0.052376441954236644,
+    "d_combined_mm": 0.00036261895381382815,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623836666876397,
+    "d_at_alpha_min_mm": 114.48607655745538,
+    "d_min_mm": 0.00024628701310478216,
+    "alpha_at_d_min_deg": 60.10002253802773,
+    "alpha_combined_deg": 0.00589531185214862,
+    "d_combined_mm": 0.00048079799276778767,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562366740477311,
+    "d_at_alpha_min_mm": 93.75505412289532,
+    "d_min_mm": 9.066035179853907e-07,
+    "alpha_at_d_min_deg": 41.98126154683478,
+    "alpha_combined_deg": 0.0062913209383058675,
+    "d_combined_mm": 0.00040672297552482405,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025697996764436765,
+    "d_at_alpha_min_mm": 191.4976746045239,
+    "d_min_mm": 3.2783601236485715e-05,
+    "alpha_at_d_min_deg": 38.15353484675896,
+    "alpha_combined_deg": 35.461072510033105,
+    "d_combined_mm": 1.1552475632890942,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025625321573869465,
+    "d_at_alpha_min_mm": 73.58195467010066,
+    "d_min_mm": 1.4230557593942826e-05,
+    "alpha_at_d_min_deg": 9.702805922297227,
+    "alpha_combined_deg": 0.0025919876100301362,
+    "d_combined_mm": 4.733446869231275e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025657790226018304,
+    "d_at_alpha_min_mm": 75.09090964304923,
+    "d_min_mm": 0.00011601197377753003,
+    "alpha_at_d_min_deg": 43.5261910985909,
+    "alpha_combined_deg": 36.172093637461764,
+    "d_combined_mm": 0.028693660135858945,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563253438066203,
+    "d_at_alpha_min_mm": 44.64823462997806,
+    "d_min_mm": 1.1487229042983493e-05,
+    "alpha_at_d_min_deg": 59.50231155260671,
+    "alpha_combined_deg": 43.64258073876369,
+    "d_combined_mm": 0.3500821846107449,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025631521979776082,
+    "d_at_alpha_min_mm": 91.66059802852517,
+    "d_min_mm": 0.0001423675570083494,
+    "alpha_at_d_min_deg": 57.8118512067548,
+    "alpha_combined_deg": 0.26710308691629947,
+    "d_combined_mm": 0.06657414340909978,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564049853352512,
+    "d_at_alpha_min_mm": 61.57825535950402,
+    "d_min_mm": 5.515408322386432e-06,
+    "alpha_at_d_min_deg": 58.686343627389874,
+    "alpha_combined_deg": 1.9464268957285835,
+    "d_combined_mm": 0.002111763768283776,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025632380816808195,
+    "d_at_alpha_min_mm": 248.55549104211775,
+    "d_min_mm": 1.3340459143902034e-05,
+    "alpha_at_d_min_deg": 78.87944609328531,
+    "alpha_combined_deg": 28.68436084691404,
+    "d_combined_mm": 1.7704668357992495,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025632456176962535,
+    "d_at_alpha_min_mm": 105.19763062729707,
+    "d_min_mm": 5.150439796874906e-08,
+    "alpha_at_d_min_deg": 71.06436904969254,
+    "alpha_combined_deg": 49.00163334769542,
+    "d_combined_mm": 0.10390496780812719,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025625176500542178,
+    "d_at_alpha_min_mm": 69.15490620963207,
+    "d_min_mm": 0.0005932205377891337,
+    "alpha_at_d_min_deg": 67.43334772079922,
+    "alpha_combined_deg": 42.13220133523975,
+    "d_combined_mm": 0.1039843020702685,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025626004260853956,
+    "d_at_alpha_min_mm": 39.70815913331388,
+    "d_min_mm": 5.494278123079272e-05,
+    "alpha_at_d_min_deg": 30.775817477811263,
+    "alpha_combined_deg": 1.2112513363492745,
+    "d_combined_mm": 0.003352119915905427,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025634783701313233,
+    "d_at_alpha_min_mm": 106.53148893006811,
+    "d_min_mm": 9.519177113226363e-09,
+    "alpha_at_d_min_deg": 16.361719334328438,
+    "alpha_combined_deg": 13.810042099469248,
+    "d_combined_mm": 0.5635012094498265,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025630122753176965,
+    "d_at_alpha_min_mm": 5.04031990428867,
+    "d_min_mm": 3.824127617801899e-05,
+    "alpha_at_d_min_deg": 28.469324614758662,
+    "alpha_combined_deg": 0.023210480107613014,
+    "d_combined_mm": 0.013837011528973311,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002565206787968992,
+    "d_at_alpha_min_mm": 100.73316953954335,
+    "d_min_mm": 8.448816650505065e-05,
+    "alpha_at_d_min_deg": 72.36483347739232,
+    "alpha_combined_deg": 1.3304637971375448,
+    "d_combined_mm": 0.002468631253456104,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025626001416362582,
+    "d_at_alpha_min_mm": 100.70923137924328,
+    "d_min_mm": 5.7389349054681346e-09,
+    "alpha_at_d_min_deg": 38.614463307475155,
+    "alpha_combined_deg": 1.7153771795680954,
+    "d_combined_mm": 0.002089731368155254,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562375274714981,
+    "d_at_alpha_min_mm": 89.81460881095109,
+    "d_min_mm": 3.500570067773255e-05,
+    "alpha_at_d_min_deg": 16.1202430283719,
+    "alpha_combined_deg": 21.26791343700369,
+    "d_combined_mm": 0.09123651626061417,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002567889277626694,
+    "d_at_alpha_min_mm": 60.694205665557305,
+    "d_min_mm": 0.00018490087100309083,
+    "alpha_at_d_min_deg": 33.53689183400964,
+    "alpha_combined_deg": 19.059489164739198,
+    "d_combined_mm": 0.8239234429935072,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025623600553046156,
+    "d_at_alpha_min_mm": 115.69512742041088,
+    "d_min_mm": 2.0713023142186246e-05,
+    "alpha_at_d_min_deg": 78.031833678632,
+    "alpha_combined_deg": 0.002611916019095207,
+    "d_combined_mm": 3.897948438865779e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562634701975277,
+    "d_at_alpha_min_mm": 90.12698950320727,
+    "d_min_mm": 1.990240000582233e-05,
+    "alpha_at_d_min_deg": 22.1855425167305,
+    "alpha_combined_deg": 62.34853335657143,
+    "d_combined_mm": 0.0010878847360451527,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563593814323135,
+    "d_at_alpha_min_mm": 101.63446222398856,
+    "d_min_mm": 0.0001977331353904867,
+    "alpha_at_d_min_deg": 46.21874037766192,
+    "alpha_combined_deg": 1.5972662917814722,
+    "d_combined_mm": 0.0023121820833651567,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025672001070665396,
+    "d_at_alpha_min_mm": 187.19516795603136,
+    "d_min_mm": 7.578759880187189e-06,
+    "alpha_at_d_min_deg": 52.033967113952016,
+    "alpha_combined_deg": 0.11946710833710128,
+    "d_combined_mm": 0.003727671408463871,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025707259177414053,
+    "d_at_alpha_min_mm": 132.56498028393224,
+    "d_min_mm": 1.2771789148722112e-06,
+    "alpha_at_d_min_deg": 27.141366117786454,
+    "alpha_combined_deg": 2.0214933029328948,
+    "d_combined_mm": 0.0035757904049963955,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562400023843488,
+    "d_at_alpha_min_mm": 115.72749685847171,
+    "d_min_mm": 1.3313470380417664e-05,
+    "alpha_at_d_min_deg": 31.62513448265425,
+    "alpha_combined_deg": 55.2759426868917,
+    "d_combined_mm": 6.180186777887423,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002581699418025757,
+    "d_at_alpha_min_mm": 23.616030999450853,
+    "d_min_mm": 0.00013966375007889997,
+    "alpha_at_d_min_deg": 17.050194302255377,
+    "alpha_combined_deg": 8.558864238266196,
+    "d_combined_mm": 0.6715940441019835,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623771237960635,
+    "d_at_alpha_min_mm": 100.73251814145164,
+    "d_min_mm": 0.0008381181307304253,
+    "alpha_at_d_min_deg": 33.282755652689794,
+    "alpha_combined_deg": 61.65315247415596,
+    "d_combined_mm": 0.0013831632320882026,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025623644646757984,
+    "d_at_alpha_min_mm": 55.1093840649397,
+    "d_min_mm": 1.231405860744454e-09,
+    "alpha_at_d_min_deg": 33.95750689460087,
+    "alpha_combined_deg": 1.0925622024495496,
+    "d_combined_mm": 0.01342951387240188,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025626738129078614,
+    "d_at_alpha_min_mm": 52.07885116601551,
+    "d_min_mm": 2.5960177006495004e-05,
+    "alpha_at_d_min_deg": 71.24383567824468,
+    "alpha_combined_deg": 7.995040576420881,
+    "d_combined_mm": 0.0016737851401005084,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.00256756622090772,
+    "d_at_alpha_min_mm": 45.09421946391186,
+    "d_min_mm": 0.00030110123174567323,
+    "alpha_at_d_min_deg": 60.785390346794145,
+    "alpha_combined_deg": 3.03709592234751,
+    "d_combined_mm": 0.00017831448172198362,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025668665984950583,
+    "d_at_alpha_min_mm": 44.13124310481581,
+    "d_min_mm": 3.510153403075834e-07,
+    "alpha_at_d_min_deg": 49.0188317814266,
+    "alpha_combined_deg": 0.002777807501363539,
+    "d_combined_mm": 0.0004283615359351932,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025672052179719226,
+    "d_at_alpha_min_mm": 53.391555068596006,
+    "d_min_mm": 1.1276131261872178e-08,
+    "alpha_at_d_min_deg": 60.34438861702282,
+    "alpha_combined_deg": 0.032803059058617565,
+    "d_combined_mm": 0.0005463220979619206,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025626092439929825,
+    "d_at_alpha_min_mm": 6.771142231390358,
+    "d_min_mm": 2.2268946160029386e-07,
+    "alpha_at_d_min_deg": 10.978289421203392,
+    "alpha_combined_deg": 1.192339899991764,
+    "d_combined_mm": 0.002016134856881349,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025697216708932547,
+    "d_at_alpha_min_mm": 40.0396605176969,
+    "d_min_mm": 1.7899798032683378e-06,
+    "alpha_at_d_min_deg": 29.386879037207155,
+    "alpha_combined_deg": 68.4080357837513,
+    "d_combined_mm": 0.055035708634215696,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025649648142239898,
+    "d_at_alpha_min_mm": 98.15169442256858,
+    "d_min_mm": 3.270880515015919e-05,
+    "alpha_at_d_min_deg": 65.45630471839051,
+    "alpha_combined_deg": 0.7850591145153996,
+    "d_combined_mm": 0.036799272791257824,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002570316580667874,
+    "d_at_alpha_min_mm": 2.7245607769196396,
+    "d_min_mm": 1.5520355319952447e-05,
+    "alpha_at_d_min_deg": 11.868089904452464,
+    "alpha_combined_deg": 0.0326085951532508,
+    "d_combined_mm": 0.0054153747890059185,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624462500237685,
+    "d_at_alpha_min_mm": 119.67175995979177,
+    "d_min_mm": 2.492361178552116e-07,
+    "alpha_at_d_min_deg": 38.42168804405584,
+    "alpha_combined_deg": 40.533552538685484,
+    "d_combined_mm": 0.04516854332786702,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562660586368367,
+    "d_at_alpha_min_mm": 117.82612611596244,
+    "d_min_mm": 2.084609707075913e-06,
+    "alpha_at_d_min_deg": 57.300179598626514,
+    "alpha_combined_deg": 54.173478905599424,
+    "d_combined_mm": 2.0965332520852114,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025637874418001456,
+    "d_at_alpha_min_mm": 53.722603487770165,
+    "d_min_mm": 7.179648779535418e-06,
+    "alpha_at_d_min_deg": 27.101365062294885,
+    "alpha_combined_deg": 0.02877035691729848,
+    "d_combined_mm": 0.0050704814231536995,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025634273284925488,
+    "d_at_alpha_min_mm": 207.50605715833294,
+    "d_min_mm": 1.272095873083856e-06,
+    "alpha_at_d_min_deg": 56.968396877870184,
+    "alpha_combined_deg": 31.411942114100732,
+    "d_combined_mm": 0.21193865177554505,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562695714769384,
+    "d_at_alpha_min_mm": 56.945347505251455,
+    "d_min_mm": 0.0003750107983358266,
+    "alpha_at_d_min_deg": 63.48676177777144,
+    "alpha_combined_deg": 9.709544783980718,
+    "d_combined_mm": 0.014612989293202604,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563641156312466,
+    "d_at_alpha_min_mm": 113.30949534147905,
+    "d_min_mm": 4.3906897562173697e-07,
+    "alpha_at_d_min_deg": 41.78895321969748,
+    "alpha_combined_deg": 57.495373790557565,
+    "d_combined_mm": 5.101343975125613,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025652579362785985,
+    "d_at_alpha_min_mm": 179.27457090579517,
+    "d_min_mm": 0.0002262761009422466,
+    "alpha_at_d_min_deg": 83.13516847900014,
+    "alpha_combined_deg": 0.003943324739075481,
+    "d_combined_mm": 0.0004719161322043132,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025657659541188063,
+    "d_at_alpha_min_mm": 55.28663772341452,
+    "d_min_mm": 2.2063182856371022e-07,
+    "alpha_at_d_min_deg": 58.16036709768861,
+    "alpha_combined_deg": 3.9166015105433365,
+    "d_combined_mm": 0.05313385931221958,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002568848130655323,
+    "d_at_alpha_min_mm": 63.62073381785122,
+    "d_min_mm": 5.2387319037721355e-06,
+    "alpha_at_d_min_deg": 60.61437112296674,
+    "alpha_combined_deg": 2.77247956546321,
+    "d_combined_mm": 0.001872273424344798,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025631884571768147,
+    "d_at_alpha_min_mm": 224.01012799582682,
+    "d_min_mm": 6.631387128514924e-05,
+    "alpha_at_d_min_deg": 50.99111309954047,
+    "alpha_combined_deg": 0.004119629214533731,
+    "d_combined_mm": 0.0027441954183172247,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025645302556183257,
+    "d_at_alpha_min_mm": 70.22752748151187,
+    "d_min_mm": 1.1250565118414713e-05,
+    "alpha_at_d_min_deg": 88.24130399059679,
+    "alpha_combined_deg": 29.449072554597144,
+    "d_combined_mm": 0.0879518441041921,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562544388995823,
+    "d_at_alpha_min_mm": 47.766504157114866,
+    "d_min_mm": 5.8673093675243315e-05,
+    "alpha_at_d_min_deg": 68.92188969496856,
+    "alpha_combined_deg": 34.01126672450586,
+    "d_combined_mm": 10.319784073206954,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025663826571539427,
+    "d_at_alpha_min_mm": 51.772735926297756,
+    "d_min_mm": 7.521869712936621e-05,
+    "alpha_at_d_min_deg": 38.695726640905214,
+    "alpha_combined_deg": 0.10096392002394357,
+    "d_combined_mm": 0.13858629179265597,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623904940349504,
+    "d_at_alpha_min_mm": 194.01323227921782,
+    "d_min_mm": 0.0008156523797767071,
+    "alpha_at_d_min_deg": 37.61253536097646,
+    "alpha_combined_deg": 62.98453905062116,
+    "d_combined_mm": 0.0009953618581505603,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562433164543509,
+    "d_at_alpha_min_mm": 59.909529650132676,
+    "d_min_mm": 0.00023928329574962585,
+    "alpha_at_d_min_deg": 61.38919482241422,
+    "alpha_combined_deg": 0.29969633888759795,
+    "d_combined_mm": 0.003388666900961302,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562367024952358,
+    "d_at_alpha_min_mm": 142.0651961077009,
+    "d_min_mm": 1.0714578497865757e-06,
+    "alpha_at_d_min_deg": 8.662806283161506,
+    "alpha_combined_deg": 2.1339481886211247,
+    "d_combined_mm": 0.0008192131266933815,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563535808531766,
+    "d_at_alpha_min_mm": 81.16404707866283,
+    "d_min_mm": 2.6642491050216777e-07,
+    "alpha_at_d_min_deg": 20.70602243730247,
+    "alpha_combined_deg": 0.0047995649280850846,
+    "d_combined_mm": 0.01434740617063647,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025667291502557044,
+    "d_at_alpha_min_mm": 122.76452626553342,
+    "d_min_mm": 0.001049037246056428,
+    "alpha_at_d_min_deg": 46.727452150546895,
+    "alpha_combined_deg": 37.23382082001205,
+    "d_combined_mm": 7.619907080106722,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025648617943982146,
+    "d_at_alpha_min_mm": 122.60561689989098,
+    "d_min_mm": 2.52544265242937e-08,
+    "alpha_at_d_min_deg": 79.71939933446144,
+    "alpha_combined_deg": 1.6296179309747632,
+    "d_combined_mm": 0.01877160072370595,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624613266899145,
+    "d_at_alpha_min_mm": 64.05106837075294,
+    "d_min_mm": 6.607715775930334e-05,
+    "alpha_at_d_min_deg": 44.98396856470773,
+    "alpha_combined_deg": 50.863130692351426,
+    "d_combined_mm": 0.08660658103085139,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025625264682466453,
+    "d_at_alpha_min_mm": 71.30627660880427,
+    "d_min_mm": 0.0006509910568941457,
+    "alpha_at_d_min_deg": 25.262510800002765,
+    "alpha_combined_deg": 25.4572671205865,
+    "d_combined_mm": 0.0021666995341090844,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002565216165235434,
+    "d_at_alpha_min_mm": 84.68116741192955,
+    "d_min_mm": 7.207689070331332e-05,
+    "alpha_at_d_min_deg": 48.270035286388385,
+    "alpha_combined_deg": 2.48959716873823,
+    "d_combined_mm": 0.002941970422801507,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562881304199557,
+    "d_at_alpha_min_mm": 250.12415135002013,
+    "d_min_mm": 3.8005924463124785e-05,
+    "alpha_at_d_min_deg": 32.85590219969564,
+    "alpha_combined_deg": 53.7126859559785,
+    "d_combined_mm": 2.638775192248921,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025629366228932583,
+    "d_at_alpha_min_mm": 61.5372331980914,
+    "d_min_mm": 1.3361268214025203e-05,
+    "alpha_at_d_min_deg": 76.36523454475832,
+    "alpha_combined_deg": 2.6042913237385767,
+    "d_combined_mm": 0.06174783310691805,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025699932618072443,
+    "d_at_alpha_min_mm": 35.060065124274566,
+    "d_min_mm": 1.1470221494835897e-05,
+    "alpha_at_d_min_deg": 53.69464778330169,
+    "alpha_combined_deg": 67.63834118978397,
+    "d_combined_mm": 0.02273750855495693,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025747879654234185,
+    "d_at_alpha_min_mm": 220.19094936499002,
+    "d_min_mm": 0.00016980279846090518,
+    "alpha_at_d_min_deg": 58.11844535453594,
+    "alpha_combined_deg": 62.948992277935176,
+    "d_combined_mm": 0.17315368850683022,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025739774563599805,
+    "d_at_alpha_min_mm": 94.28357977328413,
+    "d_min_mm": 5.214834768227341e-05,
+    "alpha_at_d_min_deg": 46.446241422960995,
+    "alpha_combined_deg": 0.23177296218696336,
+    "d_combined_mm": 0.04243924792240159,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025631142319134273,
+    "d_at_alpha_min_mm": 90.40442228749767,
+    "d_min_mm": 0.001133318683912976,
+    "alpha_at_d_min_deg": 30.804453516794638,
+    "alpha_combined_deg": 62.18865367850459,
+    "d_combined_mm": 0.0030703214322913563,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025684488530880304,
+    "d_at_alpha_min_mm": 85.34668951911713,
+    "d_min_mm": 1.1962228364152232e-07,
+    "alpha_at_d_min_deg": 52.99971388060432,
+    "alpha_combined_deg": 0.11716242522646966,
+    "d_combined_mm": 0.037166541172170796,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025628919698503813,
+    "d_at_alpha_min_mm": 207.10079911862647,
+    "d_min_mm": 2.0507967572828376e-05,
+    "alpha_at_d_min_deg": 66.15182086861327,
+    "alpha_combined_deg": 2.3238797861210583,
+    "d_combined_mm": 0.10092516229315238,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025688328077148005,
+    "d_at_alpha_min_mm": 81.16577283717969,
+    "d_min_mm": 3.3816381778128957e-06,
+    "alpha_at_d_min_deg": 52.51040474010731,
+    "alpha_combined_deg": 12.409009870627965,
+    "d_combined_mm": 14.7530835020344,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00257548826628172,
+    "d_at_alpha_min_mm": 51.36795240847403,
+    "d_min_mm": 3.0668750280226372e-06,
+    "alpha_at_d_min_deg": 70.82833350592861,
+    "alpha_combined_deg": 0.23535482746657088,
+    "d_combined_mm": 0.4501623421547335,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025709762802361975,
+    "d_at_alpha_min_mm": 72.79467815645597,
+    "d_min_mm": 3.5412956879545507e-06,
+    "alpha_at_d_min_deg": 51.97333921963538,
+    "alpha_combined_deg": 0.002941520829347252,
+    "d_combined_mm": 0.001318840302490055,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025625251881883373,
+    "d_at_alpha_min_mm": 30.735782176850773,
+    "d_min_mm": 3.099891103530705e-05,
+    "alpha_at_d_min_deg": 42.773139213641926,
+    "alpha_combined_deg": 30.83352467851032,
+    "d_combined_mm": 0.0027154949358981773,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025630597702476455,
+    "d_at_alpha_min_mm": 22.16638901447554,
+    "d_min_mm": 7.912531456433225e-05,
+    "alpha_at_d_min_deg": 36.47585088824166,
+    "alpha_combined_deg": 50.12186320600622,
+    "d_combined_mm": 2.0535179462046886,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025634758109647215,
+    "d_at_alpha_min_mm": 109.86546085566985,
+    "d_min_mm": 8.583451691091268e-09,
+    "alpha_at_d_min_deg": 87.04057686173435,
+    "alpha_combined_deg": 0.0026121747119950823,
+    "d_combined_mm": 2.4372935575310677e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562566860869269,
+    "d_at_alpha_min_mm": 76.21740824253007,
+    "d_min_mm": 0.0003714518248404408,
+    "alpha_at_d_min_deg": 46.5812334964723,
+    "alpha_combined_deg": 30.83865104616152,
+    "d_combined_mm": 0.0022640712087351744,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002566161814395666,
+    "d_at_alpha_min_mm": 71.35580963877592,
+    "d_min_mm": 2.236845776437508e-08,
+    "alpha_at_d_min_deg": 27.313609928231866,
+    "alpha_combined_deg": 0.0026086845244036928,
+    "d_combined_mm": 5.387852388124161e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025663186076096277,
+    "d_at_alpha_min_mm": 258.370225434567,
+    "d_min_mm": 1.6179943858113092e-05,
+    "alpha_at_d_min_deg": 58.41365106654997,
+    "alpha_combined_deg": 0.05130387229012975,
+    "d_combined_mm": 0.0503945890764618,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562448810218612,
+    "d_at_alpha_min_mm": 91.60389063914477,
+    "d_min_mm": 8.81013847410578e-05,
+    "alpha_at_d_min_deg": 23.543546024118076,
+    "alpha_combined_deg": 0.02674151567256344,
+    "d_combined_mm": 0.0031101717083127887,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624707140032704,
+    "d_at_alpha_min_mm": 115.05893057320229,
+    "d_min_mm": 9.129432045433867e-05,
+    "alpha_at_d_min_deg": 49.317578473369295,
+    "alpha_combined_deg": 56.70862955575336,
+    "d_combined_mm": 0.04321753534022682,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025662113814019223,
+    "d_at_alpha_min_mm": 118.51714659334937,
+    "d_min_mm": 5.064039035329593e-06,
+    "alpha_at_d_min_deg": 68.32742742302382,
+    "alpha_combined_deg": 48.25143287955558,
+    "d_combined_mm": 0.7008115126723446,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025625982927160985,
+    "d_at_alpha_min_mm": 27.130759330077122,
+    "d_min_mm": 8.07809642067584e-07,
+    "alpha_at_d_min_deg": 29.56593524335251,
+    "alpha_combined_deg": 4.721679910564181,
+    "d_combined_mm": 1.1754858624072706,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564308969068439,
+    "d_at_alpha_min_mm": 95.08311229277676,
+    "d_min_mm": 0.00010674427314283363,
+    "alpha_at_d_min_deg": 12.24851753716415,
+    "alpha_combined_deg": 59.14115473566546,
+    "d_combined_mm": 0.15335740808322673,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563113520933078,
+    "d_at_alpha_min_mm": 12.900885772090783,
+    "d_min_mm": 0.00018623471332016104,
+    "alpha_at_d_min_deg": 36.97624390226301,
+    "alpha_combined_deg": 0.1305582566901998,
+    "d_combined_mm": 0.0475249271676526,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025668433123277215,
+    "d_at_alpha_min_mm": 16.957465694029807,
+    "d_min_mm": 2.9930834745705565e-06,
+    "alpha_at_d_min_deg": 52.663159460464264,
+    "alpha_combined_deg": 0.002610362066717677,
+    "d_combined_mm": 6.144890274300302e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025637652649452146,
+    "d_at_alpha_min_mm": 34.65667901354602,
+    "d_min_mm": 2.2407364852483624e-07,
+    "alpha_at_d_min_deg": 16.743546109635975,
+    "alpha_combined_deg": 52.768100511544084,
+    "d_combined_mm": 0.04646670693482513,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025623791151126595,
+    "d_at_alpha_min_mm": 66.49114360425375,
+    "d_min_mm": 3.092027784420074e-05,
+    "alpha_at_d_min_deg": 30.717168502426315,
+    "alpha_combined_deg": 50.87248040457863,
+    "d_combined_mm": 0.018171920560490017,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025642995884845145,
+    "d_at_alpha_min_mm": 64.47731727173831,
+    "d_min_mm": 0.0013984280043691584,
+    "alpha_at_d_min_deg": 62.1372849110828,
+    "alpha_combined_deg": 2.050806947481244,
+    "d_combined_mm": 0.07610799204786309,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564727791384963,
+    "d_at_alpha_min_mm": 147.95795296723128,
+    "d_min_mm": 5.155819531033057e-05,
+    "alpha_at_d_min_deg": 15.109742821795022,
+    "alpha_combined_deg": 44.514946785663994,
+    "d_combined_mm": 0.9320801999544159,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562902777664606,
+    "d_at_alpha_min_mm": 263.19737918314786,
+    "d_min_mm": 0.0003081804515747688,
+    "alpha_at_d_min_deg": 33.26951440931913,
+    "alpha_combined_deg": 63.48450780511582,
+    "d_combined_mm": 0.0010401056346059923,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002565323859262249,
+    "d_at_alpha_min_mm": 32.19448592451177,
+    "d_min_mm": 3.302768558643976e-06,
+    "alpha_at_d_min_deg": 31.83192032464831,
+    "alpha_combined_deg": 24.387007691798722,
+    "d_combined_mm": 22.764668589649887,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562494751057974,
+    "d_at_alpha_min_mm": 202.7924578837586,
+    "d_min_mm": 0.00015502749800555549,
+    "alpha_at_d_min_deg": 39.38018414626216,
+    "alpha_combined_deg": 52.39021246790834,
+    "d_combined_mm": 0.6437500363223186,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025625200679487096,
+    "d_at_alpha_min_mm": 104.10870541790719,
+    "d_min_mm": 1.5957302423874609e-06,
+    "alpha_at_d_min_deg": 32.88553377458213,
+    "alpha_combined_deg": 46.88104772532596,
+    "d_combined_mm": 0.07197275952428028,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256396669766888,
+    "d_at_alpha_min_mm": 86.68817997597459,
+    "d_min_mm": 0.0014930601814025343,
+    "alpha_at_d_min_deg": 47.66550858136087,
+    "alpha_combined_deg": 6.15908929648287,
+    "d_combined_mm": 0.009421413758788225,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025673143901597,
+    "d_at_alpha_min_mm": 111.04024109215736,
+    "d_min_mm": 0.00038760781704805925,
+    "alpha_at_d_min_deg": 46.19129333612339,
+    "alpha_combined_deg": 10.144709724743201,
+    "d_combined_mm": 0.034312592521771754,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002577324307289874,
+    "d_at_alpha_min_mm": 44.528369140492714,
+    "d_min_mm": 3.093705872037056e-05,
+    "alpha_at_d_min_deg": 45.4819045032552,
+    "alpha_combined_deg": 26.448921702613053,
+    "d_combined_mm": 10.012651732620725,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562466304814916,
+    "d_at_alpha_min_mm": 57.70582958978303,
+    "d_min_mm": 0.00013085220301745082,
+    "alpha_at_d_min_deg": 53.02417041767714,
+    "alpha_combined_deg": 55.75552281290086,
+    "d_combined_mm": 0.00034894742500374276,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562551215914925,
+    "d_at_alpha_min_mm": 200.19903981626564,
+    "d_min_mm": 0.00016896577609282204,
+    "alpha_at_d_min_deg": 74.3596472088757,
+    "alpha_combined_deg": 22.20371595567246,
+    "d_combined_mm": 0.008566134942988857,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025623954722975633,
+    "d_at_alpha_min_mm": 64.13155499608312,
+    "d_min_mm": 8.833650587938443e-08,
+    "alpha_at_d_min_deg": 11.426178459725046,
+    "alpha_combined_deg": 0.002648935209226124,
+    "d_combined_mm": 2.9572390519209295e-06,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025630277752568494,
+    "d_at_alpha_min_mm": 173.44462588326445,
+    "d_min_mm": 3.6900768487705906e-07,
+    "alpha_at_d_min_deg": 22.95059464128476,
+    "alpha_combined_deg": 0.008212740234367985,
+    "d_combined_mm": 0.004134245122909815,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564990533010914,
+    "d_at_alpha_min_mm": 61.9021629172187,
+    "d_min_mm": 1.8879102448021712e-07,
+    "alpha_at_d_min_deg": 31.31739821767462,
+    "alpha_combined_deg": 48.02672580028142,
+    "d_combined_mm": 2.0146672181471095,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002565823909493092,
+    "d_at_alpha_min_mm": 68.47701843902857,
+    "d_min_mm": 5.066315289291063e-06,
+    "alpha_at_d_min_deg": 26.37832321117747,
+    "alpha_combined_deg": 2.541245317406987,
+    "d_combined_mm": 0.0006601177388858422,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025677239219498247,
+    "d_at_alpha_min_mm": 45.7464938098797,
+    "d_min_mm": 6.287526074280288e-07,
+    "alpha_at_d_min_deg": 58.825511828121215,
+    "alpha_combined_deg": 0.0025988963753934137,
+    "d_combined_mm": 9.841283262436501e-06,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563414674558595,
+    "d_at_alpha_min_mm": 100.07534592824464,
+    "d_min_mm": 1.974234375400616e-07,
+    "alpha_at_d_min_deg": 24.28088915570898,
+    "alpha_combined_deg": 0.09907103844830616,
+    "d_combined_mm": 0.08007324595944032,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025675462059513965,
+    "d_at_alpha_min_mm": 69.01146577130888,
+    "d_min_mm": 1.688118270943496e-09,
+    "alpha_at_d_min_deg": 42.98214953686607,
+    "alpha_combined_deg": 0.02025199848907893,
+    "d_combined_mm": 0.01691823478011162,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025638953379918893,
+    "d_at_alpha_min_mm": 154.97140349848635,
+    "d_min_mm": 3.564876731310118e-05,
+    "alpha_at_d_min_deg": 40.043573309193306,
+    "alpha_combined_deg": 65.09746810044459,
+    "d_combined_mm": 0.11693948026000878,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002571858308973841,
+    "d_at_alpha_min_mm": 86.98217160292906,
+    "d_min_mm": 4.790675188233018e-07,
+    "alpha_at_d_min_deg": 28.313245776027706,
+    "alpha_combined_deg": 32.49378574670778,
+    "d_combined_mm": 0.7847004226948406,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025623462581909305,
+    "d_at_alpha_min_mm": 2.823786262745008,
+    "d_min_mm": 7.193510189432662e-09,
+    "alpha_at_d_min_deg": 39.2715046173622,
+    "alpha_combined_deg": 0.005748041648886937,
+    "d_combined_mm": 0.007828193878851319,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025652972913670284,
+    "d_at_alpha_min_mm": 72.49316834322602,
+    "d_min_mm": 0.00013972975487158568,
+    "alpha_at_d_min_deg": 40.324778179689986,
+    "alpha_combined_deg": 63.191353517411585,
+    "d_combined_mm": 0.0011498977109302953,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562616355186677,
+    "d_at_alpha_min_mm": 171.8588762325184,
+    "d_min_mm": 1.61128224651641e-05,
+    "alpha_at_d_min_deg": 61.91203980291868,
+    "alpha_combined_deg": 31.200571279711458,
+    "d_combined_mm": 0.0011038702344423612,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025623785461652182,
+    "d_at_alpha_min_mm": 194.1373221611609,
+    "d_min_mm": 0.00021575671270247435,
+    "alpha_at_d_min_deg": 44.08445900772031,
+    "alpha_combined_deg": 2.24560039010514,
+    "d_combined_mm": 0.0003999481092546667,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025669155839501503,
+    "d_at_alpha_min_mm": 67.17646083157929,
+    "d_min_mm": 0.0004612072533466405,
+    "alpha_at_d_min_deg": 26.964500053992836,
+    "alpha_combined_deg": 31.832167432276062,
+    "d_combined_mm": 0.003906562252020684,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563669020858429,
+    "d_at_alpha_min_mm": 13.227164885969268,
+    "d_min_mm": 1.1645467239196167e-05,
+    "alpha_at_d_min_deg": 32.9302096125631,
+    "alpha_combined_deg": 0.002574755125300143,
+    "d_combined_mm": 2.009031430337253e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562379826296783,
+    "d_at_alpha_min_mm": 65.56325872909804,
+    "d_min_mm": 4.928660572815131e-07,
+    "alpha_at_d_min_deg": 35.30977884681346,
+    "alpha_combined_deg": 0.286367107606051,
+    "d_combined_mm": 0.04281752315731981,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623671671898694,
+    "d_at_alpha_min_mm": 27.935946372189573,
+    "d_min_mm": 2.313740032899858e-07,
+    "alpha_at_d_min_deg": 59.67179056948963,
+    "alpha_combined_deg": 60.88803957169978,
+    "d_combined_mm": 0.10780694165199445,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025682269107861534,
+    "d_at_alpha_min_mm": 10.01641376215109,
+    "d_min_mm": 0.00010008279768488155,
+    "alpha_at_d_min_deg": 2.7159103851467514,
+    "alpha_combined_deg": 68.72088358432234,
+    "d_combined_mm": 0.007249987358989583,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562358917401143,
+    "d_at_alpha_min_mm": 64.80379848690175,
+    "d_min_mm": 2.7473498461182065e-06,
+    "alpha_at_d_min_deg": 66.4037990908039,
+    "alpha_combined_deg": 2.6578425615071906,
+    "d_combined_mm": 3.1729056708152545e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025653151927598223,
+    "d_at_alpha_min_mm": 117.72215247831686,
+    "d_min_mm": 8.042198161584135e-05,
+    "alpha_at_d_min_deg": 29.86303182266083,
+    "alpha_combined_deg": 51.21838210120524,
+    "d_combined_mm": 0.036272559860814346,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002583900627995951,
+    "d_at_alpha_min_mm": 100.46116572768427,
+    "d_min_mm": 8.31141320628559e-05,
+    "alpha_at_d_min_deg": 37.669226211291694,
+    "alpha_combined_deg": 30.635028076021083,
+    "d_combined_mm": 0.00388406696616439,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256914974697063,
+    "d_at_alpha_min_mm": 107.24795526384074,
+    "d_min_mm": 8.006563544954582e-06,
+    "alpha_at_d_min_deg": 85.04979296645705,
+    "alpha_combined_deg": 33.89624207955109,
+    "d_combined_mm": 0.12120530008396142,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025679585393297366,
+    "d_at_alpha_min_mm": 244.15450800158396,
+    "d_min_mm": 1.6507179579254814e-05,
+    "alpha_at_d_min_deg": 16.132364089259738,
+    "alpha_combined_deg": 0.2789986438490064,
+    "d_combined_mm": 0.01440711929333597,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025639311602293933,
+    "d_at_alpha_min_mm": 219.46588100899768,
+    "d_min_mm": 0.00014682674268073903,
+    "alpha_at_d_min_deg": 39.736192820920074,
+    "alpha_combined_deg": 29.96024942925947,
+    "d_combined_mm": 0.04183958919483366,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025689508487484504,
+    "d_at_alpha_min_mm": 20.03049585211268,
+    "d_min_mm": 0.0003881044304409806,
+    "alpha_at_d_min_deg": 56.07073095365948,
+    "alpha_combined_deg": 0.003540618046364048,
+    "d_combined_mm": 0.0008516630667298831,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002576639074805379,
+    "d_at_alpha_min_mm": 65.49415710481608,
+    "d_min_mm": 7.303283008411775e-08,
+    "alpha_at_d_min_deg": 21.98498614501517,
+    "alpha_combined_deg": 0.002564062362008322,
+    "d_combined_mm": 8.229708705110189e-06,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562738237979,
+    "d_at_alpha_min_mm": 102.65625482579556,
+    "d_min_mm": 5.8947459076539024e-08,
+    "alpha_at_d_min_deg": 44.94077240097656,
+    "alpha_combined_deg": 0.007299202316469184,
+    "d_combined_mm": 0.002870742072501614,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.00256234554699749,
+    "d_at_alpha_min_mm": 67.07876908379639,
+    "d_min_mm": 0.0002688298962605362,
+    "alpha_at_d_min_deg": 44.4350883089893,
+    "alpha_combined_deg": 53.33932697468683,
+    "d_combined_mm": 0.4119501253558866,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025753657132260663,
+    "d_at_alpha_min_mm": 96.93531882866105,
+    "d_min_mm": 4.7946077878678865e-08,
+    "alpha_at_d_min_deg": 63.95305257585141,
+    "alpha_combined_deg": 0.002578890676848177,
+    "d_combined_mm": 1.773165790569397e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025635205960113936,
+    "d_at_alpha_min_mm": 38.737337386678256,
+    "d_min_mm": 4.552694869708329e-05,
+    "alpha_at_d_min_deg": 31.91821721680715,
+    "alpha_combined_deg": 64.32927376425769,
+    "d_combined_mm": 0.8225399597479449,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025623466849069,
+    "d_at_alpha_min_mm": 80.4243739397136,
+    "d_min_mm": 2.060509762813467e-06,
+    "alpha_at_d_min_deg": 41.433194187704466,
+    "alpha_combined_deg": 64.29816709174571,
+    "d_combined_mm": 0.0004370931022540381,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025624707140032704,
+    "d_at_alpha_min_mm": 32.21761136331534,
+    "d_min_mm": 0.0004802433283354472,
+    "alpha_at_d_min_deg": 42.7961243392168,
+    "alpha_combined_deg": 0.03496074003896482,
+    "d_combined_mm": 0.020608790979002506,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025626189152115762,
+    "d_at_alpha_min_mm": 178.03698077150005,
+    "d_min_mm": 6.026055625940813e-07,
+    "alpha_at_d_min_deg": 73.25174390401045,
+    "alpha_combined_deg": 1.844300481981647,
+    "d_combined_mm": 0.00010522356710930784,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562426906246719,
+    "d_at_alpha_min_mm": 83.87445028247092,
+    "d_min_mm": 1.096003136627481e-05,
+    "alpha_at_d_min_deg": 69.73361535104529,
+    "alpha_combined_deg": 0.02040855209411576,
+    "d_combined_mm": 0.0007424063189463641,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025644448415570943,
+    "d_at_alpha_min_mm": 146.79926844472996,
+    "d_min_mm": 7.080323907354383e-06,
+    "alpha_at_d_min_deg": 38.287516996690314,
+    "alpha_combined_deg": 1.3173801938974832,
+    "d_combined_mm": 0.09476878588751332,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025625807990208678,
+    "d_at_alpha_min_mm": 118.67574671027563,
+    "d_min_mm": 2.6946787327007962e-06,
+    "alpha_at_d_min_deg": 50.92497246135069,
+    "alpha_combined_deg": 0.002951239500404118,
+    "d_combined_mm": 0.0012248457667696521,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025637665443843673,
+    "d_at_alpha_min_mm": 32.81561974054698,
+    "d_min_mm": 6.150818075700837e-05,
+    "alpha_at_d_min_deg": 72.14266574682624,
+    "alpha_combined_deg": 13.61056215184702,
+    "d_combined_mm": 0.20285690859937755,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002574898514656712,
+    "d_at_alpha_min_mm": 4.067162468139436,
+    "d_min_mm": 0.0001415163187606927,
+    "alpha_at_d_min_deg": 80.55849828518225,
+    "alpha_combined_deg": 30.895368251883802,
+    "d_combined_mm": 1.077542108813695,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563155184048689,
+    "d_at_alpha_min_mm": 231.25681593460178,
+    "d_min_mm": 1.5442113726615858e-05,
+    "alpha_at_d_min_deg": 64.81851526925757,
+    "alpha_combined_deg": 34.67899722846559,
+    "d_combined_mm": 0.6109788057867827,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002574074022969616,
+    "d_at_alpha_min_mm": 5.2386628225154634,
+    "d_min_mm": 1.2718236186426424e-06,
+    "alpha_at_d_min_deg": 2.625862015813845,
+    "alpha_combined_deg": 62.90954748180022,
+    "d_combined_mm": 0.0017661663881812784,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025625941681970874,
+    "d_at_alpha_min_mm": 51.197253473715946,
+    "d_min_mm": 1.4337611705740749e-08,
+    "alpha_at_d_min_deg": 62.03820453057497,
+    "alpha_combined_deg": 0.6733785011138893,
+    "d_combined_mm": 0.00015411090607429106,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624267640125234,
+    "d_at_alpha_min_mm": 1.1184019730920147,
+    "d_min_mm": 0.00026411875196641343,
+    "alpha_at_d_min_deg": 37.76634383697306,
+    "alpha_combined_deg": 49.509106208119185,
+    "d_combined_mm": 4.755679372887234,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562481096900716,
+    "d_at_alpha_min_mm": 234.01059194595265,
+    "d_min_mm": 4.7244855402529114e-05,
+    "alpha_at_d_min_deg": 25.27956051096877,
+    "alpha_combined_deg": 0.02280730109460105,
+    "d_combined_mm": 0.0008497924812030432,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025628871347608407,
+    "d_at_alpha_min_mm": 141.69622846763565,
+    "d_min_mm": 9.562687600094302e-06,
+    "alpha_at_d_min_deg": 12.934737287416615,
+    "alpha_combined_deg": 0.006133475353387619,
+    "d_combined_mm": 0.003398915293108223,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623640379627893,
+    "d_at_alpha_min_mm": 104.71685781673764,
+    "d_min_mm": 7.58394276984727e-05,
+    "alpha_at_d_min_deg": 11.40032703155468,
+    "alpha_combined_deg": 1.0516541022287293,
+    "d_combined_mm": 0.007075971002812792,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025628613948659265,
+    "d_at_alpha_min_mm": 180.63911162037738,
+    "d_min_mm": 2.5875580141241098e-08,
+    "alpha_at_d_min_deg": 59.86304748412098,
+    "alpha_combined_deg": 1.282367976138307,
+    "d_combined_mm": 0.0007192190959036983,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623973213640704,
+    "d_at_alpha_min_mm": 149.00955778779982,
+    "d_min_mm": 2.3765826806521062e-07,
+    "alpha_at_d_min_deg": 20.56405992791213,
+    "alpha_combined_deg": 53.51606526053712,
+    "d_combined_mm": 0.003885821077534435,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025692589783880286,
+    "d_at_alpha_min_mm": 200.6798327510602,
+    "d_min_mm": 1.1756869741735765e-06,
+    "alpha_at_d_min_deg": 22.640301604959447,
+    "alpha_combined_deg": 0.26178549975347243,
+    "d_combined_mm": 0.0006948059428536566,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002574221131413227,
+    "d_at_alpha_min_mm": 86.03774226182793,
+    "d_min_mm": 0.0038835034111422972,
+    "alpha_at_d_min_deg": 65.05929969993856,
+    "alpha_combined_deg": 43.12888173600851,
+    "d_combined_mm": 0.2378243090359472,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562823282281554,
+    "d_at_alpha_min_mm": 231.88146567700545,
+    "d_min_mm": 2.3690685801991407e-06,
+    "alpha_at_d_min_deg": 17.198379316322406,
+    "alpha_combined_deg": 63.225241293254456,
+    "d_combined_mm": 0.0005912380187239608,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025630227982223848,
+    "d_at_alpha_min_mm": 236.7473633052392,
+    "d_min_mm": 3.8445102934492326e-06,
+    "alpha_at_d_min_deg": 47.452126128549395,
+    "alpha_combined_deg": 64.16385611211932,
+    "d_combined_mm": 0.0029731631542434522,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025727996751850604,
+    "d_at_alpha_min_mm": 95.46696774774361,
+    "d_min_mm": 6.288106056684395e-05,
+    "alpha_at_d_min_deg": 42.883163763102374,
+    "alpha_combined_deg": 52.49880295476059,
+    "d_combined_mm": 0.0037481186296595137,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025664097818671582,
+    "d_at_alpha_min_mm": 13.814245008451257,
+    "d_min_mm": 9.243904253164459e-09,
+    "alpha_at_d_min_deg": 18.753652084987024,
+    "alpha_combined_deg": 55.63765519317197,
+    "d_combined_mm": 0.002236798159624409,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025627015457529143,
+    "d_at_alpha_min_mm": 85.21967552203176,
+    "d_min_mm": 3.870072423965338e-05,
+    "alpha_at_d_min_deg": 12.714142558875729,
+    "alpha_combined_deg": 0.04159879877686252,
+    "d_combined_mm": 0.007689152716211442,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562355219211368,
+    "d_at_alpha_min_mm": 87.87697293618835,
+    "d_min_mm": 8.729354816772172e-05,
+    "alpha_at_d_min_deg": 77.90257931653106,
+    "alpha_combined_deg": 18.906012050448624,
+    "d_combined_mm": 0.0934478449220455,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562354081305748,
+    "d_at_alpha_min_mm": 80.16953314070673,
+    "d_min_mm": 3.6947235943531136e-09,
+    "alpha_at_d_min_deg": 56.95315397164154,
+    "alpha_combined_deg": 0.5997563793836305,
+    "d_combined_mm": 0.00014309392368141077,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025655480415605818,
+    "d_at_alpha_min_mm": 112.71546966807588,
+    "d_min_mm": 1.3371486553981433e-06,
+    "alpha_at_d_min_deg": 53.54999388009617,
+    "alpha_combined_deg": 0.11093360385289983,
+    "d_combined_mm": 0.12121618754859488,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002570837208723497,
+    "d_at_alpha_min_mm": 109.70789677903542,
+    "d_min_mm": 0.0002657101942562816,
+    "alpha_at_d_min_deg": 54.14198399801523,
+    "alpha_combined_deg": 0.0025652850728843444,
+    "d_combined_mm": 0.00011055668222539184,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562416380894921,
+    "d_at_alpha_min_mm": 21.01612032752475,
+    "d_min_mm": 0.0005360453799229027,
+    "alpha_at_d_min_deg": 61.90874998360644,
+    "alpha_combined_deg": 3.135417579792695,
+    "d_combined_mm": 0.000779871976359177,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025628707807139077,
+    "d_at_alpha_min_mm": 35.533903911751004,
+    "d_min_mm": 1.4654541665937116e-05,
+    "alpha_at_d_min_deg": 29.62172694024046,
+    "alpha_combined_deg": 0.0025801217578515345,
+    "d_combined_mm": 1.6971558439324565e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564590370631265,
+    "d_at_alpha_min_mm": 133.0904443075244,
+    "d_min_mm": 4.875786087027247e-08,
+    "alpha_at_d_min_deg": 57.47996682945302,
+    "alpha_combined_deg": 0.024517052352081833,
+    "d_combined_mm": 0.0623717371577354,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025660981854312708,
+    "d_at_alpha_min_mm": 93.91377682436571,
+    "d_min_mm": 1.4837398331560114e-08,
+    "alpha_at_d_min_deg": 47.35746269696041,
+    "alpha_combined_deg": 0.32914120268509667,
+    "d_combined_mm": 0.005359906625552129,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025630566418661624,
+    "d_at_alpha_min_mm": 116.90468990993082,
+    "d_min_mm": 0.0002608112437186985,
+    "alpha_at_d_min_deg": 35.96649273602207,
+    "alpha_combined_deg": 1.3345909896244859,
+    "d_combined_mm": 0.003179547640109171,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002567806530151181,
+    "d_at_alpha_min_mm": 33.690496012520484,
+    "d_min_mm": 0.0002072575859018275,
+    "alpha_at_d_min_deg": 63.77914528593112,
+    "alpha_combined_deg": 3.682212733146253,
+    "d_combined_mm": 0.03693310098068813,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623704386504575,
+    "d_at_alpha_min_mm": 140.0914239065863,
+    "d_min_mm": 9.671351011370455e-06,
+    "alpha_at_d_min_deg": 62.60811512058685,
+    "alpha_combined_deg": 0.003997951970946178,
+    "d_combined_mm": 0.0019336403064255383,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025629462928764956,
+    "d_at_alpha_min_mm": 118.23955139401387,
+    "d_min_mm": 9.462090823364466e-05,
+    "alpha_at_d_min_deg": 49.05501483988265,
+    "alpha_combined_deg": 10.632732340327436,
+    "d_combined_mm": 2.0931677746459654,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564745696752748,
+    "d_at_alpha_min_mm": 26.823236232219898,
+    "d_min_mm": 0.0006173429188063529,
+    "alpha_at_d_min_deg": 78.25718765667125,
+    "alpha_combined_deg": 2.9598040583302385,
+    "d_combined_mm": 0.003711774476682978,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002581611607295586,
+    "d_at_alpha_min_mm": 71.14514060993315,
+    "d_min_mm": 4.321318887017328e-06,
+    "alpha_at_d_min_deg": 69.54997762002482,
+    "alpha_combined_deg": 0.8450494050712475,
+    "d_combined_mm": 0.08864155573191852,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025628724872280295,
+    "d_at_alpha_min_mm": 194.89795545387668,
+    "d_min_mm": 1.1712217859406843e-05,
+    "alpha_at_d_min_deg": 45.27568889890277,
+    "alpha_combined_deg": 2.2789476465455487,
+    "d_combined_mm": 0.006989464598369249,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563920641052826,
+    "d_at_alpha_min_mm": 38.2933991532213,
+    "d_min_mm": 1.0876351126397027e-05,
+    "alpha_at_d_min_deg": 44.651142821398274,
+    "alpha_combined_deg": 0.002576515444837075,
+    "d_combined_mm": 0.00015205619847880294,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025701489704410066,
+    "d_at_alpha_min_mm": 49.02940983252637,
+    "d_min_mm": 0.0001511777971449738,
+    "alpha_at_d_min_deg": 49.51645858583879,
+    "alpha_combined_deg": 0.0744491481962697,
+    "d_combined_mm": 0.0030739944709785665,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025632815912004646,
+    "d_at_alpha_min_mm": 255.7571422583952,
+    "d_min_mm": 8.100440149205745e-05,
+    "alpha_at_d_min_deg": 25.514742252308796,
+    "alpha_combined_deg": 28.839686015347517,
+    "d_combined_mm": 0.005111494143297812,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002578742704112126,
+    "d_at_alpha_min_mm": 39.51089488337583,
+    "d_min_mm": 1.8620225777921107e-06,
+    "alpha_at_d_min_deg": 47.50138628860773,
+    "alpha_combined_deg": 31.77070007717098,
+    "d_combined_mm": 0.044562559689279024,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025641539007685535,
+    "d_at_alpha_min_mm": 143.3943945434758,
+    "d_min_mm": 0.0004273822887118639,
+    "alpha_at_d_min_deg": 44.99113459950786,
+    "alpha_combined_deg": 15.010961033959848,
+    "d_combined_mm": 0.6080933019799173,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025821413909987425,
+    "d_at_alpha_min_mm": 81.8890335345772,
+    "d_min_mm": 0.0002514252298279017,
+    "alpha_at_d_min_deg": 63.42199393194534,
+    "alpha_combined_deg": 2.1424064978383046,
+    "d_combined_mm": 0.0005511037644465819,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025648576735191157,
+    "d_at_alpha_min_mm": 74.04028586374693,
+    "d_min_mm": 0.00045655311596559667,
+    "alpha_at_d_min_deg": 58.799297784397375,
+    "alpha_combined_deg": 20.513339750697003,
+    "d_combined_mm": 0.020170072723160737,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025700282899816765,
+    "d_at_alpha_min_mm": 131.49016876253808,
+    "d_min_mm": 3.087228365716252e-09,
+    "alpha_at_d_min_deg": 44.08292253610162,
+    "alpha_combined_deg": 41.99047420955287,
+    "d_combined_mm": 6.8454927303531194,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002565521333924307,
+    "d_at_alpha_min_mm": 109.04630172354013,
+    "d_min_mm": 1.1615604371924729e-07,
+    "alpha_at_d_min_deg": 26.763840127395305,
+    "alpha_combined_deg": 0.20749189472594906,
+    "d_combined_mm": 0.010964774128209552,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025639763637672116,
+    "d_at_alpha_min_mm": 103.13726781837372,
+    "d_min_mm": 4.459695113201434e-08,
+    "alpha_at_d_min_deg": 42.91756706037931,
+    "alpha_combined_deg": 65.58564070350268,
+    "d_combined_mm": 0.0027730031660067045,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025645126329833755,
+    "d_at_alpha_min_mm": 95.00672020357429,
+    "d_min_mm": 3.4987520816868196e-06,
+    "alpha_at_d_min_deg": 65.13563266811869,
+    "alpha_combined_deg": 0.009629231340427273,
+    "d_combined_mm": 7.494175710648353e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025670605470233154,
+    "d_at_alpha_min_mm": 57.83231013781599,
+    "d_min_mm": 3.397644114845156e-05,
+    "alpha_at_d_min_deg": 63.200214263596074,
+    "alpha_combined_deg": 0.3866739433525224,
+    "d_combined_mm": 0.020554526388315772,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002568856217725972,
+    "d_at_alpha_min_mm": 258.879199405913,
+    "d_min_mm": 3.219194980201364e-05,
+    "alpha_at_d_min_deg": 69.49420094498807,
+    "alpha_combined_deg": 28.768381714861064,
+    "d_combined_mm": 8.779290411162716,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025627386646297017,
+    "d_at_alpha_min_mm": 39.20624267414394,
+    "d_min_mm": 2.4258009059807684e-05,
+    "alpha_at_d_min_deg": 23.836543745999222,
+    "alpha_combined_deg": 50.92038637796854,
+    "d_combined_mm": 2.2664128423406926,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025638760051478315,
+    "d_at_alpha_min_mm": 74.6297681568401,
+    "d_min_mm": 9.822391562608335e-05,
+    "alpha_at_d_min_deg": 78.21094964072715,
+    "alpha_combined_deg": 30.066456472903738,
+    "d_combined_mm": 0.0013378134488817306,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025635495992432492,
+    "d_at_alpha_min_mm": 19.38108009435576,
+    "d_min_mm": 1.0982775089759237e-05,
+    "alpha_at_d_min_deg": 39.84438495384002,
+    "alpha_combined_deg": 3.434149096265298,
+    "d_combined_mm": 0.004606026271383282,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002565558838185693,
+    "d_at_alpha_min_mm": 99.57460117840373,
+    "d_min_mm": 6.005058487781227e-07,
+    "alpha_at_d_min_deg": 70.01878419970487,
+    "alpha_combined_deg": 1.612638648577023,
+    "d_combined_mm": 0.8118860737596861,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002571314641989329,
+    "d_at_alpha_min_mm": 76.05257818762855,
+    "d_min_mm": 2.6814664377816655e-07,
+    "alpha_at_d_min_deg": 66.72860870565242,
+    "alpha_combined_deg": 63.45642886164345,
+    "d_combined_mm": 0.0005393354036292708,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025636788302438596,
+    "d_at_alpha_min_mm": 2.926718365155001,
+    "d_min_mm": 2.2704534855198124e-05,
+    "alpha_at_d_min_deg": 63.55912099996835,
+    "alpha_combined_deg": 33.10802570447326,
+    "d_combined_mm": 0.11046599011043316,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563830941996869,
+    "d_at_alpha_min_mm": 18.879424255499615,
+    "d_min_mm": 1.2715420383280218e-07,
+    "alpha_at_d_min_deg": 71.69287309853698,
+    "alpha_combined_deg": 62.79339424090386,
+    "d_combined_mm": 0.0008330062712808006,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025652467121535564,
+    "d_at_alpha_min_mm": 195.84431085203016,
+    "d_min_mm": 2.4062853514629102e-05,
+    "alpha_at_d_min_deg": 49.944096836446,
+    "alpha_combined_deg": 0.0025732113083815904,
+    "d_combined_mm": 4.205652001522009e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002566926942762743,
+    "d_at_alpha_min_mm": 234.007704236375,
+    "d_min_mm": 0.0001070787908230143,
+    "alpha_at_d_min_deg": 7.621364835926317,
+    "alpha_combined_deg": 0.0032203956020173427,
+    "d_combined_mm": 0.00027386123563624877,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.00256435260254566,
+    "d_at_alpha_min_mm": 98.58999098093437,
+    "d_min_mm": 0.00015917550738597797,
+    "alpha_at_d_min_deg": 48.718461321025266,
+    "alpha_combined_deg": 58.630935359165946,
+    "d_combined_mm": 0.03726196805445281,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002565037991310915,
+    "d_at_alpha_min_mm": 54.46217608876819,
+    "d_min_mm": 2.032549006390348e-06,
+    "alpha_at_d_min_deg": 40.983195740538925,
+    "alpha_combined_deg": 0.20189343537106746,
+    "d_combined_mm": 4.759984915619122,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025670954732393,
+    "d_at_alpha_min_mm": 123.78543116803802,
+    "d_min_mm": 0.0026806499610524392,
+    "alpha_at_d_min_deg": 69.62475921156678,
+    "alpha_combined_deg": 3.5385260900846576,
+    "d_combined_mm": 0.0015907688826859259,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025625405488458354,
+    "d_at_alpha_min_mm": 191.08431410692305,
+    "d_min_mm": 2.342064252859661e-05,
+    "alpha_at_d_min_deg": 30.09169172155338,
+    "alpha_combined_deg": 70.13333566048208,
+    "d_combined_mm": 4.8706275163609865e-05,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025675053238536625,
+    "d_at_alpha_min_mm": 18.326372356530104,
+    "d_min_mm": 1.362569647656738e-08,
+    "alpha_at_d_min_deg": 53.908398147870436,
+    "alpha_combined_deg": 0.11855022837355741,
+    "d_combined_mm": 0.0127209510597327,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564088658415298,
+    "d_at_alpha_min_mm": 245.74526543634315,
+    "d_min_mm": 9.548013118194668e-07,
+    "alpha_at_d_min_deg": 76.44411555728165,
+    "alpha_combined_deg": 62.72514118338912,
+    "d_combined_mm": 0.002162830907760932,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025628392099976923,
+    "d_at_alpha_min_mm": 21.721323132445317,
+    "d_min_mm": 3.0648148574664214e-08,
+    "alpha_at_d_min_deg": 36.24977657094624,
+    "alpha_combined_deg": 0.3896513191209869,
+    "d_combined_mm": 0.0009189360996873888,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562607679527721,
+    "d_at_alpha_min_mm": 86.0104790057467,
+    "d_min_mm": 1.7140423704046403e-06,
+    "alpha_at_d_min_deg": 70.27956298403653,
+    "alpha_combined_deg": 0.044173634942004165,
+    "d_combined_mm": 0.0003610730809795549,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025627746452499805,
+    "d_at_alpha_min_mm": 173.56113486129325,
+    "d_min_mm": 0.00045398422612972166,
+    "alpha_at_d_min_deg": 59.389670772867525,
+    "alpha_combined_deg": 0.18410969765882415,
+    "d_combined_mm": 0.00020929847541148076,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002567139911193038,
+    "d_at_alpha_min_mm": 45.08072174070496,
+    "d_min_mm": 1.4621128177793306e-07,
+    "alpha_at_d_min_deg": 53.350567209372706,
+    "alpha_combined_deg": 0.015900920560842812,
+    "d_combined_mm": 0.004800973099498343,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562416096425354,
+    "d_at_alpha_min_mm": 141.58733277251906,
+    "d_min_mm": 0.0003094253983870754,
+    "alpha_at_d_min_deg": 9.962042762742414,
+    "alpha_combined_deg": 26.408156082073567,
+    "d_combined_mm": 13.46114339588969,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025810828445001904,
+    "d_at_alpha_min_mm": 27.596822651815874,
+    "d_min_mm": 7.976448915258949e-05,
+    "alpha_at_d_min_deg": 21.70268312502019,
+    "alpha_combined_deg": 69.20243956893073,
+    "d_combined_mm": 0.0012017157995369843,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562553918232045,
+    "d_at_alpha_min_mm": 17.549272683727505,
+    "d_min_mm": 8.601647816479373e-05,
+    "alpha_at_d_min_deg": 34.966754034818294,
+    "alpha_combined_deg": 0.03276031036450301,
+    "d_combined_mm": 0.0006792785180156026,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562770378799667,
+    "d_at_alpha_min_mm": 19.702084564064194,
+    "d_min_mm": 4.461762289863615e-06,
+    "alpha_at_d_min_deg": 36.00355383284486,
+    "alpha_combined_deg": 0.06343119598225333,
+    "d_combined_mm": 4.845734242180953,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002568837205975599,
+    "d_at_alpha_min_mm": 28.7913818430053,
+    "d_min_mm": 5.328246438944626e-06,
+    "alpha_at_d_min_deg": 38.313748076131034,
+    "alpha_combined_deg": 8.563748817789515,
+    "d_combined_mm": 0.035291189478858044,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025625709854322316,
+    "d_at_alpha_min_mm": 66.59099877328175,
+    "d_min_mm": 7.414136087322252e-07,
+    "alpha_at_d_min_deg": 49.38627062444934,
+    "alpha_combined_deg": 0.0025687168895462214,
+    "d_combined_mm": 1.7195085940768567e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025659098458124317,
+    "d_at_alpha_min_mm": 45.282349543392534,
+    "d_min_mm": 0.0001685736132628346,
+    "alpha_at_d_min_deg": 49.34420321764442,
+    "alpha_combined_deg": 63.04453335890649,
+    "d_combined_mm": 0.0008850110084362983,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025632793162112004,
+    "d_at_alpha_min_mm": 78.18603967961283,
+    "d_min_mm": 2.473109092515635e-06,
+    "alpha_at_d_min_deg": 72.5555730008442,
+    "alpha_combined_deg": 32.504368083004195,
+    "d_combined_mm": 0.010461262777039515,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025633768545634296,
+    "d_at_alpha_min_mm": 269.8907485131573,
+    "d_min_mm": 0.0006452958994452072,
+    "alpha_at_d_min_deg": 28.5675811585162,
+    "alpha_combined_deg": 0.008585878948268125,
+    "d_combined_mm": 0.01295763660620939,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025630071560511455,
+    "d_at_alpha_min_mm": 101.2627531137153,
+    "d_min_mm": 0.0010054565324363585,
+    "alpha_at_d_min_deg": 13.152614127351246,
+    "alpha_combined_deg": 2.3688048221272977,
+    "d_combined_mm": 0.00026784064880113346,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025628480270837033,
+    "d_at_alpha_min_mm": 94.2204443760945,
+    "d_min_mm": 7.2982344752218045e-06,
+    "alpha_at_d_min_deg": 21.401075906806145,
+    "alpha_combined_deg": 0.005164401911051481,
+    "d_combined_mm": 0.0034724598582009532,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025631661329462226,
+    "d_at_alpha_min_mm": 102.53905715133881,
+    "d_min_mm": 8.6778566596446e-05,
+    "alpha_at_d_min_deg": 59.1670470280703,
+    "alpha_combined_deg": 65.13823055323108,
+    "d_combined_mm": 0.03630138172257269,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025696467833370568,
+    "d_at_alpha_min_mm": 109.77456166883087,
+    "d_min_mm": 0.00023770291564251256,
+    "alpha_at_d_min_deg": 60.28427607877809,
+    "alpha_combined_deg": 23.98446473273057,
+    "d_combined_mm": 0.08287811363937025,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563817437112834,
+    "d_at_alpha_min_mm": 168.08409796196548,
+    "d_min_mm": 1.0248111526056647e-06,
+    "alpha_at_d_min_deg": 83.74593168034936,
+    "alpha_combined_deg": 43.701180106269454,
+    "d_combined_mm": 0.0030720135769518597,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563225284622722,
+    "d_at_alpha_min_mm": 100.20359182767979,
+    "d_min_mm": 0.00015473112241481957,
+    "alpha_at_d_min_deg": 60.08266071103568,
+    "alpha_combined_deg": 57.01102168748865,
+    "d_combined_mm": 0.053312698996499375,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025648001226191066,
+    "d_at_alpha_min_mm": 15.210826406459738,
+    "d_min_mm": 2.3122225925598094e-05,
+    "alpha_at_d_min_deg": 24.35908454732657,
+    "alpha_combined_deg": 58.408751026546696,
+    "d_combined_mm": 2.916485935607935,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002565052342300582,
+    "d_at_alpha_min_mm": 25.541708327335726,
+    "d_min_mm": 2.8334918190592428e-08,
+    "alpha_at_d_min_deg": 75.70053822694327,
+    "alpha_combined_deg": 0.025404179996866148,
+    "d_combined_mm": 0.21479452861228182,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025637233274195207,
+    "d_at_alpha_min_mm": 103.86313166722655,
+    "d_min_mm": 2.5711788265933416e-07,
+    "alpha_at_d_min_deg": 62.00200509626802,
+    "alpha_combined_deg": 0.002745604234172969,
+    "d_combined_mm": 7.607338448077353e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563311165877166,
+    "d_at_alpha_min_mm": 219.73741085966506,
+    "d_min_mm": 1.0380136077885843e-06,
+    "alpha_at_d_min_deg": 29.8444240287625,
+    "alpha_combined_deg": 0.01232810192049205,
+    "d_combined_mm": 0.006765276784145025,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562391347452085,
+    "d_at_alpha_min_mm": 15.483432083752374,
+    "d_min_mm": 4.8777537491743e-07,
+    "alpha_at_d_min_deg": 18.535789049594587,
+    "alpha_combined_deg": 1.071281153187167,
+    "d_combined_mm": 0.008541477441475131,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025766506736513467,
+    "d_at_alpha_min_mm": 43.691967457645696,
+    "d_min_mm": 0.00015397363710423217,
+    "alpha_at_d_min_deg": 53.25995980439621,
+    "alpha_combined_deg": 38.46216073834041,
+    "d_combined_mm": 6.382876501060827,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563474247028319,
+    "d_at_alpha_min_mm": 42.81060698975289,
+    "d_min_mm": 0.0005884528579674583,
+    "alpha_at_d_min_deg": 36.05214675777615,
+    "alpha_combined_deg": 0.009985685700114232,
+    "d_combined_mm": 0.00042540541727324385,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002570170808602536,
+    "d_at_alpha_min_mm": 113.27807746531602,
+    "d_min_mm": 3.905725625877376e-09,
+    "alpha_at_d_min_deg": 5.253156051919295,
+    "alpha_combined_deg": 2.7285333870292745,
+    "d_combined_mm": 0.03897969294986992,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562357495021092,
+    "d_at_alpha_min_mm": 70.85091131594955,
+    "d_min_mm": 0.00029237407546400807,
+    "alpha_at_d_min_deg": 72.08085693797078,
+    "alpha_combined_deg": 19.04459857776843,
+    "d_combined_mm": 0.06700890499082568,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025629404624497934,
+    "d_at_alpha_min_mm": 0.5489655115112485,
+    "d_min_mm": 0.00022982055593312456,
+    "alpha_at_d_min_deg": 45.69563128598552,
+    "alpha_combined_deg": 61.91450422333339,
+    "d_combined_mm": 0.39563039431625424,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002565612820629732,
+    "d_at_alpha_min_mm": 56.79523307869951,
+    "d_min_mm": 7.405534925239491e-07,
+    "alpha_at_d_min_deg": 45.95793505990006,
+    "alpha_combined_deg": 0.009789725414805796,
+    "d_combined_mm": 0.017220658828517112,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.00256382113319343,
+    "d_at_alpha_min_mm": 63.73885952333856,
+    "d_min_mm": 1.266913750297416e-05,
+    "alpha_at_d_min_deg": 13.72440130289139,
+    "alpha_combined_deg": 49.18111090530459,
+    "d_combined_mm": 1.4854372260118334,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025631931495062863,
+    "d_at_alpha_min_mm": 6.406653307418394,
+    "d_min_mm": 0.00020625898292103706,
+    "alpha_at_d_min_deg": 38.87583042890534,
+    "alpha_combined_deg": 16.73121502866493,
+    "d_combined_mm": 0.023028792935059217,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025636044770096234,
+    "d_at_alpha_min_mm": 42.695261167655154,
+    "d_min_mm": 5.22297019529582e-06,
+    "alpha_at_d_min_deg": 15.789629596583213,
+    "alpha_combined_deg": 0.005264002745007358,
+    "d_combined_mm": 0.00037718033136986006,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563258699028926,
+    "d_at_alpha_min_mm": 83.28016193433918,
+    "d_min_mm": 1.4124903645601318e-07,
+    "alpha_at_d_min_deg": 35.576193315187275,
+    "alpha_combined_deg": 1.9304881217312515,
+    "d_combined_mm": 0.0008140049010273801,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025692379836189726,
+    "d_at_alpha_min_mm": 196.4284551220507,
+    "d_min_mm": 8.336226160754467e-05,
+    "alpha_at_d_min_deg": 58.59883764111301,
+    "alpha_combined_deg": 13.83903425461591,
+    "d_combined_mm": 0.05329654696722974,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002565059446721199,
+    "d_at_alpha_min_mm": 109.1304012973146,
+    "d_min_mm": 0.0012792735653665184,
+    "alpha_at_d_min_deg": 44.92432018146725,
+    "alpha_combined_deg": 0.025296841819023214,
+    "d_combined_mm": 0.021146757752659076,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623529433996223,
+    "d_at_alpha_min_mm": 50.723000938289815,
+    "d_min_mm": 1.2705656973350162e-07,
+    "alpha_at_d_min_deg": 38.2654214150148,
+    "alpha_combined_deg": 4.049658365400167,
+    "d_combined_mm": 1.2136270911665652,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563307753431884,
+    "d_at_alpha_min_mm": 168.86299735085532,
+    "d_min_mm": 4.792347907400796e-07,
+    "alpha_at_d_min_deg": 61.79781433035242,
+    "alpha_combined_deg": 63.71835163828713,
+    "d_combined_mm": 0.0013123469783243857,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025624030107911076,
+    "d_at_alpha_min_mm": 64.16589234591316,
+    "d_min_mm": 0.00017342893424143746,
+    "alpha_at_d_min_deg": 54.715238234119404,
+    "alpha_combined_deg": 62.348970991710814,
+    "d_combined_mm": 0.0022272260730427096,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025673683356908484,
+    "d_at_alpha_min_mm": 97.36285110567944,
+    "d_min_mm": 0.00035106854694155754,
+    "alpha_at_d_min_deg": 63.24000672907864,
+    "alpha_combined_deg": 38.46256597101515,
+    "d_combined_mm": 0.42019027979388335,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025624139629025905,
+    "d_at_alpha_min_mm": 225.65844655259937,
+    "d_min_mm": 0.00035605561228557736,
+    "alpha_at_d_min_deg": 55.22695067807048,
+    "alpha_combined_deg": 37.74997782318884,
+    "d_combined_mm": 0.498841305067832,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002569036680469188,
+    "d_at_alpha_min_mm": 79.64136385929596,
+    "d_min_mm": 9.263007028081915e-10,
+    "alpha_at_d_min_deg": 33.649548180976595,
+    "alpha_combined_deg": 33.272694398958905,
+    "d_combined_mm": 0.7226220601643102,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563190447863094,
+    "d_at_alpha_min_mm": 62.49508442943373,
+    "d_min_mm": 4.181727880636643e-08,
+    "alpha_at_d_min_deg": 30.53645809742476,
+    "alpha_combined_deg": 44.851466332998775,
+    "d_combined_mm": 2.009436051640792,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562746486546648,
+    "d_at_alpha_min_mm": 218.42874235349757,
+    "d_min_mm": 6.162958902381388e-07,
+    "alpha_at_d_min_deg": 66.3741980175884,
+    "alpha_combined_deg": 0.291809987625025,
+    "d_combined_mm": 7.835710713497149e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025634421150328578,
+    "d_at_alpha_min_mm": 107.01226241565612,
+    "d_min_mm": 6.349293456646875e-05,
+    "alpha_at_d_min_deg": 8.010179080940775,
+    "alpha_combined_deg": 2.2923252451825773,
+    "d_combined_mm": 0.24334301329015762,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564249700257107,
+    "d_at_alpha_min_mm": 32.741977020498986,
+    "d_min_mm": 1.844213957947013e-07,
+    "alpha_at_d_min_deg": 18.90983510693904,
+    "alpha_combined_deg": 0.005420744564358124,
+    "d_combined_mm": 0.00041265226548393985,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002570747751001844,
+    "d_at_alpha_min_mm": 83.6527754920765,
+    "d_min_mm": 0.00032421632296941727,
+    "alpha_at_d_min_deg": 25.976533788390654,
+    "alpha_combined_deg": 51.88700465687326,
+    "d_combined_mm": 0.04779791217197904,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002570256741384568,
+    "d_at_alpha_min_mm": 61.17184889433679,
+    "d_min_mm": 0.0001399245778133107,
+    "alpha_at_d_min_deg": 70.16725250118537,
+    "alpha_combined_deg": 55.59050397399608,
+    "d_combined_mm": 0.0023630493385107254,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025626082484242908,
+    "d_at_alpha_min_mm": 69.84905460153763,
+    "d_min_mm": 6.993821931083546e-05,
+    "alpha_at_d_min_deg": 39.31989145505482,
+    "alpha_combined_deg": 0.872144219577362,
+    "d_combined_mm": 0.00023403772051104854,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563605898697804,
+    "d_at_alpha_min_mm": 15.674440626623788,
+    "d_min_mm": 1.2824267618300927e-08,
+    "alpha_at_d_min_deg": 34.36391613697158,
+    "alpha_combined_deg": 0.8377095614976887,
+    "d_combined_mm": 0.7901328475269292,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025708221811779706,
+    "d_at_alpha_min_mm": 156.1357441010171,
+    "d_min_mm": 6.82727151201967e-05,
+    "alpha_at_d_min_deg": 28.143688573614398,
+    "alpha_combined_deg": 0.04936266302145052,
+    "d_combined_mm": 0.05433257501989819,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002565837687906627,
+    "d_at_alpha_min_mm": 33.47934223382177,
+    "d_min_mm": 1.7638624161622163e-05,
+    "alpha_at_d_min_deg": 53.055235084460044,
+    "alpha_combined_deg": 64.45843170136119,
+    "d_combined_mm": 0.019126180557727135,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025623508098242755,
+    "d_at_alpha_min_mm": 185.886936264156,
+    "d_min_mm": 6.205143098925792e-08,
+    "alpha_at_d_min_deg": 64.24513009346306,
+    "alpha_combined_deg": 0.6767042496631744,
+    "d_combined_mm": 0.3427633973822291,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025655150831607725,
+    "d_at_alpha_min_mm": 160.87095354515859,
+    "d_min_mm": 0.0015609211040190738,
+    "alpha_at_d_min_deg": 36.592954565940296,
+    "alpha_combined_deg": 0.020256139200264835,
+    "d_combined_mm": 0.0007694176173359393,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623833822144403,
+    "d_at_alpha_min_mm": 45.670031696874254,
+    "d_min_mm": 0.00011633155125258871,
+    "alpha_at_d_min_deg": 62.226165241136755,
+    "alpha_combined_deg": 6.579616916325573,
+    "d_combined_mm": 0.014494304795119062,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025626930126017864,
+    "d_at_alpha_min_mm": 102.66596267824521,
+    "d_min_mm": 2.4761486833562293e-05,
+    "alpha_at_d_min_deg": 18.143067763522723,
+    "alpha_combined_deg": 0.014582913188342301,
+    "d_combined_mm": 0.0069324705434668605,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025677740265540217,
+    "d_at_alpha_min_mm": 228.44690828984432,
+    "d_min_mm": 1.1454500124775289e-07,
+    "alpha_at_d_min_deg": 25.318293808968352,
+    "alpha_combined_deg": 0.3960907423773797,
+    "d_combined_mm": 0.08759840034294701,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025719397924262085,
+    "d_at_alpha_min_mm": 80.11069557634787,
+    "d_min_mm": 7.814325858428835e-05,
+    "alpha_at_d_min_deg": 51.83978891403319,
+    "alpha_combined_deg": 1.362053776820501,
+    "d_combined_mm": 0.10340799204546303,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025668653206011092,
+    "d_at_alpha_min_mm": 6.1907555260132145,
+    "d_min_mm": 1.0003321601208652e-05,
+    "alpha_at_d_min_deg": 75.80337634858773,
+    "alpha_combined_deg": 1.094031674763844,
+    "d_combined_mm": 0.022262911400366677,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025842275661787455,
+    "d_at_alpha_min_mm": 96.88561679431754,
+    "d_min_mm": 2.797317109291604e-07,
+    "alpha_at_d_min_deg": 56.8351616566625,
+    "alpha_combined_deg": 0.2367049456465467,
+    "d_combined_mm": 0.17928390514672918,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025657344190269716,
+    "d_at_alpha_min_mm": 182.7620075698698,
+    "d_min_mm": 1.7986915830171827e-08,
+    "alpha_at_d_min_deg": 31.479081473560516,
+    "alpha_combined_deg": 0.3824847726849883,
+    "d_combined_mm": 0.33734769199455367,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.00256608412435352,
+    "d_at_alpha_min_mm": 86.41935082215953,
+    "d_min_mm": 0.00017230400162215886,
+    "alpha_at_d_min_deg": 66.5741712414703,
+    "alpha_combined_deg": 30.09774790325803,
+    "d_combined_mm": 15.80269144950186,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002572331443814256,
+    "d_at_alpha_min_mm": 138.85263266681818,
+    "d_min_mm": 3.8416645413372316e-08,
+    "alpha_at_d_min_deg": 82.94013538279667,
+    "alpha_combined_deg": 0.3255528248350533,
+    "d_combined_mm": 0.5122890818592667,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025696646544294123,
+    "d_at_alpha_min_mm": 157.68535742302566,
+    "d_min_mm": 0.0002315940359765012,
+    "alpha_at_d_min_deg": 47.14931589973586,
+    "alpha_combined_deg": 62.01974392189853,
+    "d_combined_mm": 0.0007674722379280574,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002565571481544184,
+    "d_at_alpha_min_mm": 87.30645060715787,
+    "d_min_mm": 89.75463175890658,
+    "alpha_at_d_min_deg": 59.70199680569444,
+    "alpha_combined_deg": 0.012053356050768621,
+    "d_combined_mm": 0.004037603491267817,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563308464358359,
+    "d_at_alpha_min_mm": 72.78802888743945,
+    "d_min_mm": 8.141985819356326e-09,
+    "alpha_at_d_min_deg": 60.46891238652615,
+    "alpha_combined_deg": 0.10893424887946937,
+    "d_combined_mm": 0.03520573608088581,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623869381271626,
+    "d_at_alpha_min_mm": 59.77947696271977,
+    "d_min_mm": 9.931081928334998e-05,
+    "alpha_at_d_min_deg": 33.87089430650752,
+    "alpha_combined_deg": 0.08006441343183861,
+    "d_combined_mm": 0.04406158578771689,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025626011372081,
+    "d_at_alpha_min_mm": 247.24754597851773,
+    "d_min_mm": 1.8134574452430582e-08,
+    "alpha_at_d_min_deg": 45.426533336059954,
+    "alpha_combined_deg": 0.5138245901563405,
+    "d_combined_mm": 0.017466581363893285,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025752568823559324,
+    "d_at_alpha_min_mm": 79.88039602640534,
+    "d_min_mm": 2.7856621448876568e-08,
+    "alpha_at_d_min_deg": 67.67842115895392,
+    "alpha_combined_deg": 1.4699269789221672,
+    "d_combined_mm": 0.0001893540171999489,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624105492624743,
+    "d_at_alpha_min_mm": 192.17885845790656,
+    "d_min_mm": 0.000329514664418506,
+    "alpha_at_d_min_deg": 27.795478993218264,
+    "alpha_combined_deg": 0.3262001991444515,
+    "d_combined_mm": 0.7722500231983237,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025662382238796125,
+    "d_at_alpha_min_mm": 15.186634673826083,
+    "d_min_mm": 2.5194273195472405e-06,
+    "alpha_at_d_min_deg": 63.114462695462414,
+    "alpha_combined_deg": 31.555682398903286,
+    "d_combined_mm": 10.399337454127814,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025632602630968424,
+    "d_at_alpha_min_mm": 73.10554276706138,
+    "d_min_mm": 0.0006099260751447491,
+    "alpha_at_d_min_deg": 29.81157764257632,
+    "alpha_combined_deg": 11.784622338625535,
+    "d_combined_mm": 7.677118138895796,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563498985546872,
+    "d_at_alpha_min_mm": 25.14080394616189,
+    "d_min_mm": 1.6815456818641827e-05,
+    "alpha_at_d_min_deg": 37.32150671746222,
+    "alpha_combined_deg": 65.03633133608567,
+    "d_combined_mm": 0.0012011732404976216,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002564355587218926,
+    "d_at_alpha_min_mm": 49.45634319331663,
+    "d_min_mm": 0.00013625267250572115,
+    "alpha_at_d_min_deg": 51.191516160633846,
+    "alpha_combined_deg": 33.36711455413534,
+    "d_combined_mm": 0.16065886445550126,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025627803338393513,
+    "d_at_alpha_min_mm": 0.5917560893518581,
+    "d_min_mm": 7.544607567266393e-07,
+    "alpha_at_d_min_deg": 79.87282430703712,
+    "alpha_combined_deg": 0.002852818558212951,
+    "d_combined_mm": 3.32232459751332e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562781898199214,
+    "d_at_alpha_min_mm": 130.18440231949558,
+    "d_min_mm": 1.2670977767026415e-05,
+    "alpha_at_d_min_deg": 32.78761605511941,
+    "alpha_combined_deg": 52.08428423708647,
+    "d_combined_mm": 5.252243917194754,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025624970267437764,
+    "d_at_alpha_min_mm": 73.43762479850041,
+    "d_min_mm": 7.748071351176833e-07,
+    "alpha_at_d_min_deg": 20.24371523615529,
+    "alpha_combined_deg": 22.879388215761143,
+    "d_combined_mm": 1.4217554013035427,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025685752835102214,
+    "d_at_alpha_min_mm": 186.34743719961114,
+    "d_min_mm": 6.971619933012951e-06,
+    "alpha_at_d_min_deg": 43.56261709427757,
+    "alpha_combined_deg": 0.022754044963509117,
+    "d_combined_mm": 0.014933092516264745,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562373567869721,
+    "d_at_alpha_min_mm": 1.9725127772011382,
+    "d_min_mm": 0.00012852927388154987,
+    "alpha_at_d_min_deg": 58.62243789399878,
+    "alpha_combined_deg": 0.6295855552715348,
+    "d_combined_mm": 0.011609525664532144,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025625106808161535,
+    "d_at_alpha_min_mm": 37.64787393524989,
+    "d_min_mm": 1.210022338927186e-08,
+    "alpha_at_d_min_deg": 30.117229368489436,
+    "alpha_combined_deg": 0.002645287410871117,
+    "d_combined_mm": 7.351486745726338e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025664094978402325,
+    "d_at_alpha_min_mm": 154.4581748880521,
+    "d_min_mm": 0.00025622361990845164,
+    "alpha_at_d_min_deg": 48.17838342414408,
+    "alpha_combined_deg": 62.96800919226221,
+    "d_combined_mm": 0.0008513808221113792,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256569563885562,
+    "d_at_alpha_min_mm": 100.87445714652458,
+    "d_min_mm": 3.4161543102747616e-10,
+    "alpha_at_d_min_deg": 66.18927597413149,
+    "alpha_combined_deg": 0.02516496074177039,
+    "d_combined_mm": 0.0016834119697623751,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025696560025668873,
+    "d_at_alpha_min_mm": 125.08998620212988,
+    "d_min_mm": 1.8041345917207963e-06,
+    "alpha_at_d_min_deg": 18.68151217034193,
+    "alpha_combined_deg": 24.387028373896978,
+    "d_combined_mm": 7.34275237655034,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002569312883090423,
+    "d_at_alpha_min_mm": 68.88736413142855,
+    "d_min_mm": 8.155234196283168e-07,
+    "alpha_at_d_min_deg": 43.5882509210601,
+    "alpha_combined_deg": 55.46164839699265,
+    "d_combined_mm": 0.001097589263990284,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025624261950756622,
+    "d_at_alpha_min_mm": 190.60580430292407,
+    "d_min_mm": 1.6531483404413905e-06,
+    "alpha_at_d_min_deg": 9.464283939047322,
+    "alpha_combined_deg": 28.581076592961672,
+    "d_combined_mm": 0.046783153206830796,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002566240922314219,
+    "d_at_alpha_min_mm": 122.625917643541,
+    "d_min_mm": 1.2598075346541081e-05,
+    "alpha_at_d_min_deg": 45.45238009422662,
+    "alpha_combined_deg": 0.002575288442366516,
+    "d_combined_mm": 1.683207448400935e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623510943010913,
+    "d_at_alpha_min_mm": 90.58366371824913,
+    "d_min_mm": 3.7534361023450884e-05,
+    "alpha_at_d_min_deg": 9.750280404059163,
+    "alpha_combined_deg": 0.18664261167068644,
+    "d_combined_mm": 0.0038116406617358196,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623522322080375,
+    "d_at_alpha_min_mm": 163.88888622004987,
+    "d_min_mm": 0.0002748217552278609,
+    "alpha_at_d_min_deg": 40.73618315492111,
+    "alpha_combined_deg": 54.074127849073385,
+    "d_combined_mm": 0.026278332448295694,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025639190773877603,
+    "d_at_alpha_min_mm": 13.753775224806798,
+    "d_min_mm": 1.1353163820206601e-11,
+    "alpha_at_d_min_deg": 30.478161421791707,
+    "alpha_combined_deg": 0.00259353879996275,
+    "d_combined_mm": 4.158629470533057e-06,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562443832059623,
+    "d_at_alpha_min_mm": 188.14756336100663,
+    "d_min_mm": 4.645041296047481e-08,
+    "alpha_at_d_min_deg": 42.74738081365378,
+    "alpha_combined_deg": 67.86341206627436,
+    "d_combined_mm": 0.0016567053778560048,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025660395260820204,
+    "d_at_alpha_min_mm": 67.50608939528537,
+    "d_min_mm": 6.249908324520267e-07,
+    "alpha_at_d_min_deg": 81.99928032515929,
+    "alpha_combined_deg": 6.865459013056965,
+    "d_combined_mm": 0.07154725612374184,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025652495537088426,
+    "d_at_alpha_min_mm": 110.12024774846508,
+    "d_min_mm": 3.1559287822732665e-06,
+    "alpha_at_d_min_deg": 42.09268319161591,
+    "alpha_combined_deg": 0.01907705862431105,
+    "d_combined_mm": 0.0015265423135151692,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002566242200519095,
+    "d_at_alpha_min_mm": 50.81323158237208,
+    "d_min_mm": 3.068097859104668e-07,
+    "alpha_at_d_min_deg": 30.205656384866582,
+    "alpha_combined_deg": 11.897331226069145,
+    "d_combined_mm": 14.396192326591201,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025700505546055134,
+    "d_at_alpha_min_mm": 115.8165492254634,
+    "d_min_mm": 0.00025979636853858655,
+    "alpha_at_d_min_deg": 10.92265842694887,
+    "alpha_combined_deg": 0.03527270113405353,
+    "d_combined_mm": 0.0038645493484574197,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.00256264863975789,
+    "d_at_alpha_min_mm": 108.72939877875818,
+    "d_min_mm": 0.0002817079134000452,
+    "alpha_at_d_min_deg": 71.47015874648282,
+    "alpha_combined_deg": 7.1793493435878775,
+    "d_combined_mm": 0.11983851355927286,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623785461652182,
+    "d_at_alpha_min_mm": 86.92909847417488,
+    "d_min_mm": 2.9522052719110903e-06,
+    "alpha_at_d_min_deg": 87.17213974280858,
+    "alpha_combined_deg": 23.16244958920927,
+    "d_combined_mm": 10.37648950114814,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025626792172806978,
+    "d_at_alpha_min_mm": 147.43172410670516,
+    "d_min_mm": 0.00030820884489848535,
+    "alpha_at_d_min_deg": 16.763933132196694,
+    "alpha_combined_deg": 0.033255534464013255,
+    "d_combined_mm": 0.003010980662216091,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562739375714047,
+    "d_at_alpha_min_mm": 114.75781111018306,
+    "d_min_mm": 5.343456111370533e-08,
+    "alpha_at_d_min_deg": 39.76465294386117,
+    "alpha_combined_deg": 1.740777146839715,
+    "d_combined_mm": 0.03326007211365618,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564649773680654,
+    "d_at_alpha_min_mm": 81.92095219364693,
+    "d_min_mm": 0.00027207797294315217,
+    "alpha_at_d_min_deg": 41.76628719969971,
+    "alpha_combined_deg": 18.993283356513395,
+    "d_combined_mm": 0.24607609641801031,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025626297241774006,
+    "d_at_alpha_min_mm": 93.75717978681858,
+    "d_min_mm": 3.825754928132863e-05,
+    "alpha_at_d_min_deg": 48.07590616599567,
+    "alpha_combined_deg": 63.142734838855176,
+    "d_combined_mm": 0.0081347817891958,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025624358669851244,
+    "d_at_alpha_min_mm": 17.22455352862562,
+    "d_min_mm": 1.3583509594905507e-06,
+    "alpha_at_d_min_deg": 37.54697198468181,
+    "alpha_combined_deg": 61.45930522027216,
+    "d_combined_mm": 0.000888201019039192,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025637091111534267,
+    "d_at_alpha_min_mm": 94.57683486105688,
+    "d_min_mm": 1.7607501101843153e-08,
+    "alpha_at_d_min_deg": 58.136574786025925,
+    "alpha_combined_deg": 58.27330414018688,
+    "d_combined_mm": 1.0338519502948018,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256837960460732,
+    "d_at_alpha_min_mm": 178.22499632657792,
+    "d_min_mm": 1.4400854522755857e-05,
+    "alpha_at_d_min_deg": 70.22414889651402,
+    "alpha_combined_deg": 25.50590427195741,
+    "d_combined_mm": 0.010760530080478059,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025628461783423757,
+    "d_at_alpha_min_mm": 217.93278771820295,
+    "d_min_mm": 0.0006258752241611321,
+    "alpha_at_d_min_deg": 32.672944448828865,
+    "alpha_combined_deg": 41.04735721900646,
+    "d_combined_mm": 0.2508531799297192,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562867652101733,
+    "d_at_alpha_min_mm": 127.96706553996728,
+    "d_min_mm": 8.944536603035243e-05,
+    "alpha_at_d_min_deg": 43.841399149574,
+    "alpha_combined_deg": 70.0211036300608,
+    "d_combined_mm": 0.0024051870279513236,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562454215065993,
+    "d_at_alpha_min_mm": 31.62027952540147,
+    "d_min_mm": 2.3053711592502246e-05,
+    "alpha_at_d_min_deg": 52.48191418038215,
+    "alpha_combined_deg": 31.199107510511073,
+    "d_combined_mm": 0.00020729070573932695,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002571618094904103,
+    "d_at_alpha_min_mm": 180.9012710193051,
+    "d_min_mm": 1.2338734749745841e-06,
+    "alpha_at_d_min_deg": 75.23480990061566,
+    "alpha_combined_deg": 0.0025758704641674654,
+    "d_combined_mm": 3.694236724834795e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624099803220127,
+    "d_at_alpha_min_mm": 114.37532369921952,
+    "d_min_mm": 1.8658018213768557e-05,
+    "alpha_at_d_min_deg": 59.53007037385865,
+    "alpha_combined_deg": 15.281533341346975,
+    "d_combined_mm": 0.008588358074934632,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563845726209406,
+    "d_at_alpha_min_mm": 182.74831679926353,
+    "d_min_mm": 0.0016640410233927571,
+    "alpha_at_d_min_deg": 44.94536159530039,
+    "alpha_combined_deg": 43.94302047317034,
+    "d_combined_mm": 0.018187209272533193,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562548229140056,
+    "d_at_alpha_min_mm": 62.54907500022421,
+    "d_min_mm": 0.0006360135307019498,
+    "alpha_at_d_min_deg": 44.284008284010774,
+    "alpha_combined_deg": 3.1848530008648845,
+    "d_combined_mm": 0.0004350926484116941,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563375432748217,
+    "d_at_alpha_min_mm": 61.15300855846028,
+    "d_min_mm": 7.02759292495192e-05,
+    "alpha_at_d_min_deg": 36.575578281373424,
+    "alpha_combined_deg": 34.53577520448278,
+    "d_combined_mm": 1.1375670301101635,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025625020047994247,
+    "d_at_alpha_min_mm": 274.0586231670334,
+    "d_min_mm": 1.017151918247805e-07,
+    "alpha_at_d_min_deg": 72.32526696194132,
+    "alpha_combined_deg": 9.339762893091494,
+    "d_combined_mm": 7.827285742252152,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002577281176253039,
+    "d_at_alpha_min_mm": 35.8777260660036,
+    "d_min_mm": 1.165357400387635e-05,
+    "alpha_at_d_min_deg": 16.317384328679523,
+    "alpha_combined_deg": 2.3733361195230938,
+    "d_combined_mm": 0.00784732098188826,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025658202162975085,
+    "d_at_alpha_min_mm": 40.94569810434119,
+    "d_min_mm": 2.1200463370951717e-05,
+    "alpha_at_d_min_deg": 29.60445775083577,
+    "alpha_combined_deg": 31.91793992921938,
+    "d_combined_mm": 0.13436123060424354,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025784610095246807,
+    "d_at_alpha_min_mm": 87.45372023530109,
+    "d_min_mm": 3.586757107363533e-07,
+    "alpha_at_d_min_deg": 11.874066514943346,
+    "alpha_combined_deg": 0.18044419024308647,
+    "d_combined_mm": 0.0015319837968933087,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025631193509661177,
+    "d_at_alpha_min_mm": 118.50989530098703,
+    "d_min_mm": 6.538994322402569e-05,
+    "alpha_at_d_min_deg": 35.65184813639419,
+    "alpha_combined_deg": 70.1434968647494,
+    "d_combined_mm": 0.010755868529041535,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025630020367743696,
+    "d_at_alpha_min_mm": 273.0349042739006,
+    "d_min_mm": 3.596880783306873e-08,
+    "alpha_at_d_min_deg": 47.45090485625657,
+    "alpha_combined_deg": 15.030118764580934,
+    "d_combined_mm": 6.027603388174954,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256237499024085,
+    "d_at_alpha_min_mm": 67.17466397820328,
+    "d_min_mm": 2.133674764648319e-07,
+    "alpha_at_d_min_deg": 7.944624637005752,
+    "alpha_combined_deg": 34.825363692020304,
+    "d_combined_mm": 0.07385085180265649,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562607679527721,
+    "d_at_alpha_min_mm": 28.53006294057471,
+    "d_min_mm": 0.00027452439871344936,
+    "alpha_at_d_min_deg": 75.80281255017245,
+    "alpha_combined_deg": 9.820353993922406,
+    "d_combined_mm": 5.481497987978784,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025729367991323793,
+    "d_at_alpha_min_mm": 228.7301532013273,
+    "d_min_mm": 0.0011450211477997962,
+    "alpha_at_d_min_deg": 36.405806869109504,
+    "alpha_combined_deg": 30.67760664419926,
+    "d_combined_mm": 0.001888438069946874,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025711588621971505,
+    "d_at_alpha_min_mm": 60.504357273979444,
+    "d_min_mm": 4.405602055390645e-05,
+    "alpha_at_d_min_deg": 86.10756173732373,
+    "alpha_combined_deg": 58.9654522643815,
+    "d_combined_mm": 0.12665171408351994,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025641169445195706,
+    "d_at_alpha_min_mm": 82.05469466323714,
+    "d_min_mm": 0.00022213482736700805,
+    "alpha_at_d_min_deg": 34.964656289128186,
+    "alpha_combined_deg": 0.14365681526233257,
+    "d_combined_mm": 0.007525790760032213,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025627497575230187,
+    "d_at_alpha_min_mm": 205.8846001875138,
+    "d_min_mm": 0.004537986036540026,
+    "alpha_at_d_min_deg": 12.873460674921372,
+    "alpha_combined_deg": 35.6961136404329,
+    "d_combined_mm": 5.675478604771259,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025633477071939437,
+    "d_at_alpha_min_mm": 214.2758347788995,
+    "d_min_mm": 9.465017037133066e-05,
+    "alpha_at_d_min_deg": 35.90325767251502,
+    "alpha_combined_deg": 3.4000262688613847,
+    "d_combined_mm": 2.4321202586277777,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624317422046714,
+    "d_at_alpha_min_mm": 2.010150928318,
+    "d_min_mm": 8.73093850445315e-08,
+    "alpha_at_d_min_deg": 31.689621959379828,
+    "alpha_combined_deg": 0.0037804255427049387,
+    "d_combined_mm": 0.000737636534924209,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002569118820868644,
+    "d_at_alpha_min_mm": 50.018398829954634,
+    "d_min_mm": 3.642523117104292e-05,
+    "alpha_at_d_min_deg": 71.26569078678148,
+    "alpha_combined_deg": 62.230936181180205,
+    "d_combined_mm": 0.0015298243904248226,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025632823021341958,
+    "d_at_alpha_min_mm": 43.67819772878297,
+    "d_min_mm": 3.263303698097797e-05,
+    "alpha_at_d_min_deg": 64.24539247596266,
+    "alpha_combined_deg": 63.90922508087056,
+    "d_combined_mm": 0.007090228577255608,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025659426571023854,
+    "d_at_alpha_min_mm": 96.88699280266347,
+    "d_min_mm": 1.0097801746996856e-06,
+    "alpha_at_d_min_deg": 29.46684400973015,
+    "alpha_combined_deg": 0.10129203544713586,
+    "d_combined_mm": 0.023269783407889943,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025633865228859598,
+    "d_at_alpha_min_mm": 4.244190322655647,
+    "d_min_mm": 7.730537043837415e-08,
+    "alpha_at_d_min_deg": 62.568179023058896,
+    "alpha_combined_deg": 27.266855986503572,
+    "d_combined_mm": 0.28929042841467634,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002576542745786642,
+    "d_at_alpha_min_mm": 76.96058971768822,
+    "d_min_mm": 2.0181090879766233e-07,
+    "alpha_at_d_min_deg": 3.3580332944350633,
+    "alpha_combined_deg": 49.7325937967426,
+    "d_combined_mm": 1.2738240928005584,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025736194769675836,
+    "d_at_alpha_min_mm": 167.9726564746464,
+    "d_min_mm": 1.425630861973115e-05,
+    "alpha_at_d_min_deg": 41.063028868739906,
+    "alpha_combined_deg": 30.212751722754764,
+    "d_combined_mm": 8.839009170042516,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025669165778482586,
+    "d_at_alpha_min_mm": 92.95450080050666,
+    "d_min_mm": 9.542658160133124e-05,
+    "alpha_at_d_min_deg": 20.896440308666463,
+    "alpha_combined_deg": 30.27724004578588,
+    "d_combined_mm": 0.11545393903909854,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025695005477451424,
+    "d_at_alpha_min_mm": 96.5561989795043,
+    "d_min_mm": 4.707270596691645e-06,
+    "alpha_at_d_min_deg": 52.07972393529707,
+    "alpha_combined_deg": 38.82516487378638,
+    "d_combined_mm": 7.050596203377819,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025676538022502923,
+    "d_at_alpha_min_mm": 78.46580645501173,
+    "d_min_mm": 0.0008659243524725007,
+    "alpha_at_d_min_deg": 55.46839978014442,
+    "alpha_combined_deg": 0.32447095421739397,
+    "d_combined_mm": 4.561445668967939,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025648676204573675,
+    "d_at_alpha_min_mm": 103.79422754024179,
+    "d_min_mm": 7.778688093244757e-06,
+    "alpha_at_d_min_deg": 31.811244607796834,
+    "alpha_combined_deg": 0.13897393398493105,
+    "d_combined_mm": 0.0016372352089097056,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025667926215866615,
+    "d_at_alpha_min_mm": 51.25021939025292,
+    "d_min_mm": 4.8593197938130676e-08,
+    "alpha_at_d_min_deg": 53.51924870748246,
+    "alpha_combined_deg": 0.0056049496011841005,
+    "d_combined_mm": 0.0016033308154477244,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025626046928186623,
+    "d_at_alpha_min_mm": 12.544823038843813,
+    "d_min_mm": 1.4169078866627809e-05,
+    "alpha_at_d_min_deg": 15.069526035100404,
+    "alpha_combined_deg": 0.01497097908932748,
+    "d_combined_mm": 0.08969334189505385,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025628092032357595,
+    "d_at_alpha_min_mm": 64.90009890990592,
+    "d_min_mm": 0.00010495632295223042,
+    "alpha_at_d_min_deg": 34.25094329432531,
+    "alpha_combined_deg": 0.00803431091975187,
+    "d_combined_mm": 0.00020852977525304142,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564804669897698,
+    "d_at_alpha_min_mm": 190.33429359066466,
+    "d_min_mm": 0.0010413913070356216,
+    "alpha_at_d_min_deg": 23.20323601954388,
+    "alpha_combined_deg": 1.107498820217848,
+    "d_combined_mm": 0.051568164300796346,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.00256331045495144,
+    "d_at_alpha_min_mm": 185.61878096525206,
+    "d_min_mm": 0.000273015523660769,
+    "alpha_at_d_min_deg": 50.44000119740172,
+    "alpha_combined_deg": 20.94612801284569,
+    "d_combined_mm": 3.3878768869831237,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025648033909764093,
+    "d_at_alpha_min_mm": 203.6870612356183,
+    "d_min_mm": 4.9520877517118225e-06,
+    "alpha_at_d_min_deg": 25.35262945373181,
+    "alpha_combined_deg": 0.06417487636348583,
+    "d_combined_mm": 0.18375815913412524,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.00256450495857224,
+    "d_at_alpha_min_mm": 5.4417594538501275,
+    "d_min_mm": 1.616941322987729e-08,
+    "alpha_at_d_min_deg": 39.98415111109586,
+    "alpha_combined_deg": 1.0047060305670907,
+    "d_combined_mm": 0.00017967939867861562,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025630980215124587,
+    "d_at_alpha_min_mm": 143.7281848134608,
+    "d_min_mm": 1.560040985282285e-08,
+    "alpha_at_d_min_deg": 66.17949733929315,
+    "alpha_combined_deg": 64.99786602954418,
+    "d_combined_mm": 0.3003324439198457,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025624711406985147,
+    "d_at_alpha_min_mm": 78.10881363622566,
+    "d_min_mm": 0.0005480710026764117,
+    "alpha_at_d_min_deg": 36.85921417764688,
+    "alpha_combined_deg": 1.2317651217388097,
+    "d_combined_mm": 0.23428996865847787,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623597708287946,
+    "d_at_alpha_min_mm": 10.190787082564972,
+    "d_min_mm": 7.551900265002489e-07,
+    "alpha_at_d_min_deg": 45.213878625605965,
+    "alpha_combined_deg": 0.3295441776194224,
+    "d_combined_mm": 0.005232398975878847,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623701541757898,
+    "d_at_alpha_min_mm": 50.1904169042082,
+    "d_min_mm": 6.974273519810836e-07,
+    "alpha_at_d_min_deg": 9.069150992730448,
+    "alpha_combined_deg": 62.25324214272372,
+    "d_combined_mm": 0.004084074161858631,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025625121031111753,
+    "d_at_alpha_min_mm": 86.86115425596549,
+    "d_min_mm": 0.00013876514575221697,
+    "alpha_at_d_min_deg": 32.15561371450925,
+    "alpha_combined_deg": 0.011207928639489396,
+    "d_combined_mm": 0.0003007472086129551,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564316075548567,
+    "d_at_alpha_min_mm": 110.57358912305938,
+    "d_min_mm": 0.0007799925526697373,
+    "alpha_at_d_min_deg": 43.39898331070734,
+    "alpha_combined_deg": 1.60178569577277,
+    "d_combined_mm": 0.000351671304075441,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025646922644915063,
+    "d_at_alpha_min_mm": 69.90714814738922,
+    "d_min_mm": 3.388910087797334e-09,
+    "alpha_at_d_min_deg": 27.256772818884254,
+    "alpha_combined_deg": 0.0947435955050842,
+    "d_combined_mm": 0.17307400198334702,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025626062572857464,
+    "d_at_alpha_min_mm": 10.050601322091262,
+    "d_min_mm": 2.047806363369986e-05,
+    "alpha_at_d_min_deg": 53.22053634788066,
+    "alpha_combined_deg": 25.013987595475687,
+    "d_combined_mm": 9.052705356964397,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025623486762471515,
+    "d_at_alpha_min_mm": 119.24336225801083,
+    "d_min_mm": 6.4279553901869235e-09,
+    "alpha_at_d_min_deg": 48.192225831709465,
+    "alpha_combined_deg": 68.7236970518956,
+    "d_combined_mm": 0.19859104682100337,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025632073686340487,
+    "d_at_alpha_min_mm": 41.5496377912299,
+    "d_min_mm": 8.040548668666219e-07,
+    "alpha_at_d_min_deg": 48.206786025431555,
+    "alpha_combined_deg": 61.40762577961392,
+    "d_combined_mm": 0.00014113358058389172,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563349697756551,
+    "d_at_alpha_min_mm": 252.9455647127613,
+    "d_min_mm": 0.00022037680291503792,
+    "alpha_at_d_min_deg": 43.30565891847217,
+    "alpha_combined_deg": 25.014232891924546,
+    "d_combined_mm": 0.06244786947016841,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256240429091045,
+    "d_at_alpha_min_mm": 198.1920552616761,
+    "d_min_mm": 2.0378619833283373e-05,
+    "alpha_at_d_min_deg": 58.049290507355984,
+    "alpha_combined_deg": 40.11237293639747,
+    "d_combined_mm": 0.6172398422415528,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025669351778704426,
+    "d_at_alpha_min_mm": 147.23645266552234,
+    "d_min_mm": 0.00030874722986573566,
+    "alpha_at_d_min_deg": 53.754450927353375,
+    "alpha_combined_deg": 32.506598731813455,
+    "d_combined_mm": 0.0461916740848306,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002564773975610747,
+    "d_at_alpha_min_mm": 161.0515394326921,
+    "d_min_mm": 5.630339349735387e-06,
+    "alpha_at_d_min_deg": 25.19218745664977,
+    "alpha_combined_deg": 0.01624489467580064,
+    "d_combined_mm": 0.0005255024836147387,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025639378413056134,
+    "d_at_alpha_min_mm": 46.392243058321945,
+    "d_min_mm": 4.125771586776908e-06,
+    "alpha_at_d_min_deg": 6.202428091241574,
+    "alpha_combined_deg": 0.9021837601808691,
+    "d_combined_mm": 1.721566930309467e-07,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025625421133520804,
+    "d_at_alpha_min_mm": 120.55604421597937,
+    "d_min_mm": 5.1078433149776004e-08,
+    "alpha_at_d_min_deg": 82.7591710919033,
+    "alpha_combined_deg": 35.07379674767924,
+    "d_combined_mm": 0.15862647782625972,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025646939697936367,
+    "d_at_alpha_min_mm": 13.960876044350888,
+    "d_min_mm": 3.577993696050137e-07,
+    "alpha_at_d_min_deg": 53.92937073891054,
+    "alpha_combined_deg": 0.16510700517039303,
+    "d_combined_mm": 0.38406848765889234,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002565828028820356,
+    "d_at_alpha_min_mm": 76.09992035636931,
+    "d_min_mm": 8.392674007323008e-07,
+    "alpha_at_d_min_deg": 8.988542162786105,
+    "alpha_combined_deg": 5.626315330019423,
+    "d_combined_mm": 0.24975831043490065,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025669808964361635,
+    "d_at_alpha_min_mm": 139.95393911656421,
+    "d_min_mm": 0.00015527229055289915,
+    "alpha_at_d_min_deg": 85.64312520853566,
+    "alpha_combined_deg": 63.85788010856736,
+    "d_combined_mm": 0.00040818201918479957,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025624025840845182,
+    "d_at_alpha_min_mm": 243.3093595765313,
+    "d_min_mm": 0.000286371824769996,
+    "alpha_at_d_min_deg": 10.36308242458907,
+    "alpha_combined_deg": 62.2847381369249,
+    "d_combined_mm": 0.00036402105953692554,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256319940593222,
+    "d_at_alpha_min_mm": 61.512173369798525,
+    "d_min_mm": 0.00016456675708265145,
+    "alpha_at_d_min_deg": 33.29237271507249,
+    "alpha_combined_deg": 65.76775759810627,
+    "d_combined_mm": 0.17062633817324646,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025780230709278274,
+    "d_at_alpha_min_mm": 106.49034426278017,
+    "d_min_mm": 1.7701696358729535e-06,
+    "alpha_at_d_min_deg": 12.826668973410824,
+    "alpha_combined_deg": 4.697988655171974,
+    "d_combined_mm": 0.02125662720850463,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563192722931235,
+    "d_at_alpha_min_mm": 26.768826653562904,
+    "d_min_mm": 5.5503919484779115e-06,
+    "alpha_at_d_min_deg": 15.676644375253824,
+    "alpha_combined_deg": 5.557913994947652,
+    "d_combined_mm": 0.3011434294922527,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025628767535083624,
+    "d_at_alpha_min_mm": 74.29116743932713,
+    "d_min_mm": 4.856840579714472e-05,
+    "alpha_at_d_min_deg": 50.31006541390233,
+    "alpha_combined_deg": 59.9592518322463,
+    "d_combined_mm": 0.07205910367935608,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025635279890232235,
+    "d_at_alpha_min_mm": 159.73471120027708,
+    "d_min_mm": 0.000522940982738973,
+    "alpha_at_d_min_deg": 31.952551873261957,
+    "alpha_combined_deg": 57.20389961004082,
+    "d_combined_mm": 1.96668376586491,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025769148868793695,
+    "d_at_alpha_min_mm": 80.1962107201728,
+    "d_min_mm": 3.59931587312623e-06,
+    "alpha_at_d_min_deg": 28.780253903843057,
+    "alpha_combined_deg": 44.802322683386386,
+    "d_combined_mm": 8.576994497673615,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002572785650733046,
+    "d_at_alpha_min_mm": 104.93812498024623,
+    "d_min_mm": 0.00016702006767012627,
+    "alpha_at_d_min_deg": 66.1020940932086,
+    "alpha_combined_deg": 67.6329478113899,
+    "d_combined_mm": 0.001205467896357176,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002568871824281567,
+    "d_at_alpha_min_mm": 148.8357587460984,
+    "d_min_mm": 7.998976574732804e-09,
+    "alpha_at_d_min_deg": 9.772913265746878,
+    "alpha_combined_deg": 0.0025710417730830633,
+    "d_combined_mm": 4.680020274448626e-06,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563825397895188,
+    "d_at_alpha_min_mm": 116.99247502094683,
+    "d_min_mm": 1.3350545956487574e-06,
+    "alpha_at_d_min_deg": 82.07477459036349,
+    "alpha_combined_deg": 0.2616219322744642,
+    "d_combined_mm": 0.3709268543310985,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025753584957164703,
+    "d_at_alpha_min_mm": 71.05830315160517,
+    "d_min_mm": 9.860425155057423e-07,
+    "alpha_at_d_min_deg": 77.28725395678579,
+    "alpha_combined_deg": 0.9737387167481389,
+    "d_combined_mm": 0.021351341728227658,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562358917401143,
+    "d_at_alpha_min_mm": 108.85314409982608,
+    "d_min_mm": 5.6817969218246906e-08,
+    "alpha_at_d_min_deg": 50.055941398916815,
+    "alpha_combined_deg": 0.00256578356814554,
+    "d_combined_mm": 2.013322582039291e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002564545320032843,
+    "d_at_alpha_min_mm": 205.30669604012633,
+    "d_min_mm": 4.856241797579486e-08,
+    "alpha_at_d_min_deg": 30.670649521017,
+    "alpha_combined_deg": 56.565239255994015,
+    "d_combined_mm": 0.022279164751434766,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256261962632915,
+    "d_at_alpha_min_mm": 94.74377665977745,
+    "d_min_mm": 5.571978989316051e-08,
+    "alpha_at_d_min_deg": 53.08597090628042,
+    "alpha_combined_deg": 62.84791588834357,
+    "d_combined_mm": 0.002955557047629176,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025633154314273795,
+    "d_at_alpha_min_mm": 100.5333219338303,
+    "d_min_mm": 4.1936412675802615e-08,
+    "alpha_at_d_min_deg": 35.794324879162794,
+    "alpha_combined_deg": 47.757551934211556,
+    "d_combined_mm": 0.8502218197240091,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256769936607859,
+    "d_at_alpha_min_mm": 34.29976646735133,
+    "d_min_mm": 0.00012766702388311568,
+    "alpha_at_d_min_deg": 54.09055897489763,
+    "alpha_combined_deg": 63.776308451343795,
+    "d_combined_mm": 0.0003953078420021461,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562555198276002,
+    "d_at_alpha_min_mm": 61.99273214441128,
+    "d_min_mm": 1.5158734517628503e-05,
+    "alpha_at_d_min_deg": 50.466287961017244,
+    "alpha_combined_deg": 62.725737522232976,
+    "d_combined_mm": 0.00020005400343248159,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025638475742299793,
+    "d_at_alpha_min_mm": 183.63785231932965,
+    "d_min_mm": 3.6491360072554713e-06,
+    "alpha_at_d_min_deg": 79.37033277942145,
+    "alpha_combined_deg": 28.80929388372823,
+    "d_combined_mm": 0.008667962470468304,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025681587916550905,
+    "d_at_alpha_min_mm": 38.770120890336926,
+    "d_min_mm": 2.5141476944095748e-05,
+    "alpha_at_d_min_deg": 47.898292800438384,
+    "alpha_combined_deg": 2.1500275530415003,
+    "d_combined_mm": 0.005119924244458164,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025631335705032813,
+    "d_at_alpha_min_mm": 6.994555416365354,
+    "d_min_mm": 3.008804541218495e-05,
+    "alpha_at_d_min_deg": 44.353286777272544,
+    "alpha_combined_deg": 0.1486672526657006,
+    "d_combined_mm": 0.0003565446365480525,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002571672233602877,
+    "d_at_alpha_min_mm": 114.04251660186914,
+    "d_min_mm": 3.507452939199851e-07,
+    "alpha_at_d_min_deg": 74.14017212816948,
+    "alpha_combined_deg": 55.20879173119198,
+    "d_combined_mm": 0.6712420171605948,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025627179008798242,
+    "d_at_alpha_min_mm": 119.96794359900673,
+    "d_min_mm": 5.612490069146982e-07,
+    "alpha_at_d_min_deg": 45.188533037115015,
+    "alpha_combined_deg": 0.004608133459257857,
+    "d_combined_mm": 0.010510225533531328,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002565371595537722,
+    "d_at_alpha_min_mm": 117.42050093036775,
+    "d_min_mm": 1.222868195593918e-07,
+    "alpha_at_d_min_deg": 55.95022839729674,
+    "alpha_combined_deg": 33.361785587640405,
+    "d_combined_mm": 13.978574129929228,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025651949952973816,
+    "d_at_alpha_min_mm": 129.16799332994685,
+    "d_min_mm": 1.31132758937173e-05,
+    "alpha_at_d_min_deg": 51.22855922297547,
+    "alpha_combined_deg": 0.8441913319549956,
+    "d_combined_mm": 0.01104287178562065,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624775411186565,
+    "d_at_alpha_min_mm": 23.24527472029063,
+    "d_min_mm": 5.043712807496733e-09,
+    "alpha_at_d_min_deg": 30.67405121499037,
+    "alpha_combined_deg": 0.321618693956999,
+    "d_combined_mm": 0.02622403838323737,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562527037161244,
+    "d_at_alpha_min_mm": 173.03532951787872,
+    "d_min_mm": 2.5696139803410468e-08,
+    "alpha_at_d_min_deg": 72.55306074240116,
+    "alpha_combined_deg": 0.005628702768703606,
+    "d_combined_mm": 0.009000563006039831,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002566744201764744,
+    "d_at_alpha_min_mm": 29.767937584818146,
+    "d_min_mm": 0.0003924733718851936,
+    "alpha_at_d_min_deg": 55.450656498175725,
+    "alpha_combined_deg": 33.40466268814333,
+    "d_combined_mm": 0.11520823655650214,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562387364836358,
+    "d_at_alpha_min_mm": 96.2368923782571,
+    "d_min_mm": 2.2828432200139304e-07,
+    "alpha_at_d_min_deg": 31.75284784631994,
+    "alpha_combined_deg": 31.425878107953785,
+    "d_combined_mm": 0.04112695138618061,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025631541886920487,
+    "d_at_alpha_min_mm": 169.7808950999974,
+    "d_min_mm": 7.431312509798005e-08,
+    "alpha_at_d_min_deg": 75.7906547701513,
+    "alpha_combined_deg": 63.824349107952564,
+    "d_combined_mm": 0.0004324137224814839,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025633218297393913,
+    "d_at_alpha_min_mm": 6.086221778368552,
+    "d_min_mm": 4.111361010064441e-05,
+    "alpha_at_d_min_deg": 49.86737184710189,
+    "alpha_combined_deg": 0.0025671118003723994,
+    "d_combined_mm": 0.00016160539215084364,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025674288101229076,
+    "d_at_alpha_min_mm": 104.48104212609745,
+    "d_min_mm": 7.929142094615891e-09,
+    "alpha_at_d_min_deg": 28.13199440833957,
+    "alpha_combined_deg": 0.010517232118332947,
+    "d_combined_mm": 0.0034484336514641004,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562354650258621,
+    "d_at_alpha_min_mm": 141.0230439814385,
+    "d_min_mm": 2.5584038642562173e-06,
+    "alpha_at_d_min_deg": 44.31233823440449,
+    "alpha_combined_deg": 0.005312948477232154,
+    "d_combined_mm": 7.627982910616809e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025728719211508344,
+    "d_at_alpha_min_mm": 13.809367741359738,
+    "d_min_mm": 2.4871684936256305e-07,
+    "alpha_at_d_min_deg": 15.210236417603179,
+    "alpha_combined_deg": 0.026695558381959906,
+    "d_combined_mm": 0.018089200027210123,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025676865912550267,
+    "d_at_alpha_min_mm": 75.20771840954261,
+    "d_min_mm": 0.00010411824391542979,
+    "alpha_at_d_min_deg": 15.14428447380605,
+    "alpha_combined_deg": 27.321214889558625,
+    "d_combined_mm": 0.0028296763439072947,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025628154605989947,
+    "d_at_alpha_min_mm": 106.3705638197119,
+    "d_min_mm": 0.00033164570743815514,
+    "alpha_at_d_min_deg": 45.86646346339285,
+    "alpha_combined_deg": 28.44976563393599,
+    "d_combined_mm": 0.004045256643311901,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256416854098143,
+    "d_at_alpha_min_mm": 82.14827003633522,
+    "d_min_mm": 4.388678760425302e-05,
+    "alpha_at_d_min_deg": 44.345974620907256,
+    "alpha_combined_deg": 0.132272626480963,
+    "d_combined_mm": 0.0015930567936069226,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025624846526778417,
+    "d_at_alpha_min_mm": 93.3964495623336,
+    "d_min_mm": 1.3373122054183284e-08,
+    "alpha_at_d_min_deg": 33.99592079726269,
+    "alpha_combined_deg": 67.2532043769773,
+    "d_combined_mm": 0.0006669594812408475,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025644654492033,
+    "d_at_alpha_min_mm": 225.72042324927443,
+    "d_min_mm": 0.00011364543169023467,
+    "alpha_at_d_min_deg": 68.24840540917485,
+    "alpha_combined_deg": 62.366783642049604,
+    "d_combined_mm": 3.6886352583476167e-06,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025685422220590934,
+    "d_at_alpha_min_mm": 236.753517411693,
+    "d_min_mm": 0.0009950248403556294,
+    "alpha_at_d_min_deg": 74.57268985852635,
+    "alpha_combined_deg": 60.5721662007969,
+    "d_combined_mm": 0.49756321449047347,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002565429133617739,
+    "d_at_alpha_min_mm": 42.56385986041531,
+    "d_min_mm": 5.339942332760472e-05,
+    "alpha_at_d_min_deg": 37.96468207200142,
+    "alpha_combined_deg": 56.749828945090435,
+    "d_combined_mm": 0.02471879327785309,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025623792573495,
+    "d_at_alpha_min_mm": 54.550369573885625,
+    "d_min_mm": 5.6571596575248916e-05,
+    "alpha_at_d_min_deg": 7.779755757508619,
+    "alpha_combined_deg": 0.003909709850739536,
+    "d_combined_mm": 2.0229904268175366e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002570745340845835,
+    "d_at_alpha_min_mm": 255.99075637889322,
+    "d_min_mm": 0.0009591076362280848,
+    "alpha_at_d_min_deg": 62.68360659645425,
+    "alpha_combined_deg": 62.15818903214238,
+    "d_combined_mm": 1.1460143203491229,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002566172892491603,
+    "d_at_alpha_min_mm": 81.40364772834484,
+    "d_min_mm": 1.4848265922351445e-05,
+    "alpha_at_d_min_deg": 22.593325778884882,
+    "alpha_combined_deg": 65.42641750463149,
+    "d_combined_mm": 0.1027952096713941,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025628538577206934,
+    "d_at_alpha_min_mm": 159.50630232913508,
+    "d_min_mm": 4.0422679092877445e-08,
+    "alpha_at_d_min_deg": 32.77740422736644,
+    "alpha_combined_deg": 36.73888496962988,
+    "d_combined_mm": 9.161012937296139,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002564776817689785,
+    "d_at_alpha_min_mm": 31.819832384090375,
+    "d_min_mm": 0.0002804987808399337,
+    "alpha_at_d_min_deg": 13.547647471310333,
+    "alpha_combined_deg": 1.5463199267663847,
+    "d_combined_mm": 0.0007306206722264148,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025770510847227183,
+    "d_at_alpha_min_mm": 52.63933944648753,
+    "d_min_mm": 2.482165551711512e-08,
+    "alpha_at_d_min_deg": 13.427361969073518,
+    "alpha_combined_deg": 0.004786560026113676,
+    "d_combined_mm": 0.001380626050009729,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563928317212955,
+    "d_at_alpha_min_mm": 118.23888759043317,
+    "d_min_mm": 2.074872009504971e-08,
+    "alpha_at_d_min_deg": 38.00938552782026,
+    "alpha_combined_deg": 0.005306052032129654,
+    "d_combined_mm": 0.00019439895043942438,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025625953059960982,
+    "d_at_alpha_min_mm": 91.26763374681543,
+    "d_min_mm": 4.609436835553383e-08,
+    "alpha_at_d_min_deg": 36.70776690971665,
+    "alpha_combined_deg": 0.09248106884613581,
+    "d_combined_mm": 0.07517117846915826,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025675970237626217,
+    "d_at_alpha_min_mm": 29.910162428751818,
+    "d_min_mm": 2.1252133494897264e-08,
+    "alpha_at_d_min_deg": 34.49527531473423,
+    "alpha_combined_deg": 3.0304035224826924,
+    "d_combined_mm": 0.000511061194161527,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002568084993890761,
+    "d_at_alpha_min_mm": 56.0734392518791,
+    "d_min_mm": 0.000365503628402067,
+    "alpha_at_d_min_deg": 27.941600666060523,
+    "alpha_combined_deg": 1.3508843016405716,
+    "d_combined_mm": 0.0005017904784071245,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025677222186599774,
+    "d_at_alpha_min_mm": 96.75748249232737,
+    "d_min_mm": 8.569306178540792e-05,
+    "alpha_at_d_min_deg": 71.86840644559229,
+    "alpha_combined_deg": 63.86755683819809,
+    "d_combined_mm": 0.0007117461635203215,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025837578792846125,
+    "d_at_alpha_min_mm": 54.339547405331004,
+    "d_min_mm": 2.496357023873408e-06,
+    "alpha_at_d_min_deg": 67.22506803105861,
+    "alpha_combined_deg": 68.09014958864279,
+    "d_combined_mm": 0.0005376044102528565,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002562654044183814,
+    "d_at_alpha_min_mm": 63.97598478336333,
+    "d_min_mm": 2.631126397854025e-07,
+    "alpha_at_d_min_deg": 31.325595397046676,
+    "alpha_combined_deg": 3.2260620643498483,
+    "d_combined_mm": 0.8427058765854536,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563496426400851,
+    "d_at_alpha_min_mm": 71.40412265911382,
+    "d_min_mm": 1.3987963565220696e-07,
+    "alpha_at_d_min_deg": 49.604517936799084,
+    "alpha_combined_deg": 19.25973881313868,
+    "d_combined_mm": 0.24754185481680457,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256397039353431,
+    "d_at_alpha_min_mm": 94.1525343053358,
+    "d_min_mm": 3.50269399604264e-07,
+    "alpha_at_d_min_deg": 33.67368657665579,
+    "alpha_combined_deg": 1.6634857468888078,
+    "d_combined_mm": 0.021607512851951137,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025638794168367876,
+    "d_at_alpha_min_mm": 32.493361748322506,
+    "d_min_mm": 2.4748336088786793e-05,
+    "alpha_at_d_min_deg": 33.252996363819456,
+    "alpha_combined_deg": 63.22611476928991,
+    "d_combined_mm": 0.0006789503056298107,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025700959341333303,
+    "d_at_alpha_min_mm": 6.764081132271013,
+    "d_min_mm": 5.899601908779979e-07,
+    "alpha_at_d_min_deg": 39.33070324727604,
+    "alpha_combined_deg": 0.002653857153311234,
+    "d_combined_mm": 7.269550362943476e-08,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025670953312637744,
+    "d_at_alpha_min_mm": 53.23670873387449,
+    "d_min_mm": 0.00010432734867870773,
+    "alpha_at_d_min_deg": 38.069846664119325,
+    "alpha_combined_deg": 0.0025676279681940755,
+    "d_combined_mm": 1.3867441568022677e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025628690741986496,
+    "d_at_alpha_min_mm": 70.50273846426244,
+    "d_min_mm": 0.0007027461662034717,
+    "alpha_at_d_min_deg": 27.184118261865578,
+    "alpha_combined_deg": 2.283007546323652,
+    "d_combined_mm": 4.440677589736847,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025650169619929066,
+    "d_at_alpha_min_mm": 37.581528546884094,
+    "d_min_mm": 0.0004878823034737412,
+    "alpha_at_d_min_deg": 21.255977706971763,
+    "alpha_combined_deg": 32.83585665824177,
+    "d_combined_mm": 5.407178428608786,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00256329652076741,
+    "d_at_alpha_min_mm": 155.91196486798842,
+    "d_min_mm": 0.0002230602441088969,
+    "alpha_at_d_min_deg": 82.98482676393513,
+    "alpha_combined_deg": 35.09176772385274,
+    "d_combined_mm": 5.299272969870872,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.00257099796961051,
+    "d_at_alpha_min_mm": 54.70275426324608,
+    "d_min_mm": 6.487654005682408e-05,
+    "alpha_at_d_min_deg": 46.606203529478364,
+    "alpha_combined_deg": 60.247629868940855,
+    "d_combined_mm": 0.08933107874345425,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563440124542015,
+    "d_at_alpha_min_mm": 68.2776595334947,
+    "d_min_mm": 1.0461962391626973e-06,
+    "alpha_at_d_min_deg": 56.44249861557356,
+    "alpha_combined_deg": 0.0028806377232174648,
+    "d_combined_mm": 6.705786808706235e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002568326106039543,
+    "d_at_alpha_min_mm": 61.70365528793476,
+    "d_min_mm": 0.00015610001306148868,
+    "alpha_at_d_min_deg": 28.851143995963234,
+    "alpha_combined_deg": 53.71279395008658,
+    "d_combined_mm": 0.05161939716028657,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.002563521875572659,
+    "d_at_alpha_min_mm": 187.7338134556549,
+    "d_min_mm": 4.127776964032369e-05,
+    "alpha_at_d_min_deg": 12.195386792302097,
+    "alpha_combined_deg": 44.50622785906114,
+    "d_combined_mm": 1.0891961183720404,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025766235152958603,
+    "d_at_alpha_min_mm": 96.54883906300144,
+    "d_min_mm": 4.038070555220277e-07,
+    "alpha_at_d_min_deg": 17.93447938513295,
+    "alpha_combined_deg": 0.005653655888230895,
+    "d_combined_mm": 2.857155988398207e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025631192087703474,
+    "d_at_alpha_min_mm": 48.092827372923985,
+    "d_min_mm": 4.67883762516792e-06,
+    "alpha_at_d_min_deg": 31.450781567078167,
+    "alpha_combined_deg": 0.002666890552932017,
+    "d_combined_mm": 1.211409260591553e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025625052760878705,
+    "d_at_alpha_min_mm": 37.486669145994966,
+    "d_min_mm": 2.143062341390965e-06,
+    "alpha_at_d_min_deg": 14.029445802386892,
+    "alpha_combined_deg": 6.920353763819169,
+    "d_combined_mm": 0.19816315587231645,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025627204608032845,
+    "d_at_alpha_min_mm": 66.04443658015865,
+    "d_min_mm": 0.0014517552372190286,
+    "alpha_at_d_min_deg": 54.78465820940208,
+    "alpha_combined_deg": 0.009865752261632242,
+    "d_combined_mm": 0.0021058147145349166,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025634509300451543,
+    "d_at_alpha_min_mm": 183.59315939931898,
+    "d_min_mm": 4.556771357831995e-08,
+    "alpha_at_d_min_deg": 84.72813761218795,
+    "alpha_combined_deg": 0.0037593761363980964,
+    "d_combined_mm": 0.00237600786962253,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562495319979614,
+    "d_at_alpha_min_mm": 74.03641145646696,
+    "d_min_mm": 2.874394477221363e-07,
+    "alpha_at_d_min_deg": 44.323040655017465,
+    "alpha_combined_deg": 0.4894891200418858,
+    "d_combined_mm": 0.15070796195116795,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563426048884089,
+    "d_at_alpha_min_mm": 42.104991317262225,
+    "d_min_mm": 3.143028457176235e-05,
+    "alpha_at_d_min_deg": 29.663187382295817,
+    "alpha_combined_deg": 0.12751175991328456,
+    "d_combined_mm": 0.0518297760298034,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025636022023068934,
+    "d_at_alpha_min_mm": 43.942039908341705,
+    "d_min_mm": 3.973907429829066e-05,
+    "alpha_at_d_min_deg": 69.54342093323031,
+    "alpha_combined_deg": 4.102314225476069,
+    "d_combined_mm": 0.13320318650558396,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002563201823183604,
+    "d_at_alpha_min_mm": 145.91571036916028,
+    "d_min_mm": 9.917685103518532e-05,
+    "alpha_at_d_min_deg": 79.8189916986549,
+    "alpha_combined_deg": 0.0025782961904934113,
+    "d_combined_mm": 1.4726353389316456e-05,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002568051926127577,
+    "d_at_alpha_min_mm": 131.92958758276725,
+    "d_min_mm": 1.2517713175382077e-07,
+    "alpha_at_d_min_deg": 77.82280730614612,
+    "alpha_combined_deg": 0.004512389834885464,
+    "d_combined_mm": 0.004549814226521128,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002568634452512812,
+    "d_at_alpha_min_mm": 239.06157668166307,
+    "d_min_mm": 2.2497764357488255e-08,
+    "alpha_at_d_min_deg": 5.314966256432447,
+    "alpha_combined_deg": 0.02071845833961564,
+    "d_combined_mm": 0.0014190109419193074,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025623631845365594,
+    "d_at_alpha_min_mm": 34.764855128085905,
+    "d_min_mm": 0.003586165287935983,
+    "alpha_at_d_min_deg": 54.198862991102786,
+    "alpha_combined_deg": 63.99819628570367,
+    "d_combined_mm": 0.0012193334767707231,
+    "reachable": false
+  },
+  {
+    "alpha_min_deg": 0.0025656118262265583,
+    "d_at_alpha_min_mm": 79.67609058276707,
+    "d_min_mm": 0.001232689820328816,
+    "alpha_at_d_min_deg": 59.95180383378161,
+    "alpha_combined_deg": 3.0516511018542447,
+    "d_combined_mm": 0.00076722126608986,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.0025694985619475323,
+    "d_at_alpha_min_mm": 18.64026255313514,
+    "d_min_mm": 7.56449075278002e-08,
+    "alpha_at_d_min_deg": 49.87688783361523,
+    "alpha_combined_deg": 3.403139470230604,
+    "d_combined_mm": 0.020705135599984978,
+    "reachable": true
+  },
+  {
+    "alpha_min_deg": 0.002562436151452497,
+    "d_at_alpha_min_mm": 9.644078500719633,
+    "d_min_mm": 1.7007440455962808e-05,
+    "alpha_at_d_min_deg": 19.84792276367434,
+    "alpha_combined_deg": 63.27684037338261,
+    "d_combined_mm": 0.0004004178118660606,
+    "reachable": false
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "n_failing": 225,
+  "n_reachable": 275,
+  "failing_alpha_at_d_min_pose_deg": {
+    "min": 2.625862015813845,
+    "median": 45.86646346339285,
+    "mean": 46.05632192624124,
+    "max": 88.24130399059679
+  },
+  "failing_d_at_alpha_min_pose_mm": {
+    "min": 0.3073927332175319,
+    "median": 94.57683486105688,
+    "mean": 104.40863173603287,
+    "max": 274.078909636022
+  },
+  "reachable_alpha_at_d_min_pose_deg": {
+    "min": 3.084563919549494,
+    "median": 44.27126100728671,
+    "mean": 43.644622543935576,
+    "max": 87.04057686173435
+  },
+  "reachable_d_at_alpha_min_pose_mm": {
+    "min": 0.5917560893518581,
+    "median": 80.16953314070673,
+    "mean": 92.22579081086842,
+    "max": 287.2903153566185
+  },
+  "failing_fraction_alpha_at_d_min_over_60deg": 0.24888888888888888,
+  "failing_fraction_alpha_at_d_min_15to60deg": 0.6844444444444444,
+  "reachable_fraction_alpha_at_d_min_over_60deg": 0.2509090909090909,
+  "interpretation": "alpha-at-d-min-pose distributions are nearly IDENTICAL between failing and reachable head cases (median ~45-46deg either way), so this marginal is NOT what separates reachable from unreachable -- reachability is a joint/coupled property of the (alpha,d) trade-off surface near the optimum, not attributable to a single marginal quantity. Of FAILING cases, ~25% have alpha-at-d-min-pose exceeding the 60deg actuator limit (cone-bound), while ~68% sit within the actuator range (15-60deg) but outside the 15deg alpha_tol (tolerance-bound, not cone-bound) -- so most individual failing cases COULD in principle be resolved by loosening alpha_tol without widening the actuator cone, but a nontrivial minority genuinely need the cone widened."
+}

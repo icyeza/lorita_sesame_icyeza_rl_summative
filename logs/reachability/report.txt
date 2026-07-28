@@ -1,0 +1,6 @@
+Reachability measurement (unfiltered sampling, N=500)
+alpha_tol=15.0deg  d_tol=12.0mm
+head: 0.550
+abdomen: 0.866
+femur: 0.960
+all_three: 0.446
