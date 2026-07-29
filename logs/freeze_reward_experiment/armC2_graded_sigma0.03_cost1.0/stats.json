@@ -1,0 +1,16 @@
+{
+  "arm": "armC2_graded_sigma0.03_cost1.0",
+  "env_kwargs": {
+    "freeze_reward_mode": "graded",
+    "freeze_grade_sigma_m": 0.03,
+    "freeze_attempt_cost": 1.0
+  },
+  "ent_coef": 0.05,
+  "n_episodes": 3336,
+  "overall_success_rate": 0.0,
+  "overall_freeze_attempted_rate": 1.0,
+  "late_success_rate": 0.0,
+  "late_freeze_attempted_rate": 1.0,
+  "late_median_terminal_d_mm": 34.659939152785896,
+  "verdict": "RUNAWAY"
+}

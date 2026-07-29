@@ -1,0 +1,14 @@
+{
+  "arm": "armB2_penalty_neg0.3",
+  "env_kwargs": {
+    "freeze_miss_penalty": -0.3
+  },
+  "ent_coef": 0.05,
+  "n_episodes": 3336,
+  "overall_success_rate": 0.0,
+  "overall_freeze_attempted_rate": 0.05755395683453238,
+  "late_success_rate": 0.0,
+  "late_freeze_attempted_rate": 0.017985611510791366,
+  "late_median_terminal_d_mm": 30.0032698309729,
+  "verdict": "EXTINGUISHED"
+}

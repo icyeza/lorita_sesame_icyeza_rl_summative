@@ -1,0 +1,76 @@
+[
+  {
+    "arm": "armA_ent_original_penalty",
+    "env_kwargs": {
+      "freeze_miss_penalty": -2.0
+    },
+    "ent_coef": 0.05,
+    "n_episodes": 3336,
+    "overall_success_rate": 0.0,
+    "overall_freeze_attempted_rate": 0.042565947242206234,
+    "late_success_rate": 0.0,
+    "late_freeze_attempted_rate": 0.02158273381294964,
+    "late_median_terminal_d_mm": 29.664697754316602,
+    "verdict": "EXTINGUISHED"
+  },
+  {
+    "arm": "armB_penalty_neg0.5",
+    "env_kwargs": {
+      "freeze_miss_penalty": -0.5
+    },
+    "ent_coef": 0.05,
+    "n_episodes": 3336,
+    "overall_success_rate": 0.0,
+    "overall_freeze_attempted_rate": 0.06025179856115108,
+    "late_success_rate": 0.0,
+    "late_freeze_attempted_rate": 0.03717026378896882,
+    "late_median_terminal_d_mm": 31.2723634432679,
+    "verdict": "EXTINGUISHED"
+  },
+  {
+    "arm": "armB2_penalty_neg0.3",
+    "env_kwargs": {
+      "freeze_miss_penalty": -0.3
+    },
+    "ent_coef": 0.05,
+    "n_episodes": 3336,
+    "overall_success_rate": 0.0,
+    "overall_freeze_attempted_rate": 0.05755395683453238,
+    "late_success_rate": 0.0,
+    "late_freeze_attempted_rate": 0.017985611510791366,
+    "late_median_terminal_d_mm": 30.0032698309729,
+    "verdict": "EXTINGUISHED"
+  },
+  {
+    "arm": "armC_graded_sigma0.03_cost0.3",
+    "env_kwargs": {
+      "freeze_reward_mode": "graded",
+      "freeze_grade_sigma_m": 0.03,
+      "freeze_attempt_cost": 0.3
+    },
+    "ent_coef": 0.05,
+    "n_episodes": 3336,
+    "overall_success_rate": 0.0,
+    "overall_freeze_attempted_rate": 1.0,
+    "late_success_rate": 0.0,
+    "late_freeze_attempted_rate": 1.0,
+    "late_median_terminal_d_mm": 35.11030544037875,
+    "verdict": "RUNAWAY"
+  },
+  {
+    "arm": "armC2_graded_sigma0.03_cost1.0",
+    "env_kwargs": {
+      "freeze_reward_mode": "graded",
+      "freeze_grade_sigma_m": 0.03,
+      "freeze_attempt_cost": 1.0
+    },
+    "ent_coef": 0.05,
+    "n_episodes": 3336,
+    "overall_success_rate": 0.0,
+    "overall_freeze_attempted_rate": 1.0,
+    "late_success_rate": 0.0,
+    "late_freeze_attempted_rate": 1.0,
+    "late_median_terminal_d_mm": 34.659939152785896,
+    "verdict": "RUNAWAY"
+  }
+]
