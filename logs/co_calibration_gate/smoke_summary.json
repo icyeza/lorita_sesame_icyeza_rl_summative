@@ -1,0 +1,20 @@
+{
+  "alpha_tol_deg": 18.0,
+  "tilt_step_deg": 3.0,
+  "subtask_max_steps": 150,
+  "shaping_mode": "multiplicative",
+  "ent_coef": 0.05,
+  "n_envs": 4,
+  "total_timesteps": 40000,
+  "seed": 0,
+  "n_episodes": 268,
+  "overall_success_rate": 0.0,
+  "overall_freeze_attempted_rate": 0.2126865671641791,
+  "late_success_rate": 0.0,
+  "late_freeze_attempted_rate": 0.14925373134328357,
+  "late_median_terminal_d_mm": 40.4994930467999,
+  "first_quarter_median_terminal_d_mm": 48.2048509156636,
+  "late_median_terminal_alpha_deg": 74.61747332519325,
+  "first_quarter_median_terminal_alpha_deg": 67.62441663208642,
+  "verdict": "LEARNING SIGNAL PRESENT"
+}

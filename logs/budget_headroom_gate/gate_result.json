@@ -1,0 +1,55 @@
+{
+  "sweep": {
+    "150": {
+      "subtask_max_steps": 150,
+      "n": 100,
+      "success_rate": 0.7,
+      "timeout_rate": 0.3,
+      "median_steps_to_success": 60.0,
+      "outcomes": {
+        "froze_in_tol": 70,
+        "timeout_subtask": 30
+      }
+    },
+    "250": {
+      "subtask_max_steps": 250,
+      "n": 100,
+      "success_rate": 0.7,
+      "timeout_rate": 0.3,
+      "median_steps_to_success": 61.5,
+      "outcomes": {
+        "froze_in_tol": 70,
+        "timeout_episode": 30
+      }
+    },
+    "400": {
+      "subtask_max_steps": 400,
+      "n": 100,
+      "success_rate": 0.7,
+      "timeout_rate": 0.3,
+      "median_steps_to_success": 61.5,
+      "outcomes": {
+        "froze_in_tol": 70,
+        "timeout_episode": 30
+      }
+    }
+  },
+  "terminal_d_split_250": {
+    "n_success": 70,
+    "n_timeout": 30,
+    "d_success_median": 0.40211175862722887,
+    "d_success_mean": 2.0672629095186537,
+    "d_timeout_median": 0.4935884596209035,
+    "d_timeout_mean": 0.4829105090889401,
+    "frac_timeout_near": 1.0
+  },
+  "timeout_150": 0.3,
+  "timeout_250": 0.3,
+  "timeout_400": 0.3,
+  "drop_150_250": 0.0,
+  "drop_250_400": 0.0,
+  "flattening": true,
+  "success_250": 0.7,
+  "median_steps_to_success_250": 61.5,
+  "gate_passed": false
+}

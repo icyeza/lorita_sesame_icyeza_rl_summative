@@ -1,0 +1,49 @@
+{
+  "baseline": {
+    "n": 100,
+    "subtask_max_steps": 60,
+    "shaping_mode": "additive",
+    "success_rate": 0.27,
+    "median_steps_to_success": 54.0,
+    "terminal_d_median_mm": 0.4766758278213403,
+    "terminal_d_mean_mm": 10.764941969172549,
+    "terminal_alpha_median_deg": 16.795857511565366,
+    "terminal_alpha_mean_deg": 18.793819925418774,
+    "outcomes": {
+      "froze_in_tol": 27,
+      "timeout_subtask": 73
+    }
+  },
+  "gated": {
+    "n": 100,
+    "subtask_max_steps": 150,
+    "shaping_mode": "multiplicative",
+    "success_rate": 0.7,
+    "median_steps_to_success": 60.0,
+    "terminal_d_median_mm": 0.48242271811679316,
+    "terminal_d_mean_mm": 1.7489734598725526,
+    "terminal_alpha_median_deg": 14.666794546408253,
+    "terminal_alpha_mean_deg": 15.402069519603216,
+    "outcomes": {
+      "froze_in_tol": 70,
+      "timeout_subtask": 30
+    }
+  },
+  "reward_readout_additive": {
+    "shaping_mode": "additive",
+    "alpha_term": 1.9653962678933228,
+    "d_term": 0.9931706075828189,
+    "total": 3.9585668754761416,
+    "total_max": 5.0,
+    "pct_banked": 79.17133750952283
+  },
+  "reward_readout_multiplicative": {
+    "shaping_mode": "multiplicative",
+    "f_alpha": 0.9826981339466614,
+    "g_d": 0.49658530379140947,
+    "coupled_term": 1.951973805524616,
+    "total": 2.951973805524616,
+    "total_max": 5.0,
+    "pct_banked": 59.039476110492316
+  }
+}
