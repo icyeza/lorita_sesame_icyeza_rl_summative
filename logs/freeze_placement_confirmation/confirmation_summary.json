@@ -1,0 +1,14 @@
+{
+  "ent_coef": 0.05,
+  "freeze_miss_penalty": 0.0,
+  "n_envs": 4,
+  "total_timesteps": 200000,
+  "seed": 0,
+  "n_episodes": 3336,
+  "overall_success_rate": 0.0,
+  "overall_freeze_attempted_rate": 0.987410071942446,
+  "late_quarter_success_rate": 0.0,
+  "late_quarter_freeze_attempted_rate": 0.9832134292565947,
+  "late_quarter_median_terminal_d_mm": 31.82139060844115,
+  "verdict": "RUNAWAY"
+}
