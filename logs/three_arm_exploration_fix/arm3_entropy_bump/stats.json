@@ -1,0 +1,20 @@
+{
+  "arm": "arm3_entropy_bump",
+  "env_kwargs": {
+    "shaping_mode": "multiplicative"
+  },
+  "ent_coef": 0.1,
+  "n_episodes": 672,
+  "overall_success_rate": 0.0,
+  "overall_freeze_attempted_rate": 0.14732142857142858,
+  "first_quarter_freeze_rate": 0.39880952380952384,
+  "late_freeze_rate": 0.05357142857142857,
+  "first_quarter_median_terminal_d_mm": 44.830078862103406,
+  "late_median_terminal_d_mm": 34.454265364974844,
+  "first_quarter_median_terminal_alpha_deg": 82.89045429094405,
+  "late_median_terminal_alpha_deg": 81.75568009637696,
+  "late_success_rate": 0.0,
+  "alpha_toward_tolerance": true,
+  "alpha_away_from_tolerance": false,
+  "verdict": "EARLY PROGRESS, NO SUCCESS YET (both axes trending right way, 0 success at 40k)"
+}

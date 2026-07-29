@@ -1,0 +1,21 @@
+{
+  "arm": "arm1_hybrid_reward",
+  "env_kwargs": {
+    "shaping_mode": "hybrid",
+    "hybrid_weight": 0.2
+  },
+  "ent_coef": 0.05,
+  "n_episodes": 672,
+  "overall_success_rate": 0.0,
+  "overall_freeze_attempted_rate": 0.11607142857142858,
+  "first_quarter_freeze_rate": 0.35714285714285715,
+  "late_freeze_rate": 0.023809523809523808,
+  "first_quarter_median_terminal_d_mm": 45.88967659323495,
+  "late_median_terminal_d_mm": 28.5874505751921,
+  "first_quarter_median_terminal_alpha_deg": 83.78524549365679,
+  "late_median_terminal_alpha_deg": 66.54636910036366,
+  "late_success_rate": 0.0,
+  "alpha_toward_tolerance": true,
+  "alpha_away_from_tolerance": false,
+  "verdict": "EARLY PROGRESS, NO SUCCESS YET (both axes trending right way, 0 success at 40k)"
+}

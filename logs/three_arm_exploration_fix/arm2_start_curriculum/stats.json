@@ -1,0 +1,22 @@
+{
+  "arm": "arm2_start_curriculum",
+  "env_kwargs": {
+    "shaping_mode": "multiplicative",
+    "start_curriculum": true,
+    "start_curriculum_max_random_steps": 8
+  },
+  "ent_coef": 0.05,
+  "n_episodes": 6298,
+  "overall_success_rate": 0.9533185138139092,
+  "overall_freeze_attempted_rate": 0.9996824388694824,
+  "first_quarter_freeze_rate": 1.0,
+  "late_freeze_rate": 0.9987301587301587,
+  "first_quarter_median_terminal_d_mm": 2.8661963478645998,
+  "late_median_terminal_d_mm": 1.9854314160446,
+  "first_quarter_median_terminal_alpha_deg": 9.540746915827096,
+  "late_median_terminal_alpha_deg": 9.36956809030009,
+  "late_success_rate": 0.953015873015873,
+  "alpha_toward_tolerance": false,
+  "alpha_away_from_tolerance": false,
+  "verdict": "PARTIAL (success off 0 but alpha not clearly trending toward tolerance)"
+}
