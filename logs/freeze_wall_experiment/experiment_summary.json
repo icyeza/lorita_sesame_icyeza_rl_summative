@@ -1,0 +1,42 @@
+[
+  {
+    "arm": "baseline",
+    "ent_coef": 0.0,
+    "freeze_miss_penalty": -2.0,
+    "whole_run_success_rate": 0.0,
+    "n_episodes": 672,
+    "snapshot_success_rate": 0.0,
+    "snapshot_freeze_attempted_rate": 0.0,
+    "snapshot_median_terminal_d_mm": 28.491592368889613
+  },
+  {
+    "arm": "arm1a_ent0.01",
+    "ent_coef": 0.01,
+    "freeze_miss_penalty": -2.0,
+    "whole_run_success_rate": 0.0,
+    "n_episodes": 672,
+    "snapshot_success_rate": 0.0,
+    "snapshot_freeze_attempted_rate": 0.0,
+    "snapshot_median_terminal_d_mm": 25.946942328530923
+  },
+  {
+    "arm": "arm1b_ent0.05",
+    "ent_coef": 0.05,
+    "freeze_miss_penalty": -2.0,
+    "whole_run_success_rate": 0.0,
+    "n_episodes": 672,
+    "snapshot_success_rate": 0.0,
+    "snapshot_freeze_attempted_rate": 0.0,
+    "snapshot_median_terminal_d_mm": 29.92569817099704
+  },
+  {
+    "arm": "arm2_miss0",
+    "ent_coef": 0.0,
+    "freeze_miss_penalty": 0.0,
+    "whole_run_success_rate": 0.0,
+    "n_episodes": 672,
+    "snapshot_success_rate": 0.0,
+    "snapshot_freeze_attempted_rate": 0.0,
+    "snapshot_median_terminal_d_mm": 38.25319674636846
+  }
+]

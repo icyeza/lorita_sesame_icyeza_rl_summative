@@ -1,0 +1,10 @@
+{
+  "arm": "arm1b_ent0.05",
+  "ent_coef": 0.05,
+  "freeze_miss_penalty": -2.0,
+  "whole_run_success_rate": 0.0,
+  "n_episodes": 672,
+  "snapshot_success_rate": 0.0,
+  "snapshot_freeze_attempted_rate": 0.0,
+  "snapshot_median_terminal_d_mm": 29.92569817099704
+}
