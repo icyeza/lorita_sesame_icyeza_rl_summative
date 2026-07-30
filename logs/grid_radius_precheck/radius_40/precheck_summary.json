@@ -1,0 +1,14 @@
+{
+  "radius": 40,
+  "timesteps": 5000,
+  "n_envs": 4,
+  "seed": 0,
+  "n_episodes": 275,
+  "mean_episode_length": 18.26909090909091,
+  "throughput_steps_per_sec": 12.34255503664178,
+  "wall_clock_s": 407.04700000000594,
+  "overall_success": 0.8327272727272728,
+  "first_half_success": 0.7883211678832117,
+  "second_half_success": 0.8768115942028986,
+  "verdict": "GOOD -- non-saturated, non-zero learning curve at this radius"
+}
