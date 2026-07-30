@@ -1,0 +1,20 @@
+{
+  "combo": {
+    "learning_rate": 0.00025,
+    "gamma": 0.99,
+    "buffer_size": 50000,
+    "batch_size": 64,
+    "target_update_interval": 500,
+    "exploration_fraction": 0.2,
+    "net_arch": [
+      64,
+      64
+    ]
+  },
+  "seed": 0,
+  "total_timesteps": 6000,
+  "curriculum": "single_target",
+  "budget": "grid",
+  "n_envs": 4,
+  "max_wall_clock_seconds": null
+}
