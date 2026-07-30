@@ -1,0 +1,27 @@
+{
+  "tag": "single_target_fallback",
+  "single_target": true,
+  "config": {
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "n_steps": 256,
+    "gae_lambda": 0.95,
+    "entropy_coef": 0.01,
+    "clip_range": 0.1,
+    "net_arch": [
+      64,
+      64
+    ]
+  },
+  "total_timesteps": 40000,
+  "n_envs": 4,
+  "seed": 0,
+  "n_episodes": 8685,
+  "converged_success_rate": 0.9804260218767991,
+  "median_terminal_alpha_deg": 3.4948708756785103,
+  "median_terminal_d_mm": 1.4729258427482999,
+  "converged_freeze_attempted_rate": 1.0,
+  "classification_accuracy": null,
+  "n_classified_episodes": 0,
+  "model_path": "C:\\Users\\mbric\\Documents\\Sook\\Ultrasound\\sook_ultrasound_rl_summative\\models\\headline\\single_target_fallback\\model.zip"
+}
