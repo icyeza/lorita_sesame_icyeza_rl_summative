@@ -1,0 +1,20 @@
+
+--- dqn combo10 (start 20:22:24) ---
+    combo3 ablation: buffer_size 50000 -> 10000
+    combo={'learning_rate': 0.001, 'gamma': 0.99, 'buffer_size': 10000, 'batch_size': 64, 'target_update_interval': 2000, 'exploration_fraction': 0.2, 'net_arch': [128, 128]}
+    total_timesteps=15000 n_envs=4 seed=0 env_kwargs={'single_target': True, 'start_curriculum': True, 'start_curriculum_max_random_steps': 40}
+  done in 16.3 min -> C:\Users\mbric\Documents\Sook\Ultrasound\sook_ultrasound_rl_summative\models\dqn\20260729_231349_single_target_grid_combo10_seed0\model.zip
+
+--- dqn combo11 (start 20:38:43) ---
+    combo3 ablation: exploration_fraction 0.2 -> 0.5
+    combo={'learning_rate': 0.001, 'gamma': 0.99, 'buffer_size': 50000, 'batch_size': 64, 'target_update_interval': 2000, 'exploration_fraction': 0.5, 'net_arch': [128, 128]}
+    total_timesteps=15000 n_envs=4 seed=0 env_kwargs={'single_target': True, 'start_curriculum': True, 'start_curriculum_max_random_steps': 40}
+  done in 15.0 min -> C:\Users\mbric\Documents\Sook\Ultrasound\sook_ultrasound_rl_summative\models\dqn\20260729_231349_single_target_grid_combo11_seed0\model.zip
+
+--- reinforce combo10 (start 20:53:41) ---
+    completes the baseline-on/off matched pair at lr=1e-4
+    combo={'learning_rate': 0.0001, 'gamma': 0.99, 'use_baseline': False, 'entropy_coef': 0.0, 'net_arch': [64, 64]}
+    total_timesteps=7500 n_envs=1 seed=0 env_kwargs={'single_target': True, 'start_curriculum': True, 'start_curriculum_max_random_steps': 40}
+  done in 12.4 min -> C:\Users\mbric\Documents\Sook\Ultrasound\sook_ultrasound_rl_summative\models\reinforce\20260730_083939_single_target_grid_combo10_seed0\model.pt
+
+=== Done: 3 completed, 0 failed, 43.7 min total ===

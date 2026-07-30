@@ -1,0 +1,114 @@
+{
+  "plan": {
+    "dqn": {
+      "n_envs": 4,
+      "max_combos": 10,
+      "total_timesteps": 15000
+    },
+    "a2c": {
+      "n_envs": 4,
+      "max_combos": 10,
+      "total_timesteps": 15000
+    },
+    "ppo": {
+      "n_envs": 4,
+      "max_combos": 10,
+      "total_timesteps": 15000
+    },
+    "reinforce": {
+      "n_envs": 1,
+      "max_combos": 5,
+      "total_timesteps": 7500
+    }
+  },
+  "mid_radius": 40,
+  "seed": 0,
+  "differentiation_report": {
+    "metric_col": null,
+    "timesteps_to_target_differentiated": false,
+    "success_auc_differentiated": false,
+    "differentiated": false,
+    "per_metric_range": {
+      "seed": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "learning_rate": {
+        "min": 0.00025,
+        "max": 0.001,
+        "mean": 0.0008500000000000001
+      },
+      "gamma": {
+        "min": 0.99,
+        "max": 0.99,
+        "mean": 0.99
+      },
+      "buffer_size": {
+        "min": 50000.0,
+        "max": 50000.0,
+        "mean": 50000.0
+      },
+      "batch_size": {
+        "min": 64.0,
+        "max": 128.0,
+        "mean": 89.6
+      },
+      "target_update_interval": {
+        "min": 500.0,
+        "max": 2000.0,
+        "mean": 1100.0
+      },
+      "exploration_fraction": {
+        "min": 0.2,
+        "max": 0.2,
+        "mean": 0.2
+      },
+      "reward_std": {
+        "min": 6.191062401110232,
+        "max": 13.213257043241425,
+        "mean": 10.576853712679476
+      },
+      "reward_cv": {
+        "min": 0.8100269648401514,
+        "max": 1.4985736353209445,
+        "mean": 1.226203465168531
+      },
+      "final_mean_reward": {
+        "min": -7.844941411764704,
+        "max": -2.9234812718446603,
+        "mean": -5.8782209892116155
+      },
+      "n_episodes": {
+        "min": 309.0,
+        "max": 512.0,
+        "mean": 396.5
+      }
+    }
+  },
+  "total_wall_clock_s": 39753.906,
+  "per_algo_wall_clock_s": {
+    "dqn": 10535.328000000009,
+    "a2c": 12418.093999999983,
+    "ppo": 10996.04700000002,
+    "reinforce": 3091.7339999999967
+  },
+  "n_completed": {
+    "dqn": 10,
+    "a2c": 10,
+    "ppo": 10,
+    "reinforce": 5
+  },
+  "n_failed": {
+    "dqn": 0,
+    "a2c": 0,
+    "ppo": 0,
+    "reinforce": 0
+  },
+  "failures": {
+    "dqn": [],
+    "a2c": [],
+    "ppo": [],
+    "reinforce": []
+  }
+}

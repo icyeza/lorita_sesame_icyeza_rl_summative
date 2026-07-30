@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "run_id": "20260729_231349_single_target_grid_combo10_seed0",
+      "wall_clock_s": 979.5629999999655
+    },
+    {
+      "run_id": "20260729_231349_single_target_grid_combo11_seed0",
+      "wall_clock_s": 897.8439999999828
+    },
+    {
+      "run_id": "20260730_083939_single_target_grid_combo10_seed0",
+      "wall_clock_s": 742.4529999999795
+    }
+  ],
+  "failures": [],
+  "total_wall_clock_s": 2619.9219999999623
+}
