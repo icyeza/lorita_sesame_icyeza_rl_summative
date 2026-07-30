@@ -1,0 +1,18 @@
+{
+  "run_id": "20260730_020925_single_target_grid_combo2_seed0",
+  "combo": {
+    "learning_rate": 0.0007,
+    "gamma": 0.99,
+    "n_steps": 5,
+    "entropy_coef": 0.01,
+    "gae_lambda": 1.0,
+    "net_arch": [
+      64,
+      64
+    ]
+  },
+  "seed": 0,
+  "score": 3.59038895,
+  "log_dir": "C:\\Users\\mbric\\Documents\\Sook\\Ultrasound\\sook_ultrasound_rl_summative\\logs\\a2c\\20260730_020925_single_target_grid_combo2_seed0",
+  "model_path": "C:\\Users\\mbric\\Documents\\Sook\\Ultrasound\\sook_ultrasound_rl_summative\\models\\a2c\\20260730_020925_single_target_grid_combo2_seed0\\model.zip"
+}
