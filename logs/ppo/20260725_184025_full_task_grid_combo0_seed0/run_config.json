@@ -1,0 +1,9 @@
+{
+  "combo": {},
+  "seed": 0,
+  "total_timesteps": 500000,
+  "curriculum": "full_task",
+  "budget": "grid",
+  "n_envs": 1,
+  "max_wall_clock_seconds": 900.0
+}
