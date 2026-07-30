@@ -1,0 +1,9 @@
+{
+  "combo": {},
+  "seed": 0,
+  "total_timesteps": 2000,
+  "curriculum": "single_target",
+  "budget": "smoke",
+  "n_envs": 2,
+  "max_wall_clock_seconds": null
+}

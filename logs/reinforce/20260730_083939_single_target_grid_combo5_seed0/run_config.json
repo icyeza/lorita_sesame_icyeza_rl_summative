@@ -1,0 +1,18 @@
+{
+  "combo": {
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "use_baseline": true,
+    "entropy_coef": 0.01,
+    "net_arch": [
+      64,
+      64
+    ]
+  },
+  "seed": 0,
+  "total_timesteps": 7500,
+  "curriculum": "single_target",
+  "budget": "grid",
+  "n_envs": 1,
+  "max_wall_clock_seconds": null
+}
