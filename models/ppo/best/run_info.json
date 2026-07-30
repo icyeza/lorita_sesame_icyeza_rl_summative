@@ -1,0 +1,35 @@
+{
+  "CORRECTION_NOTE": "This file previously described PPO grid run 20260730_053623_single_target_grid_combo4_seed0 (score 3.621), written by training.sweep.run_sweep's best-model copy. That was STALE: scripts/headline_run.py later overwrote model.zip in this directory with the headline weights but did not update this file. Corrected in the status.md 'ablations, protocol fix and report figures' addendum. Verified by md5: models/ppo/best/model.zip == models/headline/model.zip == models/headline/single_target_fallback/model.zip (dfcd401d33dfc4e90c2409842e485d9d), and NOT equal to the grid combo4 checkpoint (2790f48254716feecdcc02a0f225e4c9).",
+  "run_id": "headline/single_target_fallback",
+  "source_script": "scripts/headline_run.py",
+  "is_grid_run": false,
+  "grid_relationship": "Hyperparameters are identical to PPO grid combo6 (20260730_053623_single_target_grid_combo6_seed0), chosen for the LOWEST reward_std in the PPO grid table (9.474), not for the highest reward -- combo6 ranks 7th of 10 by final_mean_reward (0.578; the grid's best by that metric is combo5 at 2.053). The training RUN is separate from, and different to, any grid run: 40000 timesteps (grid used 15000) at the class-default start distribution (start_curriculum radius 8; the grid used radius 40).",
+  "combo": {
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "n_steps": 256,
+    "gae_lambda": 0.95,
+    "entropy_coef": 0.01,
+    "clip_range": 0.1,
+    "net_arch": [
+      64,
+      64
+    ]
+  },
+  "seed": 0,
+  "total_timesteps": 40000,
+  "n_envs": 4,
+  "env_kwargs": {
+    "single_target": true,
+    "note": "all other env settings are UltrasoundProbeEnv class defaults: start_curriculum=True, start_curriculum_max_random_steps=8, alpha_tol_deg=18.0, d_tol_m=0.012, tilt_step_deg=3.0, shaping_mode='multiplicative'"
+  },
+  "training_tail_metrics": {
+    "note": "NOT an evaluation -- last-20% tail of this run's OWN training episodes (1737 of 8685), stochastic action sampling. Retained for continuity with logs/headline/single_target_fallback/headline_summary.json.",
+    "converged_success_rate": 0.9804260218767991,
+    "median_terminal_alpha_deg": 3.4948708756785103,
+    "median_terminal_d_mm": 1.4729258427482999
+  },
+  "held_out_evaluation": "See logs/deployed_eval/deployed_eval.json and logs/tables/generalization_eval.csv (scripts/deployed_eval.py) for the deterministic held-out numbers that should be quoted in the report instead.",
+  "model_path": "models/headline/single_target_fallback/model.zip",
+  "log_dir": "logs/headline/single_target_fallback"
+}
