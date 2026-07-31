@@ -12,31 +12,39 @@ Two policy modes:
     main.py uses, in the same ALGO_PRIORITY order), or point at a specific
     one with --model-path/--algo.
 
+The same server also serves `assets/index.html` at http://127.0.0.1:<port>/
+and opens it in a browser on startup (pass --no-browser to skip that), so
+there is no separate file:// step.
+
 To show random vs. model side by side, run TWO instances on different
-ports and open assets/index.html twice, once per port (see --port below;
-the page reads ?port=<N> from its own URL, e.g.
-assets/index.html?port=<N>). Each instance's WebSocket payload includes
-a `policy_label` field so the page can show which one you're looking at.
+ports (see --port below); each opens its own tab at its own port, and the
+page reads ?port=<N> from its own URL to pick the matching socket. Each
+instance's WebSocket payload includes a `policy_label` field so the page
+can show which one you're looking at.
 
 Usage:
-    uv run python scripts/serve_viz.py
-    uv run python scripts/serve_viz.py --policy model
-    uv run python scripts/serve_viz.py --policy model --model-path models/ppo/best/model.zip --algo ppo
-    uv run python scripts/serve_viz.py --policy random --port 8765     # tab 1
-    uv run python scripts/serve_viz.py --policy model  --port <N>     # tab 2 (assets/index.html?port=<N>)
-    # then open assets/index.html in a browser
+    uv run python play.py
+    uv run python play.py --policy model
+    uv run python play.py --policy model --model-path models/ppo/best/model.zip --algo ppo
+    uv run python play.py --policy random --port 8765     # tab 1
+    uv run python play.py --policy model  --port <N>      # tab 2
 """
 from __future__ import annotations
 
 import argparse
 import asyncio
 import sys
+import threading
+import webbrowser
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+# play.py lives at the repo root (unlike its scripts/serve_viz.py twin, which
+# is one level down and so uses parent.parent) -- parent IS the repo root here.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import numpy as np
 import uvicorn
+from fastapi.responses import FileResponse
 from scipy.optimize import minimize
 
 from environment.custom_env import (
@@ -50,7 +58,7 @@ from environment.rendering import VizBridge, encode_image_base64
 from environment.slicer import cast_slice, structure_visibility
 from evaluation.evaluate import load_model
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent
 MODELS_DIR = REPO_ROOT / "models"
 ALGO_PRIORITY = ["ppo", "a2c", "dqn", "reinforce"]  # same search order as main.py
 MODEL_EXT = {"ppo": ".zip", "a2c": ".zip", "dqn": ".zip", "reinforce": ".pt"}
@@ -356,11 +364,22 @@ def _on_client_message(text: str):
         _resume_event.set()
 
 
+INDEX_HTML = REPO_ROOT / "assets" / "index.html"
+
+# Serving the page from the SAME server as the WebSocket, so there is one URL
+# to open and no file:// step. The page still resolves its socket from
+# ?port=<N> on its own URL (assets/index.html's `overridePort`), which is why
+# _open_browser() below always appends the actual port -- that keeps the
+# two-instances-on-two-ports comparison working unchanged.
 @app.get("/")
 def root():
+    return FileResponse(INDEX_HTML, media_type="text/html")
+
+
+@app.get("/status")
+def status():
     return {"status": "ok", "ws_endpoint": "/ws", "policy_mode": POLICY_MODE,
-            "pause_on_episode_end": PAUSE_ON_EPISODE_END,
-            "note": "open assets/index.html separately"}
+            "pause_on_episode_end": PAUSE_ON_EPISODE_END}
 
 
 def find_best_model():
@@ -430,6 +449,9 @@ if __name__ == "__main__":
                          help="don't pause at episode end -- auto-reset and keep looping "
                               "(default: pause and wait for the browser to send \"resume\", "
                               "sent when the viewer presses SPACE or R)")
+    parser.add_argument("--no-browser", action="store_true",
+                         help="don't auto-open the visualization in a browser -- just serve it at "
+                              "http://127.0.0.1:<port>/ for you to open yourself.")
     parser.add_argument("--quiet", action="store_true",
                          help="suppress the per-step terminal table and the episode header/summary "
                               "blocks (verbose output is ON by default for this script). Printing "
@@ -462,5 +484,12 @@ if __name__ == "__main__":
 
     bridge.policy_label = policy_label
     REPORTER = _StepReporter(enabled=VERBOSE)
+    url = f"http://127.0.0.1:{args.port}/?port={args.port}"
     print(f"[serve_viz] policy_mode={POLICY_MODE} ({policy_label}), port={args.port}")
+    print(f"[serve_viz] visualization: {url}")
+    if not args.no_browser:
+        # Fired off a beat late from a background thread: uvicorn.run() blocks,
+        # so this has to be queued before it, and the socket needs a moment to
+        # be listening or the tab lands on a connection error.
+        threading.Timer(1.0, lambda: webbrowser.open(url)).start()
     uvicorn.run(app, host="127.0.0.1", port=args.port)

@@ -51,12 +51,16 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x10121a);
 
-// Camera sits above and in front of the bed, angled down at the abdomen --
-// a "clinician looking over the patient" framing rather than a flat
-// side-on view.
+// Camera sits in front of the bed at roughly standing eye level for someone
+// beside it -- about 10 deg above the bed rather than the steeper ~30 deg
+// look-down it used to have, and pulled back a little. The shallower angle
+// is what puts the cart's monitor (back-left corner of the room, screen at
+// y~0.55) in frame behind the patient instead of off the top of the view,
+// so the live slice on the monitor and the probe on the belly are visible
+// together. Orbit still moves freely from here.
 const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.01, 100);
-camera.position.set(0.35, 0.45, 0.55);
-camera.lookAt(0, 0.05, 0);
+camera.position.set(0.45, 0.28, 0.80);
+camera.lookAt(-0.05, 0.10, -0.05);
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -65,7 +69,10 @@ document.body.appendChild(renderer.domElement);
 // Free orbit/zoom/pan so a good viewing angle can be found live, instead
 // of being stuck with whatever angle was hardcoded.
 const controls = new OrbitControls(camera, renderer.domElement);
-controls.target.set(0, 0.05, 0);
+// Same point camera.lookAt() uses above -- OrbitControls overwrites the
+// camera orientation from its own target on the first update(), so these two
+// must agree or the initial framing snaps somewhere else on frame 1.
+controls.target.set(-0.05, 0.10, -0.05);
 controls.enableDamping = true;
 controls.dampingFactor = 0.08;
 controls.minDistance = 0.15;
