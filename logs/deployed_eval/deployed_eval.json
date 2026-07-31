@@ -1,0 +1,402 @@
+{
+  "model_path": "C:\\Users\\mbric\\Documents\\Sook\\Ultrasound\\sook_ultrasound_rl_summative\\models\\ppo\\best\\model.zip",
+  "protocol": {
+    "policy": "deterministic=True",
+    "env": "UltrasoundProbeEnv class defaults (single_target=True, alpha_tol_deg=18, d_tol_m=0.012, tilt_step_deg=3.0, shaping_mode=multiplicative), all 3 targets sampled",
+    "step_budget_per_episode": 60,
+    "deployed_n": 300,
+    "deployed_seeds": [
+      20000,
+      20299
+    ],
+    "generalization_n": 100,
+    "generalization_seed_base": 30000,
+    "failure_breakdown_definition": "near_miss_freeze = failed episode whose terminal pose was within 2x tolerance on BOTH axes (alpha <= 36deg AND d <= 24mm); navigation_failure = failed episode outside that. The originally-requested 'off-target freeze vs timeout' split is degenerate on this data and is reported alongside as fail_took_a_freeze_action / fail_never_froze / fail_exhausted_budget: every failure in every condition ran the full 60 steps AND took many freeze actions (median 20-38), so those two labels are not alternatives."
+  },
+  "deployed_pooled": {
+    "label": "pooled (all 3 targets)",
+    "n": 300,
+    "n_success": 284,
+    "success_rate": 0.9466666666666667,
+    "wilson_lo": 0.9151308582251686,
+    "wilson_hi": 0.9669080874809034,
+    "alpha_deg_success": {
+      "median": 3.350264246063854,
+      "q1": 1.4459919252054827,
+      "q3": 6.049222420964081
+    },
+    "d_mm_success": {
+      "median": 0.8687018640084776,
+      "q1": 2.400876052863458e-06,
+      "q3": 4.18189365293196
+    },
+    "alpha_deg_all": {
+      "median": 3.5095627869239223,
+      "q1": 1.511216329962572,
+      "q3": 6.8495775796034515
+    },
+    "d_mm_all": {
+      "median": 1.039418194457947,
+      "q1": 3.102051213025935e-06,
+      "q3": 4.262484327823385
+    },
+    "n_fail": 16,
+    "fail_near_miss_freeze": 9,
+    "fail_navigation": 7,
+    "fail_took_a_freeze_action": 16,
+    "fail_never_froze": 0,
+    "fail_exhausted_budget": 16,
+    "fail_median_freeze_actions": 17.0,
+    "fail_frac_within_alpha_tol": 0.1875,
+    "fail_frac_within_d_tol": 0.625,
+    "median_steps": 1.0,
+    "mean_episode_reward": 4.379792122789803
+  },
+  "deployed_per_target": [
+    {
+      "label": "head",
+      "n": 103,
+      "n_success": 101,
+      "success_rate": 0.9805825242718447,
+      "wilson_lo": 0.9319478168796526,
+      "wilson_hi": 0.9946587747258216,
+      "alpha_deg_success": {
+        "median": 2.8053415265378083,
+        "q1": 1.065944504808049,
+        "q3": 4.498529002937451
+      },
+      "d_mm_success": {
+        "median": 1.089363235857427,
+        "q1": 8.884001838958335e-07,
+        "q3": 4.467587951481985
+      },
+      "alpha_deg_all": {
+        "median": 2.862788364463152,
+        "q1": 1.1456672418814846,
+        "q3": 4.565481369551344
+      },
+      "d_mm_all": {
+        "median": 1.1770851485563698,
+        "q1": 9.3166704069882e-07,
+        "q3": 4.617242652780913
+      },
+      "n_fail": 2,
+      "fail_near_miss_freeze": 2,
+      "fail_navigation": 0,
+      "fail_took_a_freeze_action": 2,
+      "fail_never_froze": 0,
+      "fail_exhausted_budget": 2,
+      "fail_median_freeze_actions": 44.5,
+      "fail_frac_within_alpha_tol": 0.5,
+      "fail_frac_within_d_tol": 0.5,
+      "median_steps": 1.0,
+      "mean_episode_reward": 6.115138037254738
+    },
+    {
+      "label": "abdomen",
+      "n": 96,
+      "n_success": 95,
+      "success_rate": 0.9895833333333334,
+      "wilson_lo": 0.9433338237728424,
+      "wilson_hi": 0.9981588297831838,
+      "alpha_deg_success": {
+        "median": 2.98410558955686,
+        "q1": 0.4481366073527021,
+        "q3": 4.017068250013541
+      },
+      "d_mm_success": {
+        "median": 0.4951627178220916,
+        "q1": 7.298598396661415e-07,
+        "q3": 2.9170944672499064
+      },
+      "alpha_deg_all": {
+        "median": 2.9920041629042062,
+        "q1": 0.44881054281278643,
+        "q3": 4.182095582088585
+      },
+      "d_mm_all": {
+        "median": 0.510177077330095,
+        "q1": 7.348867389189023e-07,
+        "q3": 3.11195109223424
+      },
+      "n_fail": 1,
+      "fail_near_miss_freeze": 1,
+      "fail_navigation": 0,
+      "fail_took_a_freeze_action": 1,
+      "fail_never_froze": 0,
+      "fail_exhausted_budget": 1,
+      "fail_median_freeze_actions": 35.0,
+      "fail_frac_within_alpha_tol": 1.0,
+      "fail_frac_within_d_tol": 0.0,
+      "median_steps": 1.0,
+      "mean_episode_reward": 7.4940686065360795
+    },
+    {
+      "label": "femur",
+      "n": 101,
+      "n_success": 88,
+      "success_rate": 0.8712871287128713,
+      "wilson_lo": 0.7921530010704891,
+      "wilson_hi": 0.9232128555632813,
+      "alpha_deg_success": {
+        "median": 7.273682410205906,
+        "q1": 3.638189274326498,
+        "q3": 11.611997282830217
+      },
+      "d_mm_success": {
+        "median": 0.9342104535140184,
+        "q1": 0.025672722389604302,
+        "q3": 4.4813258426798095
+      },
+      "alpha_deg_all": {
+        "median": 8.152247463265311,
+        "q1": 4.0373321507322855,
+        "q3": 12.784123469465769
+      },
+      "d_mm_all": {
+        "median": 1.2104514233940296,
+        "q1": 0.0640947328752637,
+        "q3": 4.595976846188774
+      },
+      "n_fail": 13,
+      "fail_near_miss_freeze": 6,
+      "fail_navigation": 7,
+      "fail_took_a_freeze_action": 13,
+      "fail_never_froze": 0,
+      "fail_exhausted_budget": 13,
+      "fail_median_freeze_actions": 16.0,
+      "fail_frac_within_alpha_tol": 0.07692307692307693,
+      "fail_frac_within_d_tol": 0.6923076923076923,
+      "median_steps": 1.0,
+      "mean_episode_reward": -0.35002145770060356
+    }
+  ],
+  "generalization": [
+    {
+      "label": "curriculum (radius=8)",
+      "n": 100,
+      "n_success": 96,
+      "success_rate": 0.96,
+      "wilson_lo": 0.9016292856411208,
+      "wilson_hi": 0.9843366960084523,
+      "alpha_deg_success": {
+        "median": 3.099540808810219,
+        "q1": 0.9820811503397541,
+        "q3": 6.012791762124985
+      },
+      "d_mm_success": {
+        "median": 0.2786923625803417,
+        "q1": 5.152262601458161e-07,
+        "q3": 3.783854548949204
+      },
+      "alpha_deg_all": {
+        "median": 3.2630967706463005,
+        "q1": 1.0456194399307261,
+        "q3": 6.800307277681182
+      },
+      "d_mm_all": {
+        "median": 0.3106233545293514,
+        "q1": 7.736691277943697e-07,
+        "q3": 4.250922695966473
+      },
+      "n_fail": 4,
+      "fail_near_miss_freeze": 1,
+      "fail_navigation": 3,
+      "fail_took_a_freeze_action": 4,
+      "fail_never_froze": 0,
+      "fail_exhausted_budget": 4,
+      "fail_median_freeze_actions": 25.0,
+      "fail_frac_within_alpha_tol": 0.5,
+      "fail_frac_within_d_tol": 0.5,
+      "median_steps": 1.0,
+      "mean_episode_reward": 4.603506641428594,
+      "seed_start": 30000,
+      "seed_end": 30099
+    },
+    {
+      "label": "small (radius=20)",
+      "n": 100,
+      "n_success": 92,
+      "success_rate": 0.92,
+      "wilson_lo": 0.8500189229905127,
+      "wilson_hi": 0.9589065385156194,
+      "alpha_deg_success": {
+        "median": 4.081123330726248,
+        "q1": 1.8401722727058465,
+        "q3": 7.558350174902432
+      },
+      "d_mm_success": {
+        "median": 2.4917546261548353,
+        "q1": 0.1356481566729293,
+        "q3": 4.844597087561803
+      },
+      "alpha_deg_all": {
+        "median": 4.840592172948504,
+        "q1": 2.385010784064996,
+        "q3": 8.780465781768775
+      },
+      "d_mm_all": {
+        "median": 2.9382631648698747,
+        "q1": 0.18735076875045925,
+        "q3": 5.490441154153
+      },
+      "n_fail": 8,
+      "fail_near_miss_freeze": 3,
+      "fail_navigation": 5,
+      "fail_took_a_freeze_action": 8,
+      "fail_never_froze": 0,
+      "fail_exhausted_budget": 8,
+      "fail_median_freeze_actions": 20.0,
+      "fail_frac_within_alpha_tol": 0.25,
+      "fail_frac_within_d_tol": 0.5,
+      "median_steps": 1.0,
+      "mean_episode_reward": 2.263551889051133,
+      "seed_start": 31000,
+      "seed_end": 31099
+    },
+    {
+      "label": "medium (radius=40)",
+      "n": 100,
+      "n_success": 81,
+      "success_rate": 0.81,
+      "wilson_lo": 0.7222115462093562,
+      "wilson_hi": 0.8748524849023126,
+      "alpha_deg_success": {
+        "median": 5.3816901533722055,
+        "q1": 3.852098457715404,
+        "q3": 9.126384235774609
+      },
+      "d_mm_success": {
+        "median": 3.06921686010099,
+        "q1": 0.7344489354729113,
+        "q3": 6.515638805191872
+      },
+      "alpha_deg_all": {
+        "median": 6.876580744885908,
+        "q1": 4.2891959672855045,
+        "q3": 13.604762310505187
+      },
+      "d_mm_all": {
+        "median": 4.938688790544174,
+        "q1": 1.9413784953781166,
+        "q3": 9.126815195258564
+      },
+      "n_fail": 19,
+      "fail_near_miss_freeze": 9,
+      "fail_navigation": 10,
+      "fail_took_a_freeze_action": 19,
+      "fail_never_froze": 0,
+      "fail_exhausted_budget": 19,
+      "fail_median_freeze_actions": 26.0,
+      "fail_frac_within_alpha_tol": 0.3157894736842105,
+      "fail_frac_within_d_tol": 0.3684210526315789,
+      "median_steps": 1.0,
+      "mean_episode_reward": -8.390230714657086,
+      "seed_start": 32000,
+      "seed_end": 32099
+    },
+    {
+      "label": "large (radius=80)",
+      "n": 100,
+      "n_success": 64,
+      "success_rate": 0.64,
+      "wilson_lo": 0.5423540245160874,
+      "wilson_hi": 0.7272877959859567,
+      "alpha_deg_success": {
+        "median": 7.280785744046216,
+        "q1": 4.53767161782388,
+        "q3": 11.072726982303127
+      },
+      "d_mm_success": {
+        "median": 3.5975277513717154,
+        "q1": 0.8353925299157594,
+        "q3": 7.654189785521205
+      },
+      "alpha_deg_all": {
+        "median": 11.107563616884086,
+        "q1": 6.456886133946466,
+        "q3": 21.038611188484694
+      },
+      "d_mm_all": {
+        "median": 6.497643352048209,
+        "q1": 2.3594478193197386,
+        "q3": 11.715328503004216
+      },
+      "n_fail": 36,
+      "fail_near_miss_freeze": 12,
+      "fail_navigation": 24,
+      "fail_took_a_freeze_action": 36,
+      "fail_never_froze": 0,
+      "fail_exhausted_budget": 36,
+      "fail_median_freeze_actions": 24.0,
+      "fail_frac_within_alpha_tol": 0.1388888888888889,
+      "fail_frac_within_d_tol": 0.3333333333333333,
+      "median_steps": 1.0,
+      "mean_episode_reward": -18.534125580854163,
+      "seed_start": 33000,
+      "seed_end": 33099
+    },
+    {
+      "label": "uniform-random",
+      "n": 100,
+      "n_success": 5,
+      "success_rate": 0.05,
+      "wilson_lo": 0.02154367915436796,
+      "wilson_hi": 0.11175046923191913,
+      "alpha_deg_success": {
+        "median": 2.393573461896405,
+        "q1": 1.6780563825593815,
+        "q3": 6.151143708464381
+      },
+      "d_mm_success": {
+        "median": 7.950981341066847,
+        "q1": 1.8291252617679343,
+        "q3": 8.124255402817038
+      },
+      "alpha_deg_all": {
+        "median": 17.80686025474063,
+        "q1": 7.655464102098721,
+        "q3": 67.63869206712751
+      },
+      "d_mm_all": {
+        "median": 58.01420549934147,
+        "q1": 30.307755088211778,
+        "q3": 99.6139268085623
+      },
+      "n_fail": 95,
+      "fail_near_miss_freeze": 8,
+      "fail_navigation": 87,
+      "fail_took_a_freeze_action": 95,
+      "fail_never_froze": 0,
+      "fail_exhausted_budget": 95,
+      "fail_median_freeze_actions": 38.0,
+      "fail_frac_within_alpha_tol": 0.4842105263157895,
+      "fail_frac_within_d_tol": 0.06315789473684211,
+      "median_steps": 60.0,
+      "mean_episode_reward": -74.67134863420527,
+      "seed_start": 34000,
+      "seed_end": 34099
+    }
+  ],
+  "traversal_analysis": {
+    "n": 100,
+    "mean_parameter_sphere_separation_deg": 64.05927900702248,
+    "median_parameter_sphere_separation_deg": 61.587622662857115,
+    "mean_surface_chord_mm": 154.30972354713012,
+    "median_surface_chord_mm": 155.42377052239533,
+    "mean_min_positional_actions": 64.29,
+    "median_min_positional_actions": 66.0,
+    "mean_min_total_actions": 88.34,
+    "median_min_total_actions": 87.0,
+    "step_budget": 60,
+    "frac_episodes_over_budget": 0.82
+  },
+  "training_tail_reference": {
+    "source": "logs/headline/single_target_fallback/headline_summary.json",
+    "note": "NOT an evaluation -- last-20% tail of the headline run's own training episodes, stochastic sampling, N=1737 of 8685",
+    "converged_success_rate": 0.9804260218767991,
+    "median_terminal_alpha_deg": 3.4948708756785103,
+    "median_terminal_d_mm": 1.4729258427482999
+  },
+  "wall_clock_s": 0.2649999999557622
+}

@@ -1,0 +1,31 @@
+Loading DEPLOYED model: C:\Users\mbric\Documents\Sook\Ultrasound\sook_ultrasound_rl_summative\models\ppo\best\model.zip
+
+=== PART A: deployed held-out eval (N=300, seeds 20000-20299, deterministic, class defaults) ===
+  pooled (all 3 targets)   n=300 success=0.9467 [0.9151, 0.9669]  fail: off_target_freeze=16 timeout=0
+  head                     n=103 success=0.9806 [0.9319, 0.9947]  fail: off_target_freeze=2 timeout=0
+  abdomen                  n= 96 success=0.9896 [0.9433, 0.9982]  fail: off_target_freeze=1 timeout=0
+  femur                    n=101 success=0.8713 [0.7922, 0.9232]  fail: off_target_freeze=13 timeout=0
+
+=== PART B: generalization sweep (N=100/condition, deterministic) ===
+  curriculum (radius=8)    success=0.9600 [0.9016, 0.9843]  med_alpha=3.26deg med_d=0.31mm  fail: off_target_freeze=4 timeout=0
+  small (radius=20)        success=0.9200 [0.8500, 0.9589]  med_alpha=4.84deg med_d=2.94mm  fail: off_target_freeze=8 timeout=0
+  medium (radius=40)       success=0.8100 [0.7222, 0.8749]  med_alpha=6.88deg med_d=4.94mm  fail: off_target_freeze=19 timeout=0
+  large (radius=80)        success=0.6400 [0.5424, 0.7273]  med_alpha=11.11deg med_d=6.50mm  fail: off_target_freeze=36 timeout=0
+  uniform-random           success=0.0500 [0.0215, 0.1118]  med_alpha=17.81deg med_d=58.01mm  fail: off_target_freeze=95 timeout=0
+
+=== PART C: uniform-random success=0.0500 -- quantifying traversal requirement ===
+  n = 100
+  mean_parameter_sphere_separation_deg = 64.05927900702248
+  median_parameter_sphere_separation_deg = 61.587622662857115
+  mean_surface_chord_mm = 154.30972354713012
+  median_surface_chord_mm = 155.42377052239533
+  mean_min_positional_actions = 64.29
+  median_min_positional_actions = 66.0
+  mean_min_total_actions = 88.34
+  median_min_total_actions = 87.0
+  step_budget = 60
+  frac_episodes_over_budget = 0.82
+
+Wrote C:\Users\mbric\Documents\Sook\Ultrasound\sook_ultrasound_rl_summative\logs\tables\generalization_eval.csv
+Wrote C:\Users\mbric\Documents\Sook\Ultrasound\sook_ultrasound_rl_summative\logs\deployed_eval\deployed_eval.json
+Total wall-clock: 30.5 min
