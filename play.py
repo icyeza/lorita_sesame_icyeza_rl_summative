@@ -6,7 +6,7 @@ image, clinical flag) as JSON -- see `environment/rendering.py` for the
 exact schema. It is entirely separate from training: nothing in
 `training/` or `main.py` imports this module or depends on it running.
 
-Three policy modes:
+Two policy modes:
   --policy random (default): random actions, just to have something to stream.
   --policy model: the best saved model (same models/<algo>/best/ search
     main.py uses, in the same ALGO_PRIORITY order), or point at a specific
@@ -32,7 +32,6 @@ import argparse
 import asyncio
 import sys
 from pathlib import Path
-import time
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -275,8 +274,6 @@ def _terminal_policy_label() -> str:
     to be read off the real POLICY_MODE/MODEL state."""
     if POLICY_MODE == "model" and MODEL is not None:
         return f"trained model ({MODEL_ALGO})"
-    if POLICY_MODE == "cinematic":
-        return "SCRIPTED cinematic path -- NOT a policy, no model loaded"
     return "random actions"
 
 
@@ -313,105 +310,6 @@ def _project_to_belly(struct_center: np.ndarray) -> tuple[float, float]:
     if phi < 0:
         phi += 2 * np.pi
     return float(np.clip(theta, 0.02, np.pi / 2 - 0.02)), float(phi)
-
-
-CINEMATIC_MIN_STEPS = 15
-CINEMATIC_MAX_STEPS = 35
-
-
-def _lerp_angle(a: float, b: float, t: float) -> float:
-    """Shortest-path interpolation for a wrap-around angle (radians) --
-    plain linear interpolation on phi would sometimes sweep the long way
-    around the sphere when start/end straddle the 0/2pi seam."""
-    diff = (b - a + np.pi) % (2 * np.pi) - np.pi
-    return a + diff * t
-
-
-async def _cinematic_loop():
-    """FOR VIDEO CAPTURE ONLY -- NOT the trained/random policy, and NEVER
-    presented as such: `policy_label` below says so explicitly, and this
-    is a completely separate CLI mode (--policy cinematic) from --policy
-    model/random. The real fix for the navigation-skill gap (see
-    scripts/fix_navigation_gap.py, currently paused/WIP) is a genuine
-    retrain; this mode exists only to produce a nicer-looking clip in the
-    meantime by SCRIPTING the probe's path from a random start to the
-    known-correct pose (found the same way reset()'s curriculum finds it,
-    `_search_min_pose_error`) over a random number of steps. It bypasses
-    env.step()/the RL action space entirely -- no reward, no policy
-    decision is involved -- so it must hand-populate `_last_reward_info`,
-    `_last_terminated`, and `total_steps` itself (normally step()'s job)
-    to keep the existing HUD/pulse/pause/confirmation-view pipeline
-    working unchanged.
-    """
-    # Seeded from OS entropy (no fixed seed), not a fixed value like the
-    # rest of this file's dev-reproducibility convention -- for a video
-    # demo, restarting the server should give a DIFFERENT episode sequence
-    # each time (e.g. if a take needs a retry), not silently replay the
-    # exact same target/phantom every restart.
-    env = UltrasoundProbeEnv(seed=None)
-    rng = np.random.default_rng()
-
-    while True:
-        env.reset(seed=int(rng.integers(0, 1_000_000)))
-        target = env.targets[env.target_idx]
-
-        # "final position": the same near-optimal pose reset()'s own
-        # curriculum uses -- a REAL, reachable pose for this phantom, not
-        # an invented one.
-        env._search_min_pose_error(target)
-        theta1, phi1, roll1, pitch1, yaw1 = env._last_search_pose
-
-        # "random position": clearly non-trivial start, resampled if it
-        # happens to already land inside tolerance.
-        for _ in range(20):
-            theta0 = float(rng.uniform(np.radians(10), np.radians(50)))
-            phi0 = float(rng.uniform(0, 2 * np.pi))
-            env.probe.theta, env.probe.phi = theta0, phi0
-            env.probe.roll = env.probe.pitch = env.probe.yaw = 0.0
-            alpha0, d0 = env._pose_error(target)
-            if not (alpha0 <= env.alpha_tol and d0 <= env.d_tol):
-                break
-
-        # Same table as the real policy loop, but every number it can show
-        # is scripted: this mode hand-populates `_last_reward_info` with
-        # reward=0.0 and success=True on the last step (no env.step(), no
-        # policy decision), so the reward/return columns are 0.00 by
-        # construction and the outcome is always ACQUISITION. The header's
-        # policy line says so outright.
-        REPORTER.episode_start(env, _terminal_policy_label())
-
-        n_steps = int(rng.integers(CINEMATIC_MIN_STEPS, CINEMATIC_MAX_STEPS + 1))
-        for i in range(1, n_steps + 1):
-            t = i / n_steps
-            env.probe.theta = theta0 + (theta1 - theta0) * t
-            env.probe.phi = _lerp_angle(phi0, phi1, t)
-            env.probe.roll = 0.0 + (roll1 - 0.0) * t
-            env.probe.pitch = 0.0 + (pitch1 - 0.0) * t
-            env.probe.yaw = 0.0 + (yaw1 - 0.0) * t
-
-            env._compute_obs()
-            alpha, d = env._pose_error(target)
-            env.total_steps += 1
-            is_final = i == n_steps
-            env._last_reward_info = {
-                "target": None if is_final else target,
-                "alpha_deg": float(np.degrees(alpha)), "d_m": float(d),
-                "acquired": [target] if is_final else [],
-                "flag": None, "reward": 0.0, "success": is_final,
-            }
-            env._last_terminated = is_final
-            env._last_truncated = False
-
-            REPORTER.step(env, "scripted")
-            confirmation = _render_confirmation_image(env, target) if is_final else None
-            await bridge.publish(env, confirmation=confirmation)
-            if is_final:
-                REPORTER.episode_end(env, acquired=True)
-
-            if is_final and PAUSE_ON_EPISODE_END:
-                _resume_event.clear()
-                await _resume_event.wait()
-            await asyncio.sleep(0.3)
 
 
 def _render_confirmation_image(env, target: str) -> dict:
@@ -509,21 +407,13 @@ async def start_demo():
     bridge.on_client_message = _on_client_message
     if REPORTER is None:  # e.g. `uvicorn play:app`, which never runs __main__
         REPORTER = _StepReporter(enabled=VERBOSE)
-    if POLICY_MODE == "cinematic":
-        asyncio.create_task(_cinematic_loop())
-    else:
-        asyncio.create_task(_demo_loop())
+    asyncio.create_task(_demo_loop())
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--policy", choices=["random", "model", "cinematic"], default="random",
-                         help="drive the demo episode with random actions (default), a trained model, "
-                              "or (cinematic) a SCRIPTED illustrative path from a random start to the "
-                              "known-correct pose over a random number of steps -- for video capture "
-                              "only, NOT a policy; honestly labeled as such in the UI. See "
-                              "status.md 'navigation-skill gap' for why this exists and what the real "
-                              "fix (scripts/fix_navigation_gap.py, currently paused) will replace it with.")
+    parser.add_argument("--policy", choices=["random", "model"], default="random",
+                         help="drive the demo episode with random actions (default) or a trained model.")
     parser.add_argument("--model-path", default=None,
                          help="explicit model file -- requires --algo. Default (when --policy model and "
                               "this is unset): auto-find models/<algo>/best/, same as main.py.")
@@ -555,7 +445,7 @@ if __name__ == "__main__":
     PAUSE_ON_EPISODE_END = not args.auto_continue
 
     policy_label = "random actions"
-    if args.policy == "modeled":
+    if args.policy == "model":
         if args.model_path:
             algo, path = args.algo, args.model_path
         else:
@@ -569,20 +459,8 @@ if __name__ == "__main__":
             MODEL_ALGO = algo
             POLICY_MODE = "model"
             policy_label = f"trained model ({algo})"
-    elif args.policy == "model":
-        POLICY_MODE = "cinematic"
-        if args.model_path:
-            algo, path = args.algo, args.model_path
-        else:
-            algo, path = find_best_model()
-
-        policy_label = f"trained model (PPO)"
-        print(f"[serve_viz] Loading model for the live demo: algo={algo}, path={path}")
-        time.sleep(3)
-        print(f"[serve_viz] policy_mode=model (trained model (ppo)), port=8765")
-
 
     bridge.policy_label = policy_label
     REPORTER = _StepReporter(enabled=VERBOSE)
-    # print(f"[serve_viz] policy_mode={POLICY_MODE} ({policy_label}), port={args.port}")
+    print(f"[serve_viz] policy_mode={POLICY_MODE} ({policy_label}), port={args.port}")
     uvicorn.run(app, host="127.0.0.1", port=args.port)
